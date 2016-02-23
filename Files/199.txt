@@ -1,0 +1,4 @@
+You tell the town guards that you are a bountyhunter. They seem pleased that you have caught their wanted man. The chief guard walks over to you and hands you 5 gold pieces, saying, 'This murderer won't escape again. Here's your reward.'. He then rejoins the other guards who are busy chaining up the escaped murderer. You decide to head quickly north in case the murderer tries to implicate you. @
+normal
+change gold 5
+goto 222

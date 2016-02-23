@@ -1,0 +1,4 @@
+The sparkling water is refreshing but not as medicinal as the small boy claimed. Add 1 condition point to your total. You shake your fist at the boy in mock anger, and set off north. @
+normal
+change condition 1
+goto 247

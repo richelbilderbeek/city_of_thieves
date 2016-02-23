@@ -1,0 +1,4 @@
+There is nothing of use to you in the room. The smell of the zombies and the debris is terrible, so you decide to leave immediately. @
+normal
+option You walk back to the staircase to climb up to the next floor. @ if has_not_fought first_death_hawk goto 207
+option You walk back to the staircase to go back to the fourth floor. @ if has_fought first_death_hawk goto 65

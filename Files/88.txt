@@ -1,0 +1,5 @@
+You pull back the curtains and walk into a very lavish boudoir. In it is a young woman with her back towards you. As you approach her she spins round and you are stunned to see, not the young woman's face you are expecting, but a large snake's head. It extends out from the shoulders and bites you on the neck. You are caught somewhat off-balance by the serpent queen and suffer the loss of 4 condition points and 1 skill point before you can draw your sword to defend yourself. @
+normal
+change skill -1
+change condition -4
+goto 418

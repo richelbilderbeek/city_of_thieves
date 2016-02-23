@@ -1,0 +1,4 @@
+As soon as you pluck one of the flowers you hear the noise of rustling leaves. Three of the animal-shaped hedges have uprooted themselves and are closing in on you. Do you have a ring of fire? @
+normal
+option No @ if has_not ring_of_fire goto 191
+option Yes @ if has ring_of_fire goto 237

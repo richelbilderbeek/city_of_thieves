@@ -1,0 +1,4 @@
+You are fighting a pirate with a wooden stick, instead of Carralif's sword. Due to this, the fight will be tougher. @
+normal
+monster pirate 7 5 2
+goto 423

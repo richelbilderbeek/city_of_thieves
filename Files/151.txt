@@ -1,0 +1,6 @@
+The two guards lead you into the guardhouse and take you immediately downstairs to the cells below. There are four cells and all are empty except for one which houses a frail, white-haired old man. The guards unlock the cell next to the old man's and throw you in, placing your sword and shield on a table outside. The only contents of the cell are a straw mattress and a pail of water. The guards go back upstairs and as they disappear the old man gets up off his bed and starts to speak. 'You're an outsider, aren't you? Don't reply, it's obvious. Do you want me to set you free? Give me 10 gold pieces and I'll have you out in five minutes.' The old man then puts his arm through the bars of your cell with the palm of his hand upturned. @
+normal
+option Give the old man 10 gold pieces@ if gold 10 change gold -10 goto 351 
+option Ignore the old man@ goto 29
+change remove carralifs_sword
+change remove shield

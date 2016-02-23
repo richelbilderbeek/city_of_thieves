@@ -1,0 +1,3 @@
+The tiny man smiles and says, 'Ah well, if that's all you want, then that's simple enough. He's on the fourth floor in the room with the black door.' Then he waves his arms at you and disappears in a small puff of smoke. You stand up and walk back down the stairs to the floor where there are two doors adjacent to each other on the landing. You breathe in deeply and turn the handle of the black door. @
+normal
+goto 96

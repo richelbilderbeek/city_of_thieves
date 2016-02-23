@@ -1,0 +1,5 @@
+You wipe the blood of the moon dogs from your sword and walk to the wooden door of Zanbar Bone's tower. You try the handle, but it is locked. @
+normal
+option Try the skeleton key @ if skeleton_key goto 228
+option Pull the cord hanging down in front of the door @ goto 4
+option Attempt to charge the door open with your shoulder @ goto 365

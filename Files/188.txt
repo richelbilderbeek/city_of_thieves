@@ -1,0 +1,4 @@
+It is gloomy in the house but you can make out the shapes of abandoned furniture. Litter and rubble is strewn all over the floor. You find a broken chair and slump down in it to rest. Suddenly you notice something slither across the floor, and before you can get to your feet you see in the half-light that you are encircled by six snakes, each a metre long. @
+normal
+option Hack at them with your sword @ goto 253
+option Make a dash for the door @ goto 15

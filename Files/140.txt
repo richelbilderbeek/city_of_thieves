@@ -1,0 +1,5 @@
+The ogre looks unimpressed by your aggressive action and, picking up a large bone as a weapon, lumbers towards you. You must fight him. After the third Attack Round, you may escape by running out of the house to head north. @
+fight
+monster ogre 8 9 2
+escape 3 282
+goto 71

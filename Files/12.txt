@@ -1,0 +1,5 @@
+After a few minutes you hear footsteps coming down the corridor, The door opensand a man walks into the room wearing nothing but a towel round his fat stomach. You watch as he drops the towel and lowers himself gently into the tub with a loud sigh. @
+normal
+option Surprise the man by drawing your sword and uttering a loud 'Ahem!'@ goto 176
+option Creep out of the room back into the corridor while he submerges himself@ goto 383
+change add opened_pirate_captain_door

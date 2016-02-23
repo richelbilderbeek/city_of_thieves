@@ -1,0 +1,6 @@
+You draw your sword to defend yourself against the advancing leaf beasts. They all attack you at once, seemingly trying to crush and smother you. @
+fight
+monster leaf_beasts 6 6 2
+change add lotus_flower
+goto 133
+bye You run back to the turnstile still clutching the lotus and make your getaway into Stable Street.@ 

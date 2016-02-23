@@ -1,0 +1,4 @@
+You hear a bell ring on the other side of the door and a few minutes later the door is opened by a thin, pale-skinned man with dark, hollow eyes, who is wearing a servant's uniform. In a cold, hissing voice he says, 'Yes?' @
+normal
+option Tell him you are a lost traveller @ goto 339
+option Attack him with your sword @ goto 35

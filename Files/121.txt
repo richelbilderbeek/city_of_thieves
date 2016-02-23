@@ -1,0 +1,4 @@
+The ogre gulps down the food in no time at all. Licking his lips, he turns to you and tells you to get out of his home. @
+normal
+option Obey the ungrateful ogre, and leave the house heading north @ goto 282
+option Draw your sword to teach the ogre a lesson @ goto 140

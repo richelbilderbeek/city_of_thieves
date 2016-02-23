@@ -1,0 +1,5 @@
+The man-orc takes your gold piece and spins it in the air with a flick of the thumb, catching it in the pocket of his apron. He then starts to pick his teeth with a sharpened twig and finally says, 'I know nothing about him.'. @
+normal
+change gold -1
+option Fight the impudent man-orc @ goto 5
+option Contain your anger, leave the shop and head north again @ goto 93

@@ -1,0 +1,5 @@
+You point the mirror at the spirit stalker, but it does not stop him advancing. Again he manages to touch your flesh and burn you. Lose 2 condition points. @
+normal
+option Fire your silver arrow at him @ goto 189
+option Fire your ring of ice at him @ if ring_of_ice goto 382
+change condition -2

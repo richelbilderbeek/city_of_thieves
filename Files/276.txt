@@ -1,0 +1,6 @@
+You tell the guards that you will make it worth their while if they release you and allow you entry into the city. How much will you offer them? @
+normal
+option Five gold pieces @ if gold 5 change gold -5 goto 109
+option Ten gold pieces @ if gold 10 change gold -10 goto 267
+option Fifteen gold pieces @ if gold 15 change gold -15 goto 41
+option You decide to let yourself be taken away @ goto 151

@@ -1,0 +1,4 @@
+You leave the house with six skulls pointed on it, walking back up to the street. @
+normal
+option turn right down Candle Street @ goto 139
+option walk back to the junction and go down Harbour street @ goto 91

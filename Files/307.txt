@@ -1,0 +1,4 @@
+Walking towards you along the street are two huge guards wearing the black uniform of Lord Azzur. As they get closer you see that they are trolls, brutal mercenaries employed by Lord Azzur as Imperial Elite Guards. To your right there is a tree which reaches almost to the top of the city wall. @
+normal
+option Risk walking past the trolls @ goto 290
+option Climb the tree in order to get over the wall @ goto 11

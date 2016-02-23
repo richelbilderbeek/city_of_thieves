@@ -1,0 +1,4 @@
+The women immediately start arguing again over your gift to them, ignoring you completely. You look around the room and see a table set for a meal. There are two bowls of hot soup on top of the table waiting to be drunk. @
+normal
+option Pick up a wooden spoon and drink some of the soup @ goto 68
+option Leave the old ladies and continue east @ goto 375

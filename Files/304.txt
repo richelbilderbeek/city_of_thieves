@@ -1,0 +1,3 @@
+You arrive at a four-way junction in the street. The street leading west is called Key Street and the street leading east is called Clock Street. Ahead you see that Market Street continues north and a crowd of people are walking up it cheering loudly and waving their arms in the air. You decide to follow them. @
+normal
+goto 148

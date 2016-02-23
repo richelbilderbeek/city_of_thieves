@@ -1,0 +1,4 @@
+One of the men teaches into a pocket inside his green jacket and produces a thin silver bracelet. He gives it to you and you see the outline of an insect etched into its surface. The man explains that the insect bracelet has the power to kill even giant insects. After placing the bracelet on your wrist you leave the tavern and head north again. @
+normal
+change add silver_insect_bracelet
+goto 296

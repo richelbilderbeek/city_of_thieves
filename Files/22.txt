@@ -1,0 +1,5 @@
+As you sit down at the table the goblins stop their quarrelling and stare at you coldly. You see hatred in their brown warty faces. Suddenly they stand up and draw their swords. You must fight them one at a time. @
+fight
+monster first_goblin 4 5 2
+monster second_goblin 5 5 2
+goto 198

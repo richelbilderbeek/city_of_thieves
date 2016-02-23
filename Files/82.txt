@@ -1,0 +1,4 @@
+Before the hag can complete her spell, you reach into your backpack and take out the bottle containing the potion. You gulp down the liquid and feel its effects immediately. The hag is still mouthing her vile sorcery but you cannot hear her. Safe from her evil, you draw your sword and step forward. You grab hold of her matted hair and cut a clump from her head. She writhes and kicks and spits at you. At this close range you can see fresh blood on her face: no doubt she could not wait to cook some of the rats she had killed. Despite your repulsion you are excited about having gained one of the items necessary to defeat the Night Prince. You throw the hag into the sewer and walk back to the entrance hole. @
+normal
+change add hags_hair
+goto 104

@@ -1,0 +1,12 @@
+You give Ben Borryman the first magic item. @
+normal
+option Pay with two magic items, second item is magic elven_boots @ if has magic_elven_boots change remove magic_elven_boots goto 85
+option Pay with two magic items, second item is magic helmet @ if has magic_helmet change remove magic_helmet goto 85
+option Pay with two magic items, second item is silver scorpion brooch @ if has silver_scorpion_brooch change remove silver_scorpion_brooch goto 85
+option Pay with two magic items, second item is golden scorpion brooch @ if has golden_scorpion_brooch change remove golden_scorpion_brooch goto 85
+option Pay with two magic items, second item is copper scorpion brooch @ if has copper_scorpion_brooch change remove copper_scorpion_brooch goto 85
+option Pay with two magic items, second item is invisibility ring @ if has invisibility_ring change remove invisibility_ring goto 85
+option Pay with two magic items, second item is ring of fire @ if has ring_of_fire change remove ring_of_fire goto 85
+option Pay with two magic items, second item is ring of ice @ if has ring_of_ice change remove ring_of_ice goto 85
+option Pay with two magic items, second item is silver insect bracelet @ if has silver_insect_bracelet change remove silver_insect_bracelet goto 85
+option You cannot afford the price @ goto 42

@@ -1,0 +1,6 @@
+The little girl grabs hold of your arm and leads you into a back room. Saying nothing, she motions you to lie down on a sheepskin rug. Suddenly you are aware of a very old man sitting opposite. He rises slowly from his rocking chair and walks over to you. You watch transfixed as he takes hold of an arrow protruding from your arm and gently pulls it free without causing you any pain. The wound made by the arrow disappears before your eyes. Other arrows are treated similarly if you suffered more than one wound. 2 condition points are restored for each arrow pulled free by the old man. Then in a slow and almost inaudible voice he tells you that he wants the broadsword that Owen Carralif gave you in payment for the healing. You feel obliged to give him your sword, though reluctantly. In exchange he gives you an ordinary fighting sword. @
+normal
+change remove carralifs_sword
+change add ordinary_sword
+change arrows remove_all
+goto 112

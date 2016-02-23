@@ -1,0 +1,5 @@
+You call out to the guards, telling them that you think they are stupid and that you have seen more life on a troll's breakfast plate than in them. Quickly provoked, the guards rush down the stairs and are surprised to see you waiting for them, sword drawn. You fight them one at a time. @
+normal
+monster first_city_guard 6 7 2
+monster second_city_guard 6 5 2
+goto 54

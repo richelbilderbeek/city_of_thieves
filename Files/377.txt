@@ -1,0 +1,4 @@
+The iron grill is securely bolted to the brick wall and you are unable to remove it. However, above the grill you notice a dark recess where some bricks have been removed from the wall. It is too dark to see deep inside the recess. @
+normal
+option Put your hand into the dark hole @ goto 92
+option Walk back to the entrance hole @ goto 174

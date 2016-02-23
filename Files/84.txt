@@ -1,0 +1,4 @@
+The barrels all contain rotten fruit and the boxes contain manacles and leg irons. Perhaps this is a slave-trading ship. There is nothing else of interest to you on deck. @
+normal
+option Walk over to the deck cabin to climb down the stairs to the lower decks@ goto 50
+option Leave the ship, walk back along the jetty, turn left and walk north up Harbour Street@ goto 78

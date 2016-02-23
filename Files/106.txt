@@ -1,0 +1,5 @@
+The lantern breaks on impact with the mummy and covers it with burning oil. Flames spread quickly along the dry bandages and the mummy is soon consumed by fire. @
+normal
+change remove lantern
+option Inspect the open sarcophagus@ goto 163
+option Leave the room immediately@ goto 231

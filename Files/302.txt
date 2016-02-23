@@ -1,0 +1,4 @@
+You show the man the two gems. Holding them up to the light he examines them carefully with a small magnifying glass. He turns to face you and offers you 9 gold pieces for the two. @
+normal
+option Accept the offer @ goto 240
+option Haggle for a better deal @ goto 345

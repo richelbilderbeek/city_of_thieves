@@ -1,0 +1,5 @@
+You uncork the bottle with your teeth and take a long gulp of the liquid. Fortunately, the liquid is what the man claims it to be. Add 3 condition points and 1 luck point. Well-refreshed, you set off east again, bidding the old man farewell. @
+normal
+change luck 1
+change condition 3
+goto 363

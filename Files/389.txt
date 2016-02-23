@@ -1,0 +1,7 @@
+You push the door with your shoulder with all your might. @
+test_your_skill
+no_skill the door remains firmly shut. You 
+decide not to risk injury to yourself and walk back to 
+the street, continuing northwards @ goto 304
+skill The door flies 
+open @ goto 159

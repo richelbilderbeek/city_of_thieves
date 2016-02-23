@@ -1,0 +1,4 @@
+Zanbar Bone walks towards you, trying to touch your exposed skin. You throw down your sword and notch the silver arrow to your bow. You have only one chance. You take aim and release the bowstring. @
+test_your_luck
+no_luck The arrow misses the Night Prince and he advances to touch your arm. @ goto 411
+luck The arrow finds its mark and pierces the Night Prince through his robed chest @ goto 244

@@ -1,0 +1,5 @@
+The silk curtains in front of the archway are suddenly pulled aside and a strange creature steps into the room. It has a snake's head, which sits oddly atop the body of a young woman wearing a lavish gown. Its mouth opens and a forked tongue darts in and out as the serpent queen challenges you, saying, 'Do not lie to me, scoundrel. No doubt you are an assassin come here to kill me. But you shall die instead!' Suddenly the serpent queen stretches out her head and bites you on the neck. Lose 4 condition points and 1 skill point. @
+normal
+change condition -4
+change skill -1
+goto 404

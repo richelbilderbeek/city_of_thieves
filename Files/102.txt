@@ -1,0 +1,3 @@
+The other two vagabonds stop to aid their friend, but it is too late, as he is already dead. They seem undecided as to what to do next. After a brief conversation they pick up their dead friend and carry him off down a narrow alleyway to your right. You walk quickly north before they have time to reappear with more of their gang. @
+normal
+goto 372

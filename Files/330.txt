@@ -1,0 +1,5 @@
+You lose 3 condition points. @
+normal
+change condition -3
+goto 30
+Bye You manage with great pain to pull the bolt from your shoulder. As you bandage your wound the little man runs off into the building on your left. There does not appear to be an easy way to catch him so you walk under the bridge and continue east. @

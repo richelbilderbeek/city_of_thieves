@@ -1,0 +1,13 @@
+You ask Ben Borryman if he has any silver arrows for sale. He replies that he does not, but will make one for you at a cost of 10 gold pieces or two magic items. @
+normal
+option Pay in gold @ if gold 10 change gold -10 goto 85
+option Pay with two magic items, first item is magic elven boots @ if has magic_elven_boots change remove magic_elven_boots goto 433
+option Pay with two magic items, first item is magic helmet @ if has magic_helmet change remove magic_helmet goto 433
+option Pay with two magic items, first item is silver scorpion brooch @ if has silver_scorpion_brooch change remove silver_scorpion_brooch goto 433
+option Pay with two magic items, first item is golden scorpion brooch @ if has golden_scorpion_brooch change remove golden_scorpion_brooch goto 433
+option Pay with two magic items, first item is copper scorpion brooch @ if has copper_scorpion_brooch change remove copper_scorpion_brooch goto 433
+option Pay with two magic items, first item is invisibility ring @ if has invisibility_ring change remove invisibility_ring goto 433
+option Pay with two magic items, first item is ring of fire @ if has ring_of_fire change remove ring_of_fire goto 433
+option Pay with two magic items, first item is ring of ice @ if has ring_of_ice change remove ring_of_ice goto 433
+option Pay with two magic items, first item is silver insect bracelet @ if has silver_insect_bracelet change remove silver_insect_bracelet goto 433
+option You cannot afford the price @ goto 42

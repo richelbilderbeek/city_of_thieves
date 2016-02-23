@@ -1,0 +1,7 @@
+You must now fight the other two city guards as a pair. @
+normal
+Fight_both
+monster second_city_guard 6 6 2
+monster third_city_guard 7 5 2
+bye You are relieved that the noise of your fight did not attract even more guards, but not wishing to tempt providence you dash into the city. @
+goto 74

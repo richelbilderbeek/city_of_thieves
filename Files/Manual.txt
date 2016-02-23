@@ -1,0 +1,100 @@
+Before embarking on your adventure, you must first determine your own strengths and weaknesses. You have in your possession a shield, a sword and a backpack containing provisions (food and drink) for the trip. You have been preparing for your quest by training yourself in sword play and exercising vigorously to build up your condition. 
+
+To see how effective your preparations have been, you must use the dice to determine your initial skill and condition scores. 
+
+SKILL, CONDITION AND LUCK
+
+You initial skill will be 3 plus one dice roll.
+
+You initial condition will be the sum two dice rolls.
+
+You initial luck will be 6 plus one dice roll
+
+For reasons that will be explained below, skill, condition and luck scores change constantly during an adventure. Although you may be awarded additional skill, condition and luck points, these totals may never exceed your initial scores. 
+
+Your skill score reflects your swordsmanship and general fighting expertise: the higher the better. Your condition score reflects your general constitution, your will to survive, your determination and overall fitness. The higher your condition score, the longer you will be able to survive. Your luck score indicates how naturally lucky a person you are. Luck, and magic, are facts of life in the fantasy kingdom you are about to explore. 
+
+BATTLES
+
+You will often come across chapters to fight a creature of some sort. An option to flee may be given, but if not (or if you choose to attack the creature anyway) you must resolve the battle as described below. 
+
+Like you, each monster has a certain skill and condition. The higher the monster its skill and condition, the more difficult the battle will be.
+
+The sequence of combat is: 
+
+(1) Two dice are rolled for the creature. The sum of the two dice is added to its skill score. This total is the creature's attack strength. 
+(2) Two dice are rolled for you. The sum of the two dice is added to your current skill score. This total is your attack strength. 
+(3) If your attack strength is higher than that of the creature, you have wounded it. Proceed to step (4) If the creature's attack strength is higher than yours, it has wounded you. Proceed to step 5. If both Attack Strength totals are the same, you have avoided each other's blows and the combat starts at step 1 again.
+(4) You have wounded the creature. Its condition score decreased by 2 points. You may use your luck here to do additional damage (see at LUCK). 
+(5) The creature has wounded you, and 2 points are subtract from your own condition score. Again you may use luck at this stage (see at LUCK). 
+(6) If the condition score of the creature has been reduced to zero, you defeated the monster. If you condition gets reduced to zero, you have been killed in combat. If both opponents are still alive, continue the battle at step 1
+
+ESCAPING 
+
+On some pages you may be given the option of running away from a battle should things be going badly for you. However, if you do run away, the creature automatically gets in one wound on you (subtract 2 condition points) as you flee. Such is the price of cowardice. Note that you may use luck on this wound in the normal way (see at LUCK) [TODO]. You may only escape if that option is specifically given to you. 
+
+It is possible to come across more than one creature. Sometimes you will fight them as a single monster, sometimes you will fight each one in turn and sometimes that have simultaneous attacks. In that case, both creates attack you once each round, but you attack only one per round.
+
+LUCK 
+
+At various times during your adventure, either in battles or when you come across situations in which you could either be lucky or unlucky, you may call on your luck to make the outcome more favourable. But beware! Using luck is a risky business and if you are unlucky, the results could he disastrous. 
+
+The procedure for using your luck is as follows: roll two dice. If the number rolled is equal to or less than your current luck score, you have been lucky and the result will go in your favour. If the number rolled is higher than your current luck score, you have been unlucky and you will be penalized. 
+
+This procedure is known as testing your luck. Each time you test your luck, one point will be subtracted from the current luck score. Thus you will soon realize that the more you rely on your luck, the more risky this will become. 
+
+USING LUCK IN BATTLES
+
+In battles, you always have the option of using your luck either to inflict a more serious wound on a creature you have just wounded, or to minimize the effects of a wound the creature has just inflicted on you. 
+
+If you have just wounded the creature, you may test your luck as described above. If you are lucky, you have inflicted a severe wound and may subtract an extra 2 points from the creature's condition score. However, if you are unlucky, the wound was a mere graze and you must restore 1 point to the creature's condition (that is, instead of scoring the normal 2 points of damage, you have now scored only 1)
+
+If the creature has just wounded you, you may test your luck to try to minimize the wound. If you are lucky, you have managed to avoid the full damage of the blow. Restore 1 point of condition (that is, instead of doing 2 points of damage it has done only 1). If you are unlucky, you have taken a more serious blow and 1 extra condition point will be subtracted. 
+
+Remember that always when you use luck, 1 point will be subtracted from your luck score.
+
+RESTORING SKILL, CONDITION AND LUCK
+
+You skill score consists out of a base skill level and skill added by equipment. Your base skill score will not change much during your adventure. Occasionally, an event may increase or decrease your skill score. Your base skill score can never excited its initial value. Drinking the potion of skill (see later) will restore your base skill to its initial level at any time.
+
+Equipment adds additional skill points. For example, a magic weapon may increase your skill, but remember that only one weapon can be used at a time! You cannot claim 2 skill bonuses for carrying two magic swords. The character automatically equips the best equipment, unless the equipment has been cursed. In the inventory screen you can see the effect of your equipment on your skill level.
+
+CONDITION AND PROVISIONS 
+
+Your condition score will change a lot during your adventure as you fight monsters and undertake arduous tasks. As you near your goal, your condition level may be dangerously low and battles may be particularly risky, so be careful! 
+
+Your backpack contains enough provisions for ten meals. You may rest and eat at any time except when engaged in a battle. Eating a meal restores 4 condition points. Remember that you have a long way to go, so use your provisions wisely! 
+
+Remember also that your condition score may never exceed its Initial value. Drinking the potion of strength (see later) will restore your condition to its initial level at any time. 
+
+LUCK
+
+Additions to your luck score are awarded through the adventure when you have been particularly lucky. Remember that as with skill and condition, your luck score may never exceed its initial value. Drinking the potion of fortune will adds one to initial luck value, then restores all luck points.
+
+EQUIPMENT AND POTIONS 
+
+You will start your adventure with a bare minimum of equipment, but you may find or buy other items during your travels. You are armed with Carralif's sword, a shield and are dressed in leather armour. 
+
+In addition, you may take one bottle of a magic potion which will aid you on your quest. You may choose to take a bottle of any of the following: 
+
+(1) A potion of skill: restores all skill points.
+(2) A potion of strength: restores all condition points.
+(3) A potion of fortune: adds one to initial luck value, then restores all luck points.
+
+These potions may be taken once at any time during your adventure, except when engaged in a battle.
+
+Remember also that you may only choose one of the three potions to take on your trip, so choose wisely! 
+
+DIFFERENCES WITH THE ORIGINAL BOOK
+
+This chapter describes the differences between this digital version versus the book.
+
+Initial skill: in the book, the initial skill was 6 (instead of 3) plus one dice roll. When you loose your shield you'd lose 1 skill point and when you lose your sword, you'd lose 2 skill points. But in the book, if you'd lose your shield or sword by theft or selling them, there would be no consequence on the skill points of the player. In the computer game, the equipment is directly linked to your skill points, so the initial skill is 3 plus one dice roll plus 3 due to your initial equipment.
+
+Three good shields: in the book, you can get a better shield twice, each adding one point to your skill. But if you'd only obtain the second shield, you'd only get one skill point added. In the computer game, the initial shield adds one point, the first shield found two points and the second shield adds three skill points. This will lead to the same succession in skill points as the book when obtaining all three good shields in succession.
+
+Cursed shield: in the book, you can get a cursed shield, that decreases your skill points by one, independent which of the two possible good shields you have. In the computer game, the cursed shield simply gives you zero skill points. This will decrease your skill points by one if you have a normal shield, or decreases it by two points if you had a magnificent shield.
+
+Less loops: in the book, some events could occur multiple times. For example, you could reach the roof of Zanbar Bone's tower multiple times and experience the consequences multiple times. In the computer game, this is prevented and all events can only occur once.
+
+Random losses: in some chapters the character loses a random object. In the book it was unclear if you could select which object you lost. In the game, a truly random object is chosen. This can have some major impact, as this can even be the mighty Carralif's sword.

@@ -1,0 +1,8 @@
+Underneath the goblet lies a small pile of gold pieces. You count 12 in all and put them in your backpack. @
+normal
+change gold 12
+change add lifted_goblet_b
+option Lift goblet A @ if has_not lifted_goblet_a goto 175
+option Lift goblet C @ if has_not lifted_goblet_c goto 43
+option Walk through the archway @ goto 107
+option Climb the stairs @ goto 60

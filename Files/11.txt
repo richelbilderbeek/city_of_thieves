@@ -1,0 +1,4 @@
+The trolls see what you are doing and run towards the tree. @
+normal
+option You are forced to leave your shield behind to be able to climb up the tree quickly @ if has shield change remove shield goto 408
+option You quickly climb into the tree @ if has_not shield goto 408

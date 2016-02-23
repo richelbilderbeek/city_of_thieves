@@ -1,0 +1,17 @@
+City Of Thieves 
+version 1.6
+
+(C) 2015 Richel Bilderbeek.
+
+This game is made after the 5th Fighting Fantasy gamebook 'City Of Thieves' by Ian Livingstone.
+
+The original text is by Ian Livingstone. Thanks to Fighting Fantasy for cordially allowing us to use the text of the book.
+
+Contributors: 
+ * Richel Bilderbeek: lead developer
+ * Sander Kooi: Dutch translation
+ * Same Drenth: Dutch translation
+ * Redmar van Sinderen: Dutch translation
+ * Friedo Flache: Dutch translation
+ * Carmen IJsebaart: testing
+ * Greg Fivash: testing

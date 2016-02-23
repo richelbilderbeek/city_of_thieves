@@ -1,0 +1,5 @@
+The alley is narrow and dark and runs south some twenty metres before coming to a dead end at a wall. The dwarfs are nowhere to be seen. You start walking slowly back up the alley when suddenly a large net falls on you from above. It is weighted and you stumble to the ground, completely entangled. Then you become aware of the three dwarfs standing above you, chuckling to themselves. Their hands reach through the netting and you watch helplessly as they rummage through your backpack. They seem interested only in your gold. Eventually they walk off and leave you to wriggle free. You have lost all your gold. Lose 2 luck points. Returning to the street, you turn left and head west. @
+normal
+change remove all_gold
+change luck -2
+goto 396

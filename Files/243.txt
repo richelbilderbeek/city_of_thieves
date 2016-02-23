@@ -1,0 +1,4 @@
+You have suffered a terrible burn. Lose 5 condition points. If you are still alive, you decide to lie still and feign death. Behind you the fat man is still chortling to himself. You hear him walk over to you and then feel a sharp pain as he kicks you in the ribs. Satisfied that you really are dead, he walks up the stairs. In considerable pain, you crawl along the floor to the door. Without making a sound you crawl outside. Hauling yourself to your feet you stagger off up the street. @
+normal
+change condition -5
+goto 304

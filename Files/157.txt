@@ -1,0 +1,8 @@
+You leap up and punch the first guard. He staggers back and draws his sword. You fight them one at a time in the small cell. Because you are bare-handed, this will be a tough fight. @
+normal
+monster first_city_guard 6 7 2
+monster second_city_guard 6 5 2
+change add carralifs_sword
+change add shield
+goto 54
+Bye You leave the cell and climb the stairs, picking up your sword and shield off the table. @

@@ -1,0 +1,6 @@
+You must react quickly to escape the advancing suit of armour. @
+normal
+option Open the door in front of you @ if has_not_fought first_zombie goto 122
+option Run back to the staircase and climb up to the next floor @ if has_not_fought first_death_hawk goto 207
+option Run back to the staircase and climb down to the fourth floor @ goto 65
+

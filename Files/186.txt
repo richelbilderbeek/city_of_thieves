@@ -1,0 +1,5 @@
+On top of the lizardine's table you find 4 gold pieces and a scorpion brooch made of copper. @
+normal
+option Pick up the brooch and pin it to your tunic @ goto 387
+option Ignore the brooch, take the gold, go back down the stairs and leave the house, heading north @ goto 334
+change gold 4

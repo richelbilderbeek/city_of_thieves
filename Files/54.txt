@@ -1,0 +1,5 @@
+You search the guardhouse and find 2 gold pieces and a merchant's pass permitting the holder to trade in Port Blacksand. Taking your findings with you. You creep outside. The guard at the main gate does not see you and you walk into the city. @
+normal
+change gold 2
+change add merchant_pass
+goto 74

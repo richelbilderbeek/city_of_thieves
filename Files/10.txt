@@ -1,0 +1,4 @@
+The guard is really annoyed and charges at you with his pike. @
+fight
+monster city_guard 8 7 2
+goto 212

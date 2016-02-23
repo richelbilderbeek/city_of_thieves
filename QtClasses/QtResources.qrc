@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>ZanbarBone.jpg</file>
+        <file>ZanbarBoneGrey.png</file>
+    </qresource>
+</RCC>

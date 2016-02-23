@@ -1,0 +1,3 @@
+The dwarf smiles and extends his arm to you, saying, 'An enemy of Nicodemus is a friend of mine. Welcome stranger.' You tell Wraggins that you do not know where Nicodemus lives and he explains that the wizard lives alone in a small hut under Singing Bridge, which crosses Catfish River to the old part of the city and harbour. He explains that the bridge is in the middle of the city and that most streets lead to it. You thank the dwarf for his information and leave his shop to continue west along Key Street. @
+normal
+goto 300

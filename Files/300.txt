@@ -1,0 +1,4 @@
+The street makes a sudden right turn and heads north. You pass a cluster of small houses and are aware of unseen people watching you walk by. Then the door to one of the houses opens and a small boy dressed in rags runs out and hands you a piece of paper. Without stopping, he runs off and disappears round the corner. The paper has a message on it which reads: 'Arrows from six bows are pointed at you. Leave 10 gold pieces in the middle of the street and keep walking.'. @
+normal
+option Obey the instruction and leave 10 gold in the middle of the street @ if gold 10 change gold -10 goto 347
+option Keep walking without leaving the gold @ goto 137

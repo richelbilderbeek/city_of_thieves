@@ -1,0 +1,4 @@
+The hag is conjuring a spell which instills terrible fear in you. Your mind is full of illusions and you think you are being burned alive with a crowd of skeletal faces looking on gleefully. You swing your sword around blindly trying to hack at the faces laughing at you. @
+test_your_luck
+no_luck Your sword merely cuts through the air @ goto 59
+luck A swipe from your sword cuts into the hag @ goto 144

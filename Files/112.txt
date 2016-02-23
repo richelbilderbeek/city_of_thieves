@@ -1,0 +1,4 @@
+While most of the houses in the street are small, cramped and dark, you see one ahead that stands alone and is painted bright red. The door has a 'Welcome' sign hanging from it. @
+normal
+option Enter the house@ goto 154
+option Keep walking north@ goto 334

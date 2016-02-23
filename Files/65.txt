@@ -1,0 +1,5 @@
+On the fourth floor there are two door adjacent to one another on the landing. One is painted white and the other black. Suddenly a voice calls out from nowhere, saying, 'Oh foolish adventurer, why do you even consider it a remote possibility that you can defeat me, the almighty Zanbar Bone. I am following your every move, but you do not know where I am. Ha! Ha! Ha!'. @
+normal
+option Open the white door?@ if has_not seen_mummy goto 319
+option Open the black door?@ goto 96
+option Carry-on up the stairs?@ goto 197

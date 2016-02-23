@@ -1,0 +1,4 @@
+At the top of the stairs you reach a landing with two closed doors. As you are deciding which door to enter, you hear a noise from downstairs. Somebody is entering the front door. Then you hear a man's voice saying, 'Off you fly, my little beauty, find the intruder'. @
+normal
+option Draw your sword in readiness @ goto 349
+option Make a break for it and jump out of the window at the head of the landing into the street below @ goto 192

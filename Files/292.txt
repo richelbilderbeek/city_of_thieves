@@ -1,0 +1,4 @@
+You walk into a lavishly furnished room containing many pieces of art and curiosities. Standing in front of you is a young woman dressed in a black silk gown. She has long black hair and bright ted lips. She smiles and motions you to sit down in one of the armchairs. You refuse to sit down, only too aware that she is one of Zanbar Bone's servants. She walks towards you open-armed as though she is about to embrace you, and when she smiles again, you see two fang-like teeth which can only belong to a vampire. Do you have garlic? @
+normal
+option Yes @ if has garlic goto 254
+option No @ ifnot garlic goto 210

@@ -1,0 +1,5 @@
+The mindless zombies step slowly towards you with their sticks raised in the air. Fight them one at a time. @
+normal
+monster first_zombie 6 6 2
+monster second_zombie 6 7 2
+goto 297

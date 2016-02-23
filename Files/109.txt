@@ -1,0 +1,3 @@
+The guards look at each other and burst out laughing. Then one says, 'Do you think we would risk letting you in Port Blacksand for the sake of 5 gold pieces? If Lord Azzur found out that we let you in without a pass, we would be dead men. Let's hear no more about bribes, it's the dungeon for you.' @
+normal
+goto 151

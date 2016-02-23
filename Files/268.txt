@@ -1,0 +1,4 @@
+The silk curtains in front of the archway are pulled aside and a strange creature steps into the room. It has a snake's head, which sits oddly on the shoulders of a young woman wearing a lavish gown. Its mouth opens and a forked tongue darts in and out as the serpent queen starts to accuse you, shouting, 'I ordered no flowers from Mrs Pipe, and she certainly would not send any as a gift. What trickery is this, rogue?'. You start to panic, deciding what to do next. @
+normal
+option Run to the front door @ goto 32
+option Draw your sword to attack the serpent queen @ goto 249

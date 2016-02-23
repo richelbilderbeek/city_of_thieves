@@ -1,0 +1,4 @@
+The street makes a sharp turn to the left and continues west for some distance. Turning the corner, you are suddenly jumped on by three short, stocky assailants who were hiding down an alley. Two grab your legs and one tries to knock you out with a cudgel. @
+test_your_luck
+no_luck The cudgel lands heavily on the back of your head, knocking you unconscious@ goto 134
+luck You manage to duck to avoid the blow @ goto 384

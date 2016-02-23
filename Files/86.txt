@@ -1,0 +1,5 @@
+A leather pouch hanging round the neck of the man contains a small glass ball containing what looks like swirling smoke. @
+normal
+option Smash the ball on the ground?@ goto 45
+option Put the ball in your backpack?@ goto 194
+option Leave the ball behind and continue east?@ goto 161

@@ -1,0 +1,5 @@
+Unbeknown to you, there is a trip-wire across the doorway at your feet and a crossbow on the wall opposite, so that as you walk into the room you trigger the wire and this releases the crossbow bolt pointed straight at you. @
+test_your_luck
+no_luck The bolt sinks into your chest @ goto 142
+luck You trip over the wire and fall on the floor. The crossbow 
+bolt flies over your head and through the door @ goto 235

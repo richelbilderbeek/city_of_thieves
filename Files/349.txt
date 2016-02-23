@@ -1,0 +1,5 @@
+Suddenly you are confronted by a small winged creature, no more than a metre in length, hovering before you. It is red in colour and has two horns protruding from its head and a small tail hanging down from its back. It will be difficult to defeat as it flies quickly about your head spitting fire at you! You can escape by jumping out of the window to the street below. @
+normal
+escape 0 192
+monster Fire_imp 9 4 2
+goto 258

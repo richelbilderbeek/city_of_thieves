@@ -1,0 +1,4 @@
+The back room is as lavishly furnished as the front room. In the far corner you see a wooden chest bolted to the floor. It is securely locked. @
+normal
+option Try to pick the lock @ goto 128
+option Leave the room and climb the stairs to the floor above @ goto 60

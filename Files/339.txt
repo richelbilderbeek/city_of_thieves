@@ -1,0 +1,4 @@
+The man looks at you and smiles, saying, 'We do not get many visitors in these parts, but I am sure my master would wish you to have a room for the night. Do come in.' He steps back and you follow him into a beautiful marble-floored hallway. There are portraits and shields hanging on the walls and a spiral staircase leads up to the floor above. He asks you to follow him up the staircase and offers to carry your backpack for you, which you allow him to do. You can see that the staircase winds its way all the way up to the top of the tower, but the man steps off at the first floor and walks along the landing to a door. He opens it and walks into a large room, placing your backpack on a made-up bed. He tells you that this is your room for the night and walks out, telling you that you will meet his master at breakfast. @
+normal
+option Lock the door and go to bed @ goto 288
+option Explore the tower after waiting a few minutes@ goto 77

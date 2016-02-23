@@ -1,0 +1,3 @@
+Tower Street soon ends at a junction, where it meets Stable Street running north and south. You decide to go north. @
+normal
+goto 76

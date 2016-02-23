@@ -1,0 +1,4 @@
+A rope ladder hangs down from the stem of the ship to the jetty. There is also a gangplank going to the side of the ship. @
+normal
+option Board the ship by climbing the rope ladder @ goto 87
+option Walk straight up the gangplank @ goto 294

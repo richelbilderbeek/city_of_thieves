@@ -1,0 +1,4 @@
+You wake up feeling dazed, with a large lump on your head. Your backpack lies open by your side and you are annoyed to discover that all your gold has been stolen. Those thieving dwarfs! You stand up and set off west down the street. @
+normal
+change remove all_gold
+goto 396

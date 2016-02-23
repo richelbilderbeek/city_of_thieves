@@ -1,0 +1,4 @@
+The hag screams as your sword cuts deep into her arm. Her concentration is lost and the spell is broken. Your mind clears and you are able to face her with your senses acute again. From out of her clothing the hag pulls a dagger with a long shimmering blade. You are eager to fight her. @
+fight
+monster hag 7 7 2
+goto 303

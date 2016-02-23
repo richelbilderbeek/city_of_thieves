@@ -1,0 +1,4 @@
+You try to cut the pouch loose without waking the pirates. @
+test_your_luck
+no_luck The man's eyes flick open as you try to cut the cord and he grabs hold of your arm while calling out to his mates for help. @ goto 226
+luck You managed to cut the pouch loose without waking the pirates @ goto 7

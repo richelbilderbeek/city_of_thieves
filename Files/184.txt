@@ -1,0 +1,4 @@
+Do you have any of Mrs Pipe's golden flowers? @
+normal
+option Yes @ if has gold_flower goto 55
+option No @ if has_not gold_flower goto 308

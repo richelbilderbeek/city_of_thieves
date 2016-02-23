@@ -1,0 +1,5 @@
+The owner of the house is obviously quite wealthy. Lavish furnishing and fine objects of art adorn the marble-floored room in which you stand. An archway leads into a back room and stairs to your right lead up to another floor. @
+normal
+option Search the room you are in @ goto 278
+option Walk through the archway @ goto 107
+option Climb the stairs @ goto 60

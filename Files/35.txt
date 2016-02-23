@@ -1,0 +1,6 @@
+You push the man through the doorway and run him through with your sword. Much to your surprise he is unaffected by the wound. Slowly he advances towards you, trying to touch your skin with his skeletal, decayed hands. He grabs your arm but you manage to kick him away. He has left a mark on your arm which looks like a burn, but it emits a revolting smell of putrid flesh. Lose 2 condition points. Then you realize that before you stands a spirit stalker, one of the faithful servants of Zanbar Bone. As he advances towards you again with his arms outstretched, you try to remember what you must do. @
+normal
+change condition -2
+option Fire the silver arrow at him @ goto 189
+option Reflect his stare in your mirror @ if has mirror goto 305
+option Fire your ring of ice at him @ if has ring_of_ice goto 382

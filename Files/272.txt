@@ -1,0 +1,4 @@
+You manage to squeeze yourself between the dead centipede and the roof of the tunnel. You walk further down the tunnel and see that it ends at an iron grill through which the sewage water runs. @
+normal
+option Try to remove the grill @ goto 377
+option Walk back to the entrance hole @ goto 174

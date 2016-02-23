@@ -1,0 +1,4 @@
+The man stops playing and tells you that he can bring you good fortune. For the sum of 3 gold pieces he will sing you a song that will bring you luck. @
+normal
+option Pay the musician @ if gold 3 change gold -3 goto 37
+option Walk to the next stall @ goto 398

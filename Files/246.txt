@@ -1,0 +1,4 @@
+As you walk warily down the narrow cobbled street, you are suddenly confronted by a little old man who dashes out of one of the houses. He pulls a dirty bottle out of a canvas bag. As he speaks, you can't help staring at the large wart on his nose, with its tuft of hair. He smiles and asks it you would like to pay 2 gold pieces for a drink of his wonderful healing potion. @
+normal
+option Pay for a drink @ if gold 2 change gold -2 goto 98
+option Keep going east @ goto 363

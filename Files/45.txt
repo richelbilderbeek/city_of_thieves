@@ -1,0 +1,4 @@
+The glass ball shatters on impact with the cobbled street. On contact with the air the smoke turns a golden colour and begins to take the shape of a winged helmet. The helmet solidifies and rests on the street, sparkling in the sunlight. It is the most magnificent helmet you have ever seen. @
+normal
+option Place it on your head@ goto 376
+option Leave the helmet alone and set off east again@ goto 161

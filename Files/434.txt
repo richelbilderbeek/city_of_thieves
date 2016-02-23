@@ -1,0 +1,4 @@
+You pay miss Pipe the price and obtain the gold flower. You leave the shop and head west. @
+normal
+change add gold_flower
+goto 24

@@ -1,0 +1,5 @@
+The snakes are not very tough opponents for a person trained in the art of swordsmanship. However, when they inflict a wound on you, 4 points must be subtracted from your condition because of their poisonous bite. @
+fight
+monster snakes 5 5 4
+goto 75
+bye You leave the house by the front door. @

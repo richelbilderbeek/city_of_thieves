@@ -1,0 +1,4 @@
+The boy hurriedly picks up his barrow and dashes off, saying he is late for market. You eat an apple but it is sour. Your stomach starts to hurt and the pain develops into cramp. You do not feel very well at all. Lose 1 condition point. You throw the other apples away and continue west. @
+normal
+change condition -1
+goto 307

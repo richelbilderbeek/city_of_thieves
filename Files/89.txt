@@ -1,0 +1,4 @@
+As you slide your hand into the glove, it seems to come alive and cling tightly to your hand. Then it changes texture and becomes hot and you feel as though your hand is covered with burning tar which you are unable to shake off. Mercifully it cools down, but a thin white film remains on your hand, making it difficult to open and close. This cursed glove makes you lose two skill points and cannot be taken off without specialized help. You curse and leave the house to head north. @
+normal
+change add cursed_white_silk_glove
+goto 282

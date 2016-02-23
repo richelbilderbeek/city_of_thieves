@@ -1,0 +1,4 @@
+The guard frowns and says, 'A likely story, I'm sure. But I suppose you are just the same as all the rest inside this city. You may enter at your own peril or buy my advice for 3 gold pieces'. @
+normal
+option Head straight into the city @ goto 74
+option Buy the guard's advice @ if gold 3 change gold -3 goto 261

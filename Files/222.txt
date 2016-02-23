@@ -1,0 +1,4 @@
+On the right-hand side the houses are separated from the street by a wooden fence with shrubs, trees, bushes and flowers behind it. There is a turnstile in the middle of the fence, by the side of which is a sign reading: 'Public gardens. Entry fee 1 gold piece'. @
+normal
+option Go into the gardens @ if gold 1 change gold -1 goto 370
+option Keep on walking @ goto 133

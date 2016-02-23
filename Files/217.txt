@@ -1,0 +1,5 @@
+You walk all day until you reach the hill shown on Nicodemus's map upon which the Night Prince's tower stands. All is quiet and there is an unpleasant smell of decay in the air. Shadows start to creep along the ground as the moon rises into the night sky and you see the foreboding silhouetted shape of Zanbar Bone's tower pointing up into the sky like a black finger. You check all your possessions before drawing your sword and marching towards the arched wooden entrance door. Suddenly you hear a shrill howl and swing round to see two pairs of eyes staring at you. They belong to two moon dogs, Zanbar Bone's trained killer hounds. Fight them one at a time. @
+normal
+monster first_moon_dog 9 9 2
+monster second_moon_dog 10 7 2
+goto 259

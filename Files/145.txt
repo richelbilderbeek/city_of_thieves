@@ -1,0 +1,4 @@
+Inside the shop an old woman is busily watering the flowers and plants. She looks up and smiles, saying, 'Good afternoon, my name is Mrs Pipe. Can I interest you in one of my special flowers?'. @
+normal
+option See what she has to offer @ goto 293
+option Leave the shop, refuse politely and head west @ goto 24

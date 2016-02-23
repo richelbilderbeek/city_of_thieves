@@ -1,0 +1,5 @@
+The elf leads you into a room lit by purple candles, which give a strange glow, You stand and stare blankly at the candles and drift off into a world of vivid dreams. While you are in this trance, the elf takes two items and 5 gold pieces from your backpack (as far as you possess these). When you awake, you have no recollection of the theft and leave the shop thanking the elf for showing you his beautiful candles. Outside you head east again. @
+normal
+change remove two_random_items
+change gold -5
+goto 280

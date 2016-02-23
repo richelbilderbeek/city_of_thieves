@@ -1,0 +1,4 @@
+You tell the trolls that you are a weapon-maker and have been to the market to sell daggers to a stall-holder there. Sourbelly sneers at you and says, 'Well in that case you have finished your business in Port Blacksand. Allow us to escort you to the city gates'. @
+normal
+option Let them throw you out of the city @ goto 156
+option Attack the trolls @ goto 73

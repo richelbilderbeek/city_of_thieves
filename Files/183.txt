@@ -1,0 +1,5 @@
+You are told that smoking mixture and a pipe costs 1 gold piece, and healing mixture costs 4 gold pieces per portion. @
+normal
+option Buy some smoking mixture @ if gold 1 change gold -1 goto 366
+option Buy some healing mixture @ if gold 4 change gold -4 goto 167 
+option Leave the shop and head north @ goto 93

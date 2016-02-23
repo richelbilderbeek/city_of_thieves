@@ -1,0 +1,5 @@
+You sheathe your sword and start to search the serpent queen's house. You find a brown leather bag which you pick up and shake. The contents make a jingling sound. Inside you find 12 gold pieces. Add 1 luck point. You leave the house and continue your walk along Stable Street. @
+normal
+change luck 1
+change gold 12
+goto 333

@@ -1,0 +1,5 @@
+As you take your first step forwards you are alarmed to hear the familiar whistle of arrows flying through the air. They are coming from windows on either side of the street. A random number from 1 to 6 will be the number of arrows that will hit you and each will cause you to lose 3 condition points. You lose 2 luck points. @
+normal
+change arrows random[1-6]
+change luck -2
+goto 327

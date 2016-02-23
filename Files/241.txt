@@ -1,0 +1,6 @@
+Inside the shop you see a tall, thin man with pointed ears and fair hair, pouring hot wax from an iron pan into a mould. The candlemaker is an elf. As he turns to you to speak, you notice his slanted eyes, which are ice-blue. For some reason they appear very cold to you. He tells you that he can sell you a coloured candle for 1 gold piece. @
+shop
+shop_items 
+  coloured_candle 1 
+  @
+goto 432

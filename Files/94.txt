@@ -1,0 +1,4 @@
+The little man smiles and says, 'Easy.' He reaches into his pocket and produces some sparkling dust which he throws up at you. As it settles on your clothes, a feeling of strength surges through your body. Add 6 condition points. He then tells you that as he is feeling particularly grateful he will grant you another wish. With your strength returned you feel you can now deal with Zanbar Bone and ask the little man of his whereabouts. @
+normal
+change condition 6
+goto 234

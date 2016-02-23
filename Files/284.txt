@@ -1,0 +1,4 @@
+You close the door with the snoring pirate crew. @
+normal
+option Open the other door @ if has_not opened_pirate_captain_door goto 232
+option Leave the ship to continue your search of Port Blacksand, walking north up Harbour Street @ goto 78

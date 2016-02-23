@@ -1,0 +1,6 @@
+The key fits the lock securing the grill enclosing the glass cupboard. It clicks open and you are able to take the two silver goblets, a silver chalice and a silver spoon. You find nothing else of interest in the shop, so you walk outside and continue east. @
+normal
+change add two_silver_goblets
+change add silver_chalice
+change add silver_spoon
+goto 100

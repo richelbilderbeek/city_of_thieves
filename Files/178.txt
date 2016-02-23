@@ -1,0 +1,5 @@
+The archway lends into a large room in the centre of which crouches a human-like creature, some three metres tall. He looks very worried and is muttering to himself. The lumps on his face are the distinguishing marks of an ogre. @
+normal
+option Attempt to speak with the ogre @ goto 264
+option Attack the ogre with your sword @ goto 140
+option Leave the house to head north @ goto 282

@@ -1,0 +1,4 @@
+Tower Street makes a sharp turn to the right, going cast between tall buildings. An iron bridge crosses overhead between two of the buildings and you see movement on it. Small cloaked people are carrying laden sacks between the buildings, apparently in a great hurry. @
+normal
+option Call out to them @ goto 251
+option Walk under the bridge and continue east @ goto 30

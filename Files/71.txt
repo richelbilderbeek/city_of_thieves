@@ -1,0 +1,4 @@
+The ogre's room is full of clutter and discarded bits and pieces. It does not appear to have been tidied for years. Rummaging through the jumble, you find a polished wooden box with a hand made of white shell inlaid on the lid. The box is locked and you cannot find the key to open it. @
+normal
+option Try to smash it open with your sword@ goto 324
+option Leave the house to continue north, without trying to open the box@ goto 282

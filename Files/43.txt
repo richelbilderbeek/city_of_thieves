@@ -1,0 +1,9 @@
+You cry out in pain as the goblet changes into a burning coal in your hand. You are badly burnt. Lose 2 skill and 2 luck points. @
+normal
+change skill -2
+change luck -2
+change add lifted_goblet_c
+option Lift goblet A @ if has_not lifted_goblet_a goto 175
+option Lift goblet B @ if has_not lifted_goblet_b goto 209
+option Walk through the archway@ goto 107
+option Climb the stairs@ goto 60

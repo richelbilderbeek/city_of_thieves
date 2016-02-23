@@ -1,0 +1,5 @@
+The houses on the right-hand side of the street are small and weather-beaten. Old women sit outside on the front steps cleaning fish and mending fishing nets. They are large and jolly, talking to each other and frequently rolling about, bellowing with laughter. The fishermen do not appear to be at home. The street and the quayside come to an end at a great iron anchor. You turn round and walk back towards the junction. @
+normal
+option Talk with the women @ goto 320
+option Ignore the women and walk straight back to the junction @ goto 369
+

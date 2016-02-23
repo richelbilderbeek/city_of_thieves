@@ -1,0 +1,4 @@
+You shake the wolf off your arm and draw your sword. The wolf snarls and leaps at you. @
+fight
+monster wolf 5 5 2
+goto 97

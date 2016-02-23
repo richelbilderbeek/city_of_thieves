@@ -1,0 +1,4 @@
+This shield is cursed by Zanbar Bone and sticks firmly to your hand by magic. Anybody who is not undead will suffer if they use it, and decreases your skill points by 1. Unable to rid yourself of this handicap, you walk over to the spiral staircase and climb up it. @
+normal
+change add shield_with_tower_crest 
+goto 21

@@ -1,0 +1,4 @@
+You enter a large room with brown walls and a straw-covered floor. There is a musty smell hanging in the air which reminds you of the dirty old cave trolls that live on the northern borders. In the middle of the room is a table made from half a barrel with some roughly made stools round it. A high archway leads through the room to the back of the house, from where you hear a low murmuring voice. @
+normal
+option Walk through the archway @ goto 178
+option Leave the house and continue north @ goto 282

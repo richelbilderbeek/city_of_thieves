@@ -1,0 +1,4 @@
+You will have to swing your sword with all your might to pierce the armour-like shell of this monster. @
+fight
+Monster giant_centipede 6 10 2
+Next_chapter 272

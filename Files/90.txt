@@ -1,0 +1,4 @@
+You swing your sword with all your strength and bring it down on the heavy chain. Much to your surprise it bounces off. Before you have time to try again, you are surrounded by four town guards who are pointing their pikes at you. @
+normal
+option Tell them you have caught the escaped prisoner for them @ goto 199
+option Offer them a bribe to let you and the prisoner go free @ goto 187

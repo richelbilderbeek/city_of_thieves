@@ -1,0 +1,5 @@
+You lift the lid of the sarcophagus and see a human body completely encased in old bandages. The light, although dim, has disturbed the sleep of a mummy, and it sits up, turning its head from side to side. It senses where you are and starts to climb out of its sarcophagus. It walks towards you with its arms extended. @
+normal
+option Fight the mummy @ goto 193
+option Throw the lantern at the mummy @ if has lantern goto 106
+change add seen_mummy

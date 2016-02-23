@@ -1,0 +1,4 @@
+You walk over to the old man and help him to his feet. He is very grateful and offers to buy you a drink at a nearby tavern. @
+normal
+option Go for a drink @ goto 325
+option Refuse the offer @ goto 348

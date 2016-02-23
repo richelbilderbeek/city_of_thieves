@@ -1,0 +1,4 @@
+The bays on your side are angry with you for losing the match. Some of their supporters rush over and start to jostle you. By the time you manage to drag yourself over to the wall, everyone in the arena seems to have pushed you around. Lose two items from your backpack. Eventually you climb back over the wall and walk to the junction to head west along Harbour Street. @
+normal
+change remove two_random_items
+goto 91

@@ -1,0 +1,4 @@
+The creature pins the silver brooch to your leather tunic and you pay the price demanded. You have bought an item with healing properties. After surviving any battle, the brooch will immediately restore 1 condition point to your total. Pleased with your purchase, you leave the house and head north. @
+normal
+change add silver_scorpion_brooch
+goto 334

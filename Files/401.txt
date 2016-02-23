@@ -1,0 +1,4 @@
+You beat Sourbelly. Fatnose looks eager to fight you. @
+normal
+option Escape by throwing your shield at Fatnose and run off west along Mill Street @ if has shield change remove shield goto 239
+option Fight Fatnose @ goto 403

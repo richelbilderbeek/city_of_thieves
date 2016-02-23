@@ -1,0 +1,5 @@
+Walking towards you down the street are two men wearing black robes which cover them completely except for their eyes. On seeing you they nod at each other and draw their swords. They are thieves hoping to rob you of your possessions and you must defend yourself. Fight them one at a time. @
+normal
+monster first_thief 7 8 2
+monster second_thief 7 6 2
+goto 147

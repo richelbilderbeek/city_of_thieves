@@ -1,0 +1,4 @@
+You draw your sword and stand ready to fight the trolls. They seem pleased that you are going to give them a chance to practise their beloved sport of killing humans, and advance towards you swinging their battle-axes. Sourbelly snarls and says, 'Stand back, Fatnose. Let me deal with this dog alone.'. @
+fight
+monster Sourbelly 10 9 2
+goto 401

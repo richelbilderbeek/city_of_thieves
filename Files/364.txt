@@ -1,0 +1,4 @@
+The gaunt-faced man looks thoroughly miserable. He sees you and shrinks back, telling you that it is not worth robbing him because he has no money. You tell him that you do not wish to rob him but are seeking an old wizard named Nicodemus. He stares at you with a surprised expression on his face and says: 'For 2 gold pieces, I'll tell you where he is.' You decide to trust the man and pay him for his information. He pockets the gold and says, 'You are standing on top of him! Nicodemus lives in a hut underneath this bridge.' He throws back his head and lets out a shrill laugh before hobbling off on his crutches, obviously pleased with himself. You shake your head and walk over to the steps that lead down beneath the bridge. @
+normal
+change gold -2
+goto 329

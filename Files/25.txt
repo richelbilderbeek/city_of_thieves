@@ -1,0 +1,5 @@
+You soon realize you are in a stable when you see a large, bare-chested man wearing a grubby white apron busy at work at an open fire. He takes a red-hot iron bar from the fire with his gloved hand and starts to hammer it into the shape of a horseshoe on his anvil. Sweat pours from his brow as he toils with the hammer. @
+normal
+option Make conversation with the blacksmith?@ goto 169
+option Attack him with your sword?@ goto 323
+option Leave him to his labours and continue north?@ goto 115

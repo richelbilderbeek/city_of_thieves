@@ -1,0 +1,3 @@
+The jolly fishwives' plump cheeks are as round and shiny as red apples. You ask if they own any of the items you need, but they all frown and shake their heads together. Then one tells you that there is a tale that hags have been seen disappearing down sewers to catch rats for their stew-pots. However, she has never seen a hag herself. You decide to leave the ladies. You then walk back to the junction and turn left into Clog Street. @
+normal
+goto 216

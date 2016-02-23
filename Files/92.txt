@@ -1,0 +1,4 @@
+You are slowly feeling your way along the bricks when your hand comes into contact with a smooth flat object. You pull it out and see that you are holding a mirror. You pack it away and walk back to the entrance hole. @
+normal
+change add mirror
+goto 174

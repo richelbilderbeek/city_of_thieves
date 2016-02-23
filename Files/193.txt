@@ -1,0 +1,4 @@
+If you have a ring of fire, it will be the best weapon against the mummy. Do you have a ring of fire? @
+normal
+option Yes @ if has ring_of_fire goto 286
+option No @ ifnot ring_of_fire goto 425

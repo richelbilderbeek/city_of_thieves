@@ -1,0 +1,2 @@
+The crossbow bolt has a poisoned tip. You stagger back from the force of the bolt and fall to the ground. The poison spreads through your body quickly and you sink into a deep sleep from which you will not awaken. @
+game_lost

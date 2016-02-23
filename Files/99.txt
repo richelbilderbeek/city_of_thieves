@@ -1,0 +1,5 @@
+You are unable to explain why you are in Port Blacksand and the guards draw their swords, telling you that you are under arrest. You draw your sword and fight them one at a time. @
+normal
+monster first_patrolling_city_guard 7 4 2
+monster second_patrolling_city_guard 6 6 2
+goto 285

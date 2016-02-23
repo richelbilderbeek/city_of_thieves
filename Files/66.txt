@@ -1,0 +1,7 @@
+The dwarf smiles and boasts that he can make a key to open any lock in Port Blacksand. @
+shop
+shop_items 
+  skeleton_key 10 
+  @
+bye You leave the shop and continue west @
+goto 300

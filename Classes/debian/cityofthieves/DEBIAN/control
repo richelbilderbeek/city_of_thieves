@@ -1,0 +1,9 @@
+Package: cityofthieves
+Version: 1.0-1
+Architecture: i386
+Maintainer: Richel Bilderbeek <richel@richelbilderbeek.nl>
+Installed-Size: 59
+Section: misc
+Priority: optional
+Description: greet user
+ hithere greets the user, or the world.

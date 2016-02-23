@@ -1,0 +1,6 @@
+The man frowns and thumps his fist down on top of the counter, shouting 'This is not a bazaar! If you do not like my prices, take your custom elsewhere. Now get out of my shop before I slice you in two.'. @
+normal
+option Calm him down and accept his offer @ goto 240 
+option Walk out of the shop and head west @ goto 196 
+option Attack him with your sword @ goto 170 
+

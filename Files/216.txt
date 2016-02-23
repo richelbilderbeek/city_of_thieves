@@ -1,0 +1,4 @@
+Clog Street is very narrow and lined with terraced cottages and the occasional shop. To your left you see what looks like a small boy lying face down on the cobblestones, groaning loudly. A hood is pulled over his head and you cannot see his face. A wooden hoop and stick lie by his side. @
+normal
+option Stop to help @ goto 72
+option Walk on @ goto 317

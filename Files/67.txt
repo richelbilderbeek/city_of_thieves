@@ -1,0 +1,4 @@
+The woman's voice sounds excited as she calls through the curtains, 'Oh, I wonder which kind dear has sent me flowers? Can you tell me who they are from?'. @
+normal
+option Tell her a name @ goto 195
+option Tell her that you do not know who they are from @ goto 79

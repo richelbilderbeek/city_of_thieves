@@ -1,0 +1,5 @@
+The dwarf explains that they are playing a simple winner-takes-all dice game. The stakes are 2 gold pieces. Each person will stake 2 gold pieces and roll two dice. The person rolling the highest number collects the 8 gold pieces. To play, roll two dice three limes for the three dwarfs and make a note of each total. Next, roll two dice for yourself. If your own total is higher than each of the other three totals, you win 6 gold pieces from the dwarfs. If the total is less than any of the other three totals, you lose 2 gold pieces. You may play four times if you wish to before the dwarfs get bored and leave the tavern. @
+play_dice
+goto 296
+bye At the end of the game you leave the tavern 
+yourself to head north.@

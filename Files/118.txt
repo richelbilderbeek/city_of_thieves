@@ -1,0 +1,5 @@
+You can hear some scratching sounds in the tunnel ahead. Then you see a long shadow appear on the curved brick wall. In the dim light you can just make out the large shape of something black and shiny moving towards you. The scratching becomes louder and you also hear clicking sounds. The monster is only a couple of metres ahead of you when you recognize it as a giant centipede. Do you possess an insect bracelet? @
+normal
+option You use your silver insect bracelet @ if has silver_insect_bracelet goto 2
+option You have no have a silver insect bracelet @ ifnot silver_insect_bracelet goto 166
+change add followed_sewer_south

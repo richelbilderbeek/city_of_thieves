@@ -1,0 +1,5 @@
+At the bottom of the ladder you realize, much to your disgust, that you are standing in a sewer. There are torches along the tunnel wall, giving a very dim light, and droplets of water make eerie sounds as they fall into the sewage water. @
+normal
+option Walk north along the tunnel @ goto 356
+option Walk south along the tunnel @ goto 118
+

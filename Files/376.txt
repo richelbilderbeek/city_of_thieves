@@ -1,0 +1,5 @@
+The helmet fits on your head perfectly, as though it had been specially made for you. It has magic properties also, and will allow you to add 1 point to all future dice rolls when computing your attack strength during combat as long as you wear it. Add 1 luck point. You set off east again. @
+normal
+change add magic_helmet
+change luck 1
+goto 161

@@ -1,0 +1,4 @@
+You pass a beggar in the street. He is sitting in the gutter and holds an empty tin in his hand. @
+normal
+option Toss a gold piece into his tin @ if gold 1 change gold -1 goto 332
+option Walk past him @ goto 124

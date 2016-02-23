@@ -1,0 +1,4 @@
+You place the coin in the slot and walk through the turnstile. Although the flowers and shrubs are not outstanding, you are nevertheless surprised that such a place exists in Port Blacksand. The gardens are not very large, extending back some sixty metres to where some houses back on to them. There are two paths to follow, one of which runs around the edge of the gardens and one that leads directly into the centre, where there is some topiary. Each shrub has been cut into the shape of an animal. You decide to take a closer look. The path leads into a small paved area surrounded by many animal-shaped shrubs. In the middle there is a stone plinth upon which sits a large earthen bowl containing lotus flowers! There is a painted sign which reads 'Do not pick the flowers'. The gardener is nowhere to be seen and there is nobody else about. @
+normal
+option Risk picking one of the flowers @ goto 14
+option Leave the gardens and continue north @ goto 133

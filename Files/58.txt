@@ -1,0 +1,4 @@
+As the carriage thunders by, the driver lashes out at you with his whip. Lose 1 condition point. You curse the driver of the carriage as it races out of view, rubbing your neck where the whip has raised a weal. You set off west again. @
+normal
+change condition -1
+goto 171

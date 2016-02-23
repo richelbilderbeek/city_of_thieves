@@ -1,0 +1,4 @@
+The stairs lead into a small room, again painted red. Sitting at a table is a strange creature with a long snout and deep red, scaly skin. From its jaw protrude rows of sharp teeth and a long pink tongue darts quickly in and out between them. The creature looks up and stares at you. Are you wearing a scorpion brooch? @
+normal
+option No @ ifnot any_scorpion_brooch goto 215
+option Yes @ if any_scorpion_brooch goto 392

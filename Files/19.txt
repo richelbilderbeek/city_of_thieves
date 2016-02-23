@@ -1,0 +1,6 @@
+The darts are poison-tipped. Lose 4 condition points and 1 skill point. @
+normal
+change condition -4
+change skill -1
+option Continue picking the lock@ goto 340
+option Leave the room and climb the stairs to the floor above@ goto 60

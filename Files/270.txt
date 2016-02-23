@@ -1,0 +1,4 @@
+As you draw your sword the innkeeper lets out a loud whistle. A trap-door behind the bar flies open and you hear low grunting. An ugly head pops up through the door and you watch as the large green body of a troll emerges from a cellar. He is carrying a wooden club. The innkeeper points at you and the troll lumbers slowly round the bar swinging his club in the air. All the tavern's customers start to chant, 'Fight! Fight! Fight!' and stand up to form a ring round you and the Troll. You are forced to fight. @
+normal
+monster troll 8 8 2
+goto 26

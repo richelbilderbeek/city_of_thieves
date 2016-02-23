@@ -1,0 +1,3 @@
+The two guards holding you look at each other and then at the other guard for a decision. He nods at them and they release their grip on you. As you pay him the 15 gold pieces he gives you a piercing look, saying, 'If Lord Azzur finds out that you are in the city without a pass, you are as good as dead. I'd get one if I were you. And as for Nicodemus, find him yourself.' Repressing an urge to draw your sword you turn and walk into the city. @
+normal
+goto 74

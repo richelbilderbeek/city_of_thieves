@@ -1,0 +1,4 @@
+You are outside on the landing of the fourth floor. @
+normal
+option Enter the black door @ goto 96
+option Walk back to the stairs to climb up to the next floor @ if has_not has_inspected_suit_of_armor goto 197

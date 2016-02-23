@@ -1,0 +1,5 @@
+The dwarf jumps up off his stool, his face full of hatred. He calls out two names loudly and two huge black dogs immediately appear from under a table with long fangs protruding from their slavering mouths. Wraggins points a finger at you, shouting 'Kill the friend of Nicodemus!' and the dogs leap at you, barking wildly. You must fight them for your life, one at a time. @
+normal
+monster first_wolf_dog 7 7 2
+monster second_wolf_dog 7 5 2
+goto 360

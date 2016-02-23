@@ -1,0 +1,4 @@
+Walking along the street you are suddenly halted by a plant pot smashing on to the cobblestones in front of you. You look to the left and see an open window. Inside, voices can be heard arguing. The door to tho house is open. @
+normal
+option Enter the house to find out what the argument is about @ goto 113
+option Ignore the argument and continue east @ goto 375

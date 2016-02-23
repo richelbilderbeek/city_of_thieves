@@ -1,0 +1,4 @@
+Despite the light from the burning lanterns on the landing, you are unable to see anything inside the room. It is completely black. Do you have a golden owl? @
+normal
+option Yes @ if has golden_owl goto 153
+option No @ ifnot golden_owl goto 281

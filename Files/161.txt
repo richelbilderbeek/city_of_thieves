@@ -1,0 +1,5 @@
+The street makes a sudden left turn and continues north as far as you can see. However, you notice that round the comer the houses are much bigger, with doorways some four metres high. On the left side of the street you see that a door to one of the houses is open. @
+normal
+option Enter the house @ goto 245
+option Keep going northwards @ goto 282
+

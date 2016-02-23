@@ -1,0 +1,3 @@
+The skull somehow attracts and absorbs all the power of the lightning bolt, leaving you unharmed. The fat man is angry but powerless and you are able to leave the house by the front door. Once outside you set off north again. @
+normal
+goto 304

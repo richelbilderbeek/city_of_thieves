@@ -1,0 +1,7 @@
+Ahead the alleyway is strewn with rubbish and discarded possessions. Suddenly you hear growling and you see movement amongst the rubbish. You draw your sword just in time as two wild dogs, each a metre and a hall long, leap at you. You must fight them both at the same time. You can escape just in time by running back up the alleyway and turning west into Harbour Street. @
+fight
+escape 0 180
+fight_both
+monster first_wild_dog 4 4 2
+monster second_wild_dog 4 3 2
+goto 184

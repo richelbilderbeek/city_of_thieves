@@ -1,0 +1,5 @@
+You feel the effects of poison creeping through your body. Lose 4 condition points. @
+normal
+change condition -4
+goto 75
+bye You manage to reach the door to escape. @

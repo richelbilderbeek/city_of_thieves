@@ -1,0 +1,4 @@
+You are fighting with your bare hands as you already lost Carralif's sword. Due to this, the fight will be tougher. @
+normal
+monster pirate 7 5 2
+goto 20

@@ -1,0 +1,4 @@
+The bays have difficulty in explaining themselves, but you manage to understand that one of the other team is going to throw the ball at you. You are handed the wooden stick and told that if you hit the ball over the wall, you will win the game for them. @
+test_your_skill
+no_skill the ball goes whistling by your midriff as you swing, and a voice behind you calls, 'You're out!' @ goto 266
+skill You hit the ball powerfully in the middle of the bat and watch it soar over the wall @ goto 359

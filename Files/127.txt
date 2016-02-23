@@ -1,0 +1,4 @@
+Just ahead of you, three men are involved in a fight. The two younger men appear to be attacking an older man with iron bars. @
+normal
+option Help the old man @ goto 177
+option Avoid the brawling men and continue north @ goto 348

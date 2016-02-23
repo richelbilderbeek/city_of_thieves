@@ -1,0 +1,3 @@
+Congratulations! You have killed Zanbar Bone, the infamous Night Prince. He decays before your eyes, becoming nothing more than a small pile of powder on the floor. @
+normal
+goto 400

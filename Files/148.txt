@@ -1,0 +1,4 @@
+As you catch up with the chanting crowd, you see that they are carrying eggs and rotten tomatoes. Soon the street opens out into a large market square. All round the edge are stalls with vendors, hawkers, musicians and entertainers carrying on their business. In the middle of the square is an elevated pillory. Above the noise of the crowd a trumpet sounds and the crowd start to pell the man in the pillory with rotten food. An old woman standing next to you offers you two eggs to throw. Not wishing to appear to be an outsider, you take the eggs and hurl them. But as you do so, the old woman picks your pocket without you noticing. Lose 1 gold piece or any one item you may have. Unaware of your loss, you walk away from the crowd to look at the various stalls. @
+normal
+change remove random_item_or_one_gold
+goto 287

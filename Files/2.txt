@@ -1,0 +1,6 @@
+You remove the bracelet from your wrist and toss it at the incoming monster. It lands on its armour-like shell and sticks to it like glue. You then watch as the bracelet starts to burn its way through the shell into the body of the giant centipede. Smoke rises from the neat round hole and as the bracelet burns deeper you can see from the frantic movements of the centipede that it is in its death throes. Finally it is still. You manage to squeeze yourself between its body and the roof of the tunnel. You walk further down the tunnel, which ends at an iron grill through which the sewage runs. @
+normal
+change remove silver_insect_bracelet
+option Remove the grill @ goto 377
+option Walk back to the entrance hole @ goto 174
+

@@ -1,0 +1,4 @@
+You climb up to the third floor and see another door at the end of the landing. @
+normal
+option Open the door @ goto 263
+option Climb up to the fourth floor @ goto 65

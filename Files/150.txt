@@ -1,0 +1,4 @@
+The troll bursts out laughing and says, 'Fooled you! There isn't a Pepper Street in Port Blacksand!'. His face folds into a sickly grin and he tells you that you are under arrest for being in Port Blacksand without authorization. He tells you that he is feeling generous, however, and offers you a choice. You can pay a fine of all the gold in your backpack and be thrown out of the city, or spend a year with rats and cockroaches in a dirty dungeon cell. The oilier troll bursts out laughing, saying, 'Generous? Ho! Ho! Ho! Ah, Sourbelly, you've got such a sense of humour!' @
+normal
+option Pay the fine and be thrown out of the city@ goto 367
+option Resist arrest@ goto 73

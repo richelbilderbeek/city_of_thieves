@@ -1,0 +1,4 @@
+The small boy smiles and thrusts a tin mug into your hand. He tells you the barrel contains sparkling water which cures ills, wounds and diseases. To fill the mug costs 3 gold pieces. @
+normal
+option Drink the water @ if gold 3 change gold -3 goto 233
+option Keep your gold and walk north @ goto 247

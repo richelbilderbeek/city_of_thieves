@@ -1,0 +1,5 @@
+The guard replies that he will send for an escort to take you to Nicodemus. He reaches up to a small bell on the wall of the guardhouse and rings it three times. Almost immediately two other guards come running out of the house, and you are surprised when they each grab hold of one of your arms. The guard with the pike looks up to the sky and laughs, saying, 'So you want to see Nicodemus, do you? How would you like to see the inside of a dungeon cell instead? Guards, take this fool away to be shackled, and throw away the key.' @
+normal
+option Allow yourself to be taken away @ goto 151
+option Attempt to fight the guards @goto 69
+option Try to bribe the guards (for 5,10 or 15 gold) @ if gold 5 goto 276

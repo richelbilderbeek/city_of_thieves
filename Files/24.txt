@@ -1,0 +1,4 @@
+There is another shop on the left side of the street. An iron grill over the window prevents you seeing what kind of shop it is. You try the handle on the door and it turns. @
+normal
+option Enter the shop @ goto 336
+option Continue west, without looking into the shop @ goto 196

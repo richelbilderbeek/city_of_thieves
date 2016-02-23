@@ -1,0 +1,5 @@
+The staircase to the sixth floor ends at a door. You turn the handle slowly and the door opens, much to your surprise, into open air. You walk outside on to the flat roof of the lower. Suddenly you are aware of movement in the sky and look up to see two large birds in the moonlight with long beaks and talons swooping down on you. There is no time to run for cover, and you must fight the two death hawks one at a time. @
+normal
+monster first_death_hawk 4 5 2
+monster second_death_hawk 5 4 2
+goto 314

@@ -1,0 +1,6 @@
+You cut the pouch from round the pirate's neck and open it. Inside you find six black pearls. Add 2 luck points. You leave the room with your valuable treasure. You are back outside in the corridor. @
+normal
+change luck 2
+change add black_pearls
+option Open the other door @ if has_not opened_pirate_captain_door goto 232
+option Leave the ship and continue your search of Port Blacksand, walking north up Harbour Street @ goto 78

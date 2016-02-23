@@ -1,0 +1,6 @@
+Inside the house you find yourself in a room painted red and empty apart from a table on top of which are two glass bowls. In one there is a small golden scorpion and in the other lies a silver scorpion. In the far corner of the room there are stairs that lead up to another floor. @
+normal
+option Pick up the golden scorpion @ goto 273
+option Pick up the silver scorpion @ goto 13
+option Climb the stairs @ goto 80
+option Leave the house and head north @ goto 334

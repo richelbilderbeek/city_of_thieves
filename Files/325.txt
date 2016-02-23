@@ -1,0 +1,4 @@
+You follow the old man through the swinging doors of the Hog and Frog tavern. He tells you to sit down at a small table in a corner while he shuffles over to the bar to buy the drinks. There are several shifty-looking characters sitting at nearby tables but they do not seem interested in you. Soon the old man comes back to the table carrying two wooden mugs filled lo the brim with cider. Once seated, he opens his leather bag and places two small pots on the table. He opens one and rubs the white cream in the pot on his wounds. He smiles and tells you that he is a chemist by trade and that you should rub some of the cream on your wounds too. You take his advice and are surprised to feel the healing effect of the cream work quickly. Add 5 condition points. After finishing your drink, you say goodbye to the chemist leave the tavern and head north. @
+normal
+change condition 5
+goto 348

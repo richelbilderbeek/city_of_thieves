@@ -1,0 +1,5 @@
+You fight the serpent queen. You may escape after three attack rounds by running out of the house and north along Stable Street. @
+normal
+monster serpent_queen 9 7 2
+escape 3 333
+goto 295

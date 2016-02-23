@@ -1,0 +1,5 @@
+There is a battle-axe held in the iron-plated glove of the armour. @
+normal
+option Take the battle-axe @ goto 214
+option Push the suit of armour on to the floor to make sure it is not a booby-trap @ goto 185
+change add has_inspected_suit_of_armor

@@ -1,0 +1,4 @@
+When you draw your sword the man cries out and runs into a back room. You follow him into the room. He is apparently unarmed, but is holding an egg and a small key in his hands. He warns you that the egg contains a deadly gas and he will throw it at you. He also threatens to swallow the key to his silver cupboard. @
+normal
+option Attack him @ goto 229
+option Run out of the shop and go further up Clog Street @ goto 100

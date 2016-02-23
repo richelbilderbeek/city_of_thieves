@@ -1,0 +1,4 @@
+What will you do in this dark room? @
+normal
+option Grope your way into the room @ goto 391
+option Walk back to the staircase to climb up to the fourth floor @ goto 65

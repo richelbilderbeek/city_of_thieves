@@ -1,0 +1,4 @@
+One of the small people stops and looks down at you. He mistakes you for a town guard and calls out to his accomplices to run for cover. Then he points a short crossbow at you and fires a bolt. @
+test_your_luck
+no_luck The bolt lodges deeply in your shoulder @ goto 330
+luck The bolt thuds into the ground at your feet @ goto 269

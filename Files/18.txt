@@ -1,0 +1,4 @@
+You take aim carefully and throw the knife at the leading vagabond. @
+test_your_skill
+no_skill The knife flies past its target and you must fight all three vagabonds with your sword @ goto 225
+skill The knife sinks deep into the vagabond's chest, stopping him dead in his tracks@ goto 102

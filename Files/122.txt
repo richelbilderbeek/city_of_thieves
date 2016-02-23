@@ -1,0 +1,4 @@
+The room you enter is full of debris and rotting food. Standing in the middle of all the mess are two men wearing tattered clothing. They have hollow eyes and vacant expressions. On seeing you, they pick up wooden sticks and advance towards you. @
+normal
+option Back out of the room and shut them in @ goto 197
+option Attack them @ goto 361

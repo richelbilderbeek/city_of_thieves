@@ -1,0 +1,4 @@
+The street gradually starts to run downhill. The houses end at a tavern called the Black Lobster and the street opens out on to a quayside. A stone jetty runs out to sea and tied to it is an old galleon. It is flying the skull and crossbones and is probably one of the many pirate ships that anchor in Port Blacksand to offtoad their booty. Harbour Street turns right at the jetty and runs north parallel to the shore as far as you can see. @
+normal
+option Walk down the jetty to climb on board the ship @ goto 399
+option Walk north up Harbour Street @ goto 78

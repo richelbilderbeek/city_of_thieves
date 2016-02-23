@@ -1,0 +1,2 @@
+./crosscompile.sh
+./zip.sh

@@ -1,0 +1,4 @@
+He takes the money and asks you to sit down on a wooden stool. After a long and painful process of repeatedly pricking your forehead with a sharp needle he applies the indelible inks. You look in a mirror on the wall and find your new appearance somewhat strange. You shrug your shoulders and leave the shop. You then walk back up the lane and turn left into Mill Street. @
+normal
+change add tattoo
+goto 307

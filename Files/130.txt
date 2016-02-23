@@ -1,0 +1,5 @@
+The guard slumps to the ground, two more armed men appear from a stone guardhouse by the gate, obviously attracted by the noise of your battle. There is no time to run so you must fight them one at a time. @
+normal
+monster second_city_guard 6 7 2
+monster third_city_guard 6 5 2
+goto 74

@@ -1,0 +1,11 @@
+You tell the town guards that you have something special for them if they let the two of you go. They reply that the prisoner is a murderer and that you should not help him, but they insist that you bribe them or else you too will be taken to the jail. They say they are interested in any of the following items: magic armour, magic rings or magic potions. @
+normal
+option Give them a luck potion @ if luck_potion change remove luck_potion goto 260
+option Give them a stamina potion @ if stamina_potion change remove stamina_potion goto 260
+option Give them a dexterity potion @ if dexterity_potion change remove dexterity_potion goto 260
+option Give them an invisibility ring @ if invisibility_ring change remove invisibility_ring goto 260
+option Give them a ring of ice @ if ring_of_ice change remove ring_of_ice goto 260
+option Give them a ring of fire @ if ring_of_fire change remove ring_of_fire goto 260
+option Give them the elven boots @ if magic_elven_boots change remove magic_elven_boots goto 260
+option Give them the magic helmet @ if magic_helmet change remove magic_helmet goto 260
+option You do not have any of the items that the guards require @ goto 341

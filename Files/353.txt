@@ -1,0 +1,5 @@
+You try to turn the large brass handle on the door but it is locked. @
+normal
+option Use the iron key @ if has iron_key goto 181
+option Try to force the door open @ goto 389
+option Return to the street to head north @ goto 304

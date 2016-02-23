@@ -1,0 +1,4 @@
+The door opens into a small room, in the centre of which stands a steaming tub of hot water.@
+normal
+option Hide behind the door inside the room to see who is about to take a bath @ goto 12
+option Close the door @ goto 383

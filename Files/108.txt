@@ -1,0 +1,4 @@
+You lower yourself slowly to the ground. Above you the guards are waving their fists at you from the battlements. You are now outside Port Blacksand. Do you have all the necessary items required to slay the Night Prince? @
+normal
+option Yes @ if has all_needed_to_slay_zanbar_bone goto 201
+option No @ ifnot all_needed_to_slay_zanbar_bone goto 299

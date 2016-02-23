@@ -1,0 +1,5 @@
+You decide to take a quick look inside the kennel. Hanging on a hook is an iron key which you place in your pocket. Add 1 luck point. @
+normal
+change add iron_key
+change luck 1
+goto 353

@@ -1,0 +1,6 @@
+A small bell rings as the door opens and a creature wearing a brown apron over his clothing hurries through the archway from the back room into the shop to stand behind the counter. He appears human-like but has very ugly facial features and pointed teeth. You realize he is a crossbreed, half man, half orc. A sharp hand-axe hangs from his belt to remind you that Port Blacksand is unlikely to be a friendly place in which to do business. @
+normal
+option Inquire about the herbs @ goto 183
+option Ask if the man-orc knows of Nicodemus @ goto 342
+option Attack the man-orc @ goto 5
+

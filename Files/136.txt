@@ -1,0 +1,4 @@
+You walk over to the bar and order a drink. The old innkeeper scowls and tells you that he doesn't serve people from out of town. He pulls a dagger from his belt and, stabbing it in the bar top, tells you to leave. @
+normal
+option Fight the innkeeper @ goto 270
+option Leave the tavern and head north @ goto 296

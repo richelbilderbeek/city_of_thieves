@@ -1,0 +1,6 @@
+You fall to the floor, unconscious. You lose 3 condition points. @
+normal
+change remove all_silver_items
+change condition -3
+goto 199
+bye You awake to find yourself lying outside the shop in Clog Street. You will find that any silver items you had are now missing. You stand up and set off angrily along the street. @

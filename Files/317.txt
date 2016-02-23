@@ -1,0 +1,5 @@
+One of the shops to your left is a candle-maker's. There are many different coloured candles burning brightly in the window. @
+normal
+option Enter the shop @ goto 241
+option Continue east @ goto 280
+

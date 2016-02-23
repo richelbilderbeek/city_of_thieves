@@ -1,0 +1,4 @@
+The lizard-like creature starts to speak in a low, hissing voice by asking whether you would like to buy one of its famous scorpion broaches. @
+normal
+option Buy one @ goto 315
+option Refuse politely, go back down the stairs and leave the house to head north @ goto 334

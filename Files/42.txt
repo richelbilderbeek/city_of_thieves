@@ -1,0 +1,5 @@
+You tell the man that you cannot pay the price he is asking. He shrugs his shoulders and says, 'Well, do you have any food?' You open your backpack and he takes all your remaining provisions. He then starts to cast the silver arrow and you wait patiently as he makes it. Finally he presents you with it and assures you that it will be accurate in flight. You thank him for his trouble and leave his shop. Outside you set off east once again. @
+normal
+change remove all_provisions
+change add silver_arrow
+goto 100

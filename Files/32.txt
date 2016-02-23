@@ -1,0 +1,5 @@
+Before you reach the door, the serpent queen extends her head and bites you on the neck, causing the loss of 4 condition points and 1 skill point. You draw your sword to attack the serpent queen. @
+normal
+change condition -4
+change skill -1
+goto 249

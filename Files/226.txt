@@ -1,0 +1,7 @@
+You manage to break free from the pirate's grip and draw your sword. You step backwards towards the door as the pirates leap from their bunks to grab their cutlasses. The room is cramped and you fight the three pirates one at a time. You can escape by backing out through the door and fleeing from the ship north up Harbour Street. @
+normal
+escape 0 78
+monster first_pirate 6 6 2
+monster second_pirate 5 4 2
+monster third_pirate 7 4 2
+goto 111

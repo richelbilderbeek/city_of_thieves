@@ -1,0 +1,7 @@
+The two guards look at each other in horror and run out of the cell, up the stairs, screaming 'Plague!' at the top of their voices. Smiling to yourself you walk calmly out of the cell and pick up your sword and shield off the table. Upstairs you find that the guards have fled. A search of the room reveals 2 gold pieces and a merchant's pass to trade in Port Blacksand. Taking your findings, you move over to the door and creep outside into the city. @
+normal
+change gold 2
+change add merchant_pass
+change add carralifs_sword
+change add shield
+goto 74

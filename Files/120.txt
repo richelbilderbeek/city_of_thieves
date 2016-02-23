@@ -1,0 +1,4 @@
+You pick up a piece of wood and run as quietly as possible over to the pirate to try to knock him unconscious. @
+test_your_luck
+no_luck You stumble on a coil of rope and the pirate turns to face you. @ goto 152
+luck He does not hear you approach and you hit him on the back of the head. He falls to the deck unconscious and you begin your search. @ goto 84

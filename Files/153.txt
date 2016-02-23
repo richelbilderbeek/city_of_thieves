@@ -1,0 +1,3 @@
+Holding the golden owl in your hand, you are able to see into the pitch-black room. Just in time, you see the trip-wire across the doorway at your feet and the large crossbow pointing at you on the opposite wall. There is nothing else in the room. You decide to walk back to the staircase to climb up to the next floor. @
+normal
+goto 65

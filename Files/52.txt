@@ -1,0 +1,11 @@
+Behind the next stall is a young man selling small weapons and items of equipment. The prices of his wares are chalked up on a slate. @
+shop
+shop_items 
+  throwing_knife 4
+  climbing_rope 2
+  meat_hook 2
+  iron_spike 1
+  lantern 3
+  @
+bye You then walk north. @
+goto 200

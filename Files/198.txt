@@ -1,0 +1,5 @@
+You look around at the rest of the crowd but they remain seated out of respect for your swordsmanship. You search through the dirty clothing of the goblins and find 9 gold pieces and a small carved ivory skull on a silver chain. You take your findings and leave the tavern to head north. @
+normal
+change gold 9
+change add ivory_skull_on_a_silver_chain
+goto 296

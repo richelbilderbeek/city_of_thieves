@@ -1,0 +1,6 @@
+A voice in your mind tells you that the black cat is an illusion and does not exist. Also you understand the black cat is not what you thought it was. Before you stands a black-robed skeleton with green and firy eyes, wearing a golden crown. It is Zanbar Bone! Before you have time to shoot the siver arrow, the Night Prince pulls three globes from its mouth and throws them on to floor. The globes explode in puffs of smoke and out of them step three skeletons armed with swords. Fight them one at a time. @
+normal
+Monster first_skeleton 7 7 2
+Monster second_skeleton 7 7 2
+Monster third_skeleton 7 7 2
+goto 203

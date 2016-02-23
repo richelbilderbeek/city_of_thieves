@@ -1,0 +1,4 @@
+You enter a room which is dark and very cold. The walls and floor are made of rough stone and the room is empty except for a decorated sarcophagus. There is a strong musty smell in the air. @
+normal
+option Open the sarcophagus @ goto 352
+option Walk outside again @ goto 231

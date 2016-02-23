@@ -1,0 +1,5 @@
+You realize that you must jump a distance of two metres between the branch and the top of the wall. @
+normal
+option You take off your chainmail coat to be able to make the jump @ if chainmail_coat change remove chainmail_coat goto 358
+option You make the jump @ if has_not chainmail_coat goto 358
+bye Below, you see the two trolls running round the tree waving their swords at you. There is no alternative but to jump. @

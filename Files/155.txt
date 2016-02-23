@@ -1,0 +1,5 @@
+You are trampled underfoot by one of the horses. You lose 3 condition points. @
+normal
+change condition -3
+goto 171
+bye You stand up and brush yourself down. The carriage races out of view and you set off west again, hoping that you will have another opportunity to meet the infamous Lord Azzur. @

@@ -1,0 +1,4 @@
+Walking along the narrow street called Clock Street you see a man wearing faltered rags sitting in the gutter. His head rests on his hands and he looks thoroughly miserable. @
+normal
+option Talk to him@ goto 331
+option Continue walking east@ goto 161

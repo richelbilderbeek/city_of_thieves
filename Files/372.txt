@@ -1,0 +1,4 @@
+The houses in this section of Stable Street consist of two rows of terraces. They are all made of sandstone apart from one in the middle of the terrace to your right, which is made of brick and is painted white. The door is made of oak and a serpent's head is carved into it. @
+normal
+option Enter the white house @ goto 131
+option Keep walking north @ goto 333

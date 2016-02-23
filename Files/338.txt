@@ -1,0 +1,4 @@
+You have just swallowed a potion of misfortune. Reduce your luck by 3 points. Hoping for better luck ahead you set off north again. @
+normal
+change luck -3
+goto 105

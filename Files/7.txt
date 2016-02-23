@@ -1,0 +1,6 @@
+You tiptoe quietly out of the room and close the door. In the corridor you open the pouch and find six black pearls. Add 2 luck points. @
+normal
+option Open the other door @ if has_not opened_pirate_captain_door goto 232
+option Leave the ship to continue your search of Port Blacksand by walking north up Harbour Street @ goto 78
+change luck 2
+change add black_pearls

@@ -1,0 +1,3 @@
+Looking into a crystal ball, she seems to go into a trance. She tells you that you are searching for a man, a wise man with magical powers. She pauses for a moment and then draws in a deep breath before going on to tell you that the man you are looking for lives in a hut beneath a bridge to the north. She warns you to be careful when approaching the man, for he does not welcome strangers. Then she looks away from the crystal ball and asks you to leave. Her face seems to be hiding something. Has she seen some dreadful fate awaiting you? You decide to leave the tent and head north. @
+normal
+goto 117

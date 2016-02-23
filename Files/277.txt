@@ -1,0 +1,5 @@
+You run away quickly over to the staircase. @
+normal
+Option You climb up to the next floor @ if has_not_fought first_death_hawk goto 207
+Option You go down to the fourth floor @ if has_fought first_death_hawk goto 65
+

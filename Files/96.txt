@@ -1,0 +1,5 @@
+You open the handle of the black door and enter a room which is adorned with macabre objects and paintings. A black cat is sitting in front of a table covered in black cloth. Two black candles are burning on either side of a mirror on the far wall. On the table lies an open chest containing a golden skull. @
+normal
+option Walk over to the chest?@ goto 257
+option Close the door and open the white door? @ if has_not seen_mummy goto 319
+option Close the door and walk back to the staircase to climb up to the next floor?@ if has_not has_inspected_suit_of_armor goto 197

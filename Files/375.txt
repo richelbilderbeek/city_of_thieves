@@ -1,0 +1,4 @@
+Eventually the street comes to a dead end at a high stone wall. There are stone steps leading to the top of the wall. On the other side of the wall you can hear grunts, growls and cheering. @
+normal
+option Climb over the wall @ goto 40
+option Walk back to the junction and head west down Harbour Street @ goto 91

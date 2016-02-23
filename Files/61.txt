@@ -1,0 +1,4 @@
+The silk curtains in front of the archway are pulled aside and a strange creature steps into the room. It has a snake's head, which sits oddly atop the body of a young woman wearing a lavish gown. You feel uncomfortable and are undecided whether or not to draw your sword. Then the snake's mouth opens and a forked tongue darts in and out as the serpent queen asks to see the flowers sent to her by Lord Azzur. Do you have a (bunch of) flower(s)? @
+normal
+option Yes, you have a golden flower @ if gold_flower goto 172
+option No, you do not have a (bunch of) flower(s)@ ifnot gold_flower goto 350

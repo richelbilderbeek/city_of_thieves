@@ -1,0 +1,6 @@
+The man hands you the gold and puts the gems under the counter. @
+normal
+change remove two_gems
+change gold 9
+option Inquire about the price of his rings @ goto 36
+option You have had enough of transactions for the time being, you leave the shop and head west @ goto 196

@@ -1,0 +1,5 @@
+The Night Prince is paralysed, but not for long. He can summon unearthly powers to defend himself, and you must act quickly. What compound will you rub into his eyes? @
+normal
+option Hag's hair and black pearls @ goto 9
+option Black pearls and lotus flower @ goto 129
+option Lotus flower and hag's hair @ goto 337

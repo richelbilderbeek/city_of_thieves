@@ -1,0 +1,4 @@
+After replacing the manhole cover you set off east again. Everything seems a little too quiet and you begin to feel nervous. Ahead you see that Stable Street turns sharply to the left. @
+normal
+option Walk round the corner @ goto 44
+option Walk back to the junction and turn right into Tower Street @ goto 127

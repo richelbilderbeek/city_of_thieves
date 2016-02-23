@@ -1,0 +1,4 @@
+Stepping over the fire imp, you walk back to the stairs to see if its master is still in the house. You descend the stairs slowly, sword drawn. When you reach the bottom you are somewhat surprised to see a fat man, richly dressed, sitting in an ornate chair looking directly at you. He appears very relaxed, quite unperturbed by your drawn sword. Then he speaks, slowly and coldly, saying, 'For killing my pet you shall pay with your life.' He raises his right hand in the air and from his outstretched fingers shoot ragged white bolts of lightning. Do you wear an ivory skull around your neck? @
+normal
+option Yes @ if has ivory_skull_on_a_silver_chain goto 318
+option No @ ifnot ivory_skull_on_a_silver_chain goto 47

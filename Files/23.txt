@@ -1,0 +1,4 @@
+The man grabs a wooden club from behind a chair and prepares to fight you. He is strong but not a good fighter. @
+fight
+monster silversmith 4 8 2
+goto 146

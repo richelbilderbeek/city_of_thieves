@@ -1,0 +1,4 @@
+Sitting on a stool at the back of the shop is an old bespectacled dwarf. He is busy cutting a key on a cast-iron treadle machine which squeaks and grinds noisily. You cough to get his attention, but he does not look up from his work. Finally the machine comes to a halt and the dwarf asks you what you want. @
+normal
+option ask him if he has a skeleton keys for sale @ goto 66
+option ask him if he knows where Nicodemus lives @ goto 236

@@ -1,0 +1,4 @@
+The beggar tips his hat in gratitude and mumbles a few words. Add 1 luck point before continuing west. @
+normal
+change luck 1
+goto 124

@@ -1,0 +1,5 @@
+The dart is poison-tipped. You lose 2 condition points. @
+normal
+change condition -2
+option Continue picking the lock @ goto 340
+option Leave the room and climb the stairs to the floor above @ goto 60

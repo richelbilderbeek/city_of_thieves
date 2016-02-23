@@ -1,0 +1,7 @@
+There are three bejewelled rings under the counter and 53 gold pieces in a drawer. Take what you will and leave the shop to continue west. @
+normal
+change gold 53
+change add invisibility_ring
+change add ring_of_ice
+change add ring_of_fire
+goto 196

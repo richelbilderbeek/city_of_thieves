@@ -1,0 +1,5 @@
+You tell the guard that you wish to sell some silver chalices that you stole from a tavern in Silverton and that you will pay him a gold piece for his advice as to where to go for the best price. The guard looks at you suspiciously, saying, 'Let me look at these chalices in your backpack before I admit you'. @
+normal
+option Tell him that you know the chalices are cursed and should only be examined by a mage? @ goto 381
+option Try to run past the guard into the main street? @ goto 291
+option Attack him quickly with your sword?@ goto 49

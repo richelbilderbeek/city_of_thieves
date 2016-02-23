@@ -1,0 +1,2 @@
+It would be extremely dangerous for you to enter Port Blacksand again, especially as many of the town guards would recognize you. There is nothing else you can do but to make the long walk back to Silverton to report that you have failed in your mission. @
+game_lost

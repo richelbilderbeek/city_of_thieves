@@ -1,0 +1,4 @@
+You leap over the snakes and run for the door. @
+test_your_luck
+luck One of the snakes strikes out and bites you in the leg @ goto 298
+no_luck You reach the door safely @ goto 75

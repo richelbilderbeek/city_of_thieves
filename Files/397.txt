@@ -1,0 +1,4 @@
+No wonder the vagabonds wanted to rob you: they only have 1 gold piece between them. With nothing else of interest in their pockets decide to set off north along Stable Street. @
+normal
+change gold 1
+goto 372

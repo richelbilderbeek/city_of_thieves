@@ -1,0 +1,5 @@
+You take the golden flower out of your backpack and hand it to the serpent queen. She thanks you and hands you 2 gold pieces before showing you to the front door. Outside you set off north along Stable Street. @
+normal
+change gold 2
+change remove gold_flower
+goto 333

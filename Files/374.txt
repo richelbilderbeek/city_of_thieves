@@ -1,0 +1,4 @@
+The shield was taken from a goodly knight who died at the hand of Zanbar Bone. It was forged with good magic, and adds 3 skill points and 1 attack point during each fighting round. You walk over to the spiral staircase with your new shield and climb to the floor above. @
+normal
+change add shield_with_unicorn_crest
+goto 21

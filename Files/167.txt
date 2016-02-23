@@ -1,0 +1,5 @@
+When you have paid the man-orc the 4 gold pieces, he explains that placing the herbs on a wound will help to heal it. Unfortunately the strength of the mixture varies. Somewhat surprised at your good fortune you leave the shop and walk north. Add 1 luck point. @
+normal
+change luck 1
+change condition random[1-6]
+goto 93

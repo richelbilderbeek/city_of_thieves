@@ -1,0 +1,5 @@
+The sarcophagus contains a gold ring which has an eye etched into its top. You have found the long-lost ring of the golden eye, fabled for its ability to allow its wearer to detect illusions. Add 2 luck points and leave the room. @
+normal
+change luck 2
+change add ring_of_the_golden_eye
+goto 231

@@ -1,0 +1,4 @@
+From the top of the wall you see that it encircles a group of brown creatures playing some kind of game with a wooden stick and a small leather ball. One of the creatures has just hit the ball and is running towards a creature from the other team who has his foot on a cloth bag. You realize that these creatures are bays playing their favourite game: bays' ball. @
+normal
+option Ask to join in their game@ goto 168
+option Climb back down the wall, return to the junction and head west down Harbour Street@ goto 91

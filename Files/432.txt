@@ -1,0 +1,4 @@
+The elf asks you if you would like to see one of his magic candles in the back room. @
+normal
+option Say you wish to see it @ goto 63
+option Leave the shop and head east @ goto 280

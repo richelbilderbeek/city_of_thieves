@@ -1,0 +1,9 @@
+The man leans on the counter. He sells magical rings. @
+shop
+shop_items 
+  invisibility_ring 10 
+  ring_of_fire 8 
+  ring_of_ice 7 
+  @
+bye Bidding the man farewell, you leave the shop to head west. @
+goto 196

@@ -1,0 +1,5 @@
+A jet of gas shoots out of the ring and turns to ice on contact with the spirit stalker, covering him completely. It does not stop him advancing towards you, but it slows him down. Your ring of ice is now useless. @
+normal
+option Fire your silver arrow at him @ goto 189
+option Reflect his stare in your mirror @ if has mirror goto 305
+

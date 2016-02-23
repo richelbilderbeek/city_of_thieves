@@ -1,0 +1,4 @@
+You tell the worried bather that, despite your hatred for pirates, you will not harm him if he cooperates with you. You ask him if he has any of the items that you are searching for, but he replies that as captain of a pirate ship he does not need such things. You press the blade of your sword against his fat neck to make sure he is not lying. He looks terrified and assures you that he is telling the truth. Then he says: 'But I do know where you can get a silver arrow. Ben Borryman the silversmith will make anything in silver at a price. You will find him in Clog Street.'. Making a mental note of the information you leave the shivering captain alone in his room, locking the door behind you, bringing you back outside in the corridor. @
+normal
+option Open the other door @ if has_not opened_pirate_crew_door goto 271
+option Leave the ship and continue your search of Port Blacksand by walking north up Harbour Street@ goto 78

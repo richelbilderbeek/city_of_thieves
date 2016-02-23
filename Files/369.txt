@@ -1,0 +1,3 @@
+Back at the junction you turn left into Clog Street and walk eastwards. @
+normal
+goto 216

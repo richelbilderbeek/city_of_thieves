@@ -1,0 +1,6 @@
+To your left you see a large wooden barn set back from the houses. Two horses are tied to a post outside the barn, and smoke rises from a crooked chimney on top of its low flat roof. @
+normal
+option Walk through the barn doors@ goto 25
+option Continue walking north through Stable Street @ goto 115
+
+

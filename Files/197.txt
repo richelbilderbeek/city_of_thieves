@@ -1,0 +1,8 @@
+On the fifth floor there is a door with a black tower carved in ebony attached to it. There is also a black suit of armour standing outside the door. @
+normal
+option Inspect the suit of armour? @ if has_not has_inspected_suit_of_armor goto 301
+option Open the door? @ if has_not_fought first_zombie goto 122
+option Carry on up the stairs? @ if has_not_fought first_death_hawk goto 207
+option Go back down to the fourth floor? @ goto 65
+
+

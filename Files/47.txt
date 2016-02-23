@@ -1,0 +1,4 @@
+The lightning bolt slams into your chest and knocks you to the floor. Lose 3 condition points. @
+normal
+change condition -3
+goto 430

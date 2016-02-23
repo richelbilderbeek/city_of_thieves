@@ -1,0 +1,7 @@
+Inspecting the scorpion you see that it is a brooch. You decide to pin it to your leather tunic. The brooch has magic healing properties: after any battle, the brooch will immediately restore 1 condition point to your total. @
+normal
+option Pick up the golden scorpion @ if has_not picked_up_golden_scorpion goto 273
+option Climb the stairs @ goto 80
+option Leave the house and head north @ goto 334
+change add picked_up_silver_scorpion
+change add silver_scorpion_brooch

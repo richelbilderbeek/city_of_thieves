@@ -1,0 +1,4 @@
+Standing in a line across the street are three tall men each armed with a spiked club. You notice that each has a red star tattooed on his forehead. They are vagabonds intent on robbing you. If you have a throwing knife you may be able to cut one down before they reach you. If you do not have a throwing knife you will have to fight all three with your sword. Do you have a throwing knife? @
+normal
+option You have a throwing knife@ if throwing_knife goto 18
+option You do not have a throwing knife@ ifnot throwing_knife goto 225

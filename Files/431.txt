@@ -1,0 +1,11 @@
+Suddenly to your left you hear rustling and grunting in the bushes. It is a wandering monster which has been attracted by your scent. @
+fight
+random_monsters
+  monster orc 3 3 2
+  monster giant_snake 4 6 2
+  monster wolf 5 5 2
+  monster pygmy 4 4 2
+  monster ape_man 7 6 2
+  monster cave_troll 8 7 2
+@
+goto 138

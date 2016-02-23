@@ -1,0 +1,6 @@
+The trolls watch carefully as you open your backpack. You give them all your gold except for 1 gold piece which you manage to palm without their noticing. They then place themselves on either side of you and inarch you along Mill Street until you reach the city's North Gate at the junction with Goose Street. They tell the two guards on duty not to let you back into Port Blacksand. They give you a forceful boot up the backside and you land sprawling on the dusty road outside. Do you have all the items required to slay the Night Prince, and have you been tattooed? @
+normal
+change remove all_gold
+change gold 1
+option Yes @ if has all_needed_to_slay_zanbar_bone goto 201
+option No @ if has_not all_needed_to_slay_zanbar_bone goto 299

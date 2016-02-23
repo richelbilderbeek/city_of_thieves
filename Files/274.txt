@@ -1,0 +1,4 @@
+The guards are pleased that you have caught their wanted man. They tell you that he is an escaped murderer. The chief guard hands you 5 gold pieces, saying, 'Here's your reward. But you won't be getting another one, as he won't escape again'. You watch for a short while as they lead the shouting murderer away, before continuing north along Stable Street. @
+normal
+change gold 5
+goto 222

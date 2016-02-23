@@ -1,0 +1,4 @@
+You soon arrive at a junction. @
+normal
+option Turn north into Tower Street@ goto 127
+option Continue east into Stable Street@ goto 246

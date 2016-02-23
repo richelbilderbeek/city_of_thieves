@@ -1,0 +1,4 @@
+The blacksmith removes his gloves and wipes his hands on his apron before asking you what you want. You answer by asking if he makes anything besides horseshoes. He replies that in his spare time he enjoys making chainmail coats. In fact it has become quite a profitable sideline of his, especially in a place like Port Blacksand. He tells you in great detail of the skill and labour that goes into making one and finally inquires if you are interested in buying one. They are not cheap. @
+normal
+option Pay 20 gold pieces for a chainmail coat@ if gold 20 change gold -20 goto 46
+option Leave the stables without buying a coat@ goto 115

@@ -1,0 +1,5 @@
+The stairs lead down into the ship's cargo hold. It is empty. Opposite you a corridor leads from the hold to two closed doors. You walk along the corridor and listen at the doors. From the door on your left you hear loud snoring. From the door on your right you hear nothing. @
+normal
+option Open the door on the left@ goto 271
+option Open the door on the right@ goto 232
+option Leave the ship and walk north up Harbour Street @ goto 78

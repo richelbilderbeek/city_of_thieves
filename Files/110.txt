@@ -1,0 +1,3 @@
+Your fight attracted a group of onlookers. Some of the beggars even cheered when you cut down old Sourbelly. But one sly-looking character sloped off with the obvious intention of finding more guards. It is dangerous to stay here any longer, so you run off west along Mill Street. @
+normal
+goto 239

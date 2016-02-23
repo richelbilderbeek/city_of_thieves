@@ -1,0 +1,4 @@
+Ahead you hear the noisy clatter of galloping hooves on the cobblestones. You hear the noise of wooden wheels and an urging voice followed by the crack of a whip. Someone is rapidly approaching in a horse-drawn carriage. @
+normal
+option Keep standing on the street to see who it is @ goto 344
+option Hide out of sight behind a barrel and watch the carriage pass by @ goto 34

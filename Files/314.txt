@@ -1,0 +1,4 @@
+You sit down to rest and plan what to do next. As you slump down on the cold stone floor, you inadvertently knock over a glass jar you hadn't seen before, which rolls against the wall and shatters. From the broken jar a small man some fifteen centimetres high steps out and walks over to you. He looks up at you with his hands on his hips and in a barely audible voice says, 'Thank you very much. I've been trapped in that infernal jar for the last hundred years. Now how can I repay you?'. @
+normal
+option Ask the whereabouts of Zanbar Bone @ goto 234
+option Ask if he can heal some of your wounds @ goto 94

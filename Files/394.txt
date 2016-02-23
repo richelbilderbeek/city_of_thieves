@@ -1,0 +1,4 @@
+Sitting behind a small table is a plump woman wearing bright yellow clothes and a shawl over her head. She smiles as you enter, bidding you to sit down. She tells you that a glimpse of the future will cost you 2 gold pieces. @
+normal
+option Pay to hear her predictions @ if gold 2 change gold -2 goto 368
+option Carry on unaided, leave the tent and head north @ goto 117

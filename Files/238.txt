@@ -1,0 +1,4 @@
+On the right side of the street you see a small alleyway between two houses. The alley soon ends at a doorway with six skulls painted on it: one black and five white. @
+normal
+option Walk down the alley and open the door @ goto 27
+option Ignore the alley and continue east @ goto 139

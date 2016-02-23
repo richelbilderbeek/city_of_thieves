@@ -1,0 +1,3 @@
+A horrified look spreads across the vampire's face when she sees the clove of garlic in your hand. She retreats into a corner of the room trying to escape the pungent smell, which negates her bloodsucking powers. You back out of the room taking the key to the door with you, and lock it from the outside. You then run over to the staircase and climb the stairs to the next floor. @
+normal
+goto 310

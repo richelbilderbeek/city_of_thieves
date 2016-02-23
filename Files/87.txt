@@ -1,0 +1,4 @@
+You reach the top of the ladder and peer over the handrail to survey the ship's deck. There are two large masts rising into the air from the deck. Wooden boxes, barrels and coils of rope lie all around, and one of the ship's crew stands on guard at the top of the gangplank. In the centre of the deck there is a small cabin with an open door. Through the door you see stairs leading down to the lower decks. @
+normal
+option Inspect any of the wooden boxes and barrels, deal with the pirate on guard first @ goto 120
+option Creep along the deck to the stairs@ goto 50

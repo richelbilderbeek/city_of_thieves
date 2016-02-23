@@ -1,0 +1,4 @@
+You rub the jewel in the ring and point it at the leaf beasts. A blast of fire shoots out of the ring and burns a large hole in the nearest leaf beast. It makes a whistling cry and backs away. You seize your opportunity and dash through their broken defence. You run to the turnstile clutching the lotus and make your escape into Stable Street. @
+normal
+change add lotus_flower
+goto 133

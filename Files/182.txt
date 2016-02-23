@@ -1,0 +1,4 @@
+The lane ends at a small shop. On the glass-paned door is painted a sign: 'Jimmy Quicktint, Best Tattooist in Town'. A tiny bell rings as you push the door open and a fat man wearing purple silk smiles in greeting. You are surprised to see that his arms, hands, feet and even his face are completely covered in colourful tattoos. He grins and says, 'Practise what you preach!' You tell him that you require a yellow sun to be tattooed on your forehead with a white unicorn in the centre of it. He replies that it it is a simple task but it will cost you 10 gold pieces. @
+normal
+option You can afford his high price@ if gold 10 change gold -10 goto 279
+option You cannot afford his high price@ goto 354

@@ -1,0 +1,4 @@
+The blacksmith takes your money and walks over to some bales of hay in the corner. He lifts one up and underneath it you see the chainmail coat. He turns to you and says, 'You have to hide everything in this place. You can't trust anybody.' The coat fits perfectly and its workmanship is excellent. The chainmail coat adds 2 skill points. You leave the stables with your new armour and continue north. @
+normal
+change add chainmail_coat
+goto 115

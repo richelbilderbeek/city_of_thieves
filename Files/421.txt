@@ -1,0 +1,4 @@
+The first dart hit you in your hand. Now the second dart. @
+test_your_luck
+no_luck The second dart also flies into your hand @ goto 19
+luck The second dart bounces harmlessly of your armor @ goto 149

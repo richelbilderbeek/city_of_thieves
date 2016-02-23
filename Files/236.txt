@@ -1,0 +1,4 @@
+Your question produces a suspicious look on the face of the dwarf and he raises one eyebrow. Then he says, 'I know Nicodemus, but what do you want of him?'. @
+normal
+option You tell him that you are on a mission from Silverton and need the help of Nicodemus @ goto 57
+option You tell him that you want to kill Nicodemus @ goto 218

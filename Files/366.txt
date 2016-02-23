@@ -1,0 +1,5 @@
+You pay for the smoking mixture and leave the shop. Outside you pack your pipe with the smoking mixture and light it. The smoke is dark and tastes awful. You start to cough and your chest is gripped by a terrible pain. Lose 2 condition points. You are unable to stop coughing, so you sit down on the street and try to calm down. You slump down against a wall between two barrels and gradually the coughing subsides. @
+normal
+change condition -2
+option Go back to the herbalist to complain @ goto 101
+option Do not compain and walk north @ goto 93

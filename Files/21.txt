@@ -1,0 +1,4 @@
+Looking up, you see that the staircase goes all the way up to the top of the tower. You stop off at the first floor and walk along the landing to a door. The door opens into a large room which contains a comfortable, made-up bed. @
+normal
+option Lock the door and go to sleep for the night @ goto 288
+option Explore the tower further @ goto 77

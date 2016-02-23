@@ -1,0 +1,4 @@
+Ahead you see a wooden bridge stretching over a dirty river. Various bits of rubbish are floating down to the sea on its black surface, and you squirm at the sight of a human hand passing by. The bridge supports and columns reach high above and you see skulls, both human and non-human, between them. The wind makes an eerie noise as it whistles through the bridge structures, reminding you of tortured souls crying out for help. Almost hidden from view is a small flight of steps going down underneath the bridge from where you are standing. A one-legged man carrying a sack is crossing the bridge from the northern bank. @
+normal
+option Climb down the steps @ goto 329
+option Wait to talk to the man @ goto 364

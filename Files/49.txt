@@ -1,0 +1,4 @@
+As you draw your sword the guard leaps to his right and attempts to ring a small bell on the wall of the guardhouse. @
+test_your_luck
+no_luck He manages to grab the bell and rings it loudly before turning to fight you with his pike. @ goto 311
+luck He misses the bell, curses, and turns to fight you with his pike. @ goto 10

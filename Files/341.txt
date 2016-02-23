@@ -1,0 +1,4 @@
+You decide that you are going to have to make a run for it or risk being put in jail. You take 5 gold pieces out of your backpack and throw them on the floor. The guards bend down to pick them up and you run north as fast as you can. As you run off, the escaped murderer starts to yell and two of the guards chase after you. In an alleyway to your left you see a large open barrel which you dive into. You hear the guards run past but you wait a few minutes before climbing out of the barrel. You look up and down Stable Street and all is clear. Once more you set off north. @
+normal
+change gold -5
+goto 222

@@ -1,0 +1,5 @@
+Fortunately, the contents of the jar are as the label reads, although the strength of the mixture is unpredictable. @
+normal
+change condition random[1-6]
+option Continue searching the shop @ goto 322
+option Leave the shop to head north @ goto 93

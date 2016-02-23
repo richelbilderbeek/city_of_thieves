@@ -1,0 +1,4 @@
+After beating the pirate, you get hold of your sword again. @
+normal
+change add carralifs_sword
+goto 20

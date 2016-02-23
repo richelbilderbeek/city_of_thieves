@@ -1,0 +1,4 @@
+As the guard realizes what you are doing he thrusts his pike at you. @
+test_your_luck
+no_luck The pike pierces your arm. You lose 2 condition points @ change condition -2 goto 10
+luck He misses and you are able to run past him into the city @ goto 74

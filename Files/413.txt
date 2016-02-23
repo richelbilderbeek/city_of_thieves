@@ -1,0 +1,4 @@
+Walking north along the west side of the square you see a man dressed in purple velvet playing a lyre. @
+normal
+option Stop and listen @ goto 3
+option Walk past him @ goto 398

@@ -1,0 +1,5 @@
+Asleep in their bunks are three pirates. Their room is small and contains only clothing and a few personal possessions. It looks as if the pirates have been drinking and gambling, as there is an uncorked bottle of rum, a mug and a pack of cards on top of a barrel in the centre of the room. You see that one of the pirates is wearing a small leather pouch around his neck. @
+normal
+option Creep up the pirate and try to cut the pouch loose silently @ goto 162
+option Leave the room silently and close the door again @ goto 284
+change add opened_pirate_crew_door

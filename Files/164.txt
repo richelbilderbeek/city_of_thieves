@@ -1,0 +1,3 @@
+You stagger forward beyond the angle of fire of the unseen archers. Ahead you see some sacks lying outside a house and you slump down on top of them. Slowly and painfully you pull the arrows from your body. After bandaging your wounds you rise to your feet and continue north. @
+normal
+goto 112

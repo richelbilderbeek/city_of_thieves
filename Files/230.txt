@@ -1,0 +1,6 @@
+You scratch around in the cracks in the wall and find a loose stone. The old man watches intently as you pull the stone out of the wall. Peering into the hole you see an iron key. You place it in the lock of your cell and are amazed to feel it turn. Add 1 luck point. With the cell door open you put the key back in the hole in the wall and replace the stone. You leave your cell and pick up your sword and shield off the table. @
+normal
+change luck 1
+change add carralifs_sword
+change add shield
+goto 407

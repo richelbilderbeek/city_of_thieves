@@ -1,0 +1,4 @@
+Coming towards you as fast as he is able is a man in tattered rags with a ball and chain attached to his leg. He is exhausted and collapses in your arms. His face is dirty and unshaven. With great difficulty he manages to speak, saying, 'Please cut me free. The town guards are not far behind me. I have been locked in a dungeon for two years but managed to runnel my way out. I was robbed and unable to pay my taxes, so Lord Azzur ordered I should be jailed for five years. Please help me.' Farther up the street you hear shouting voices and then armed men come into view. @
+normal
+option Cut through his chains with your sword@ goto 90
+option Hand him over to the town guards@ goto 274

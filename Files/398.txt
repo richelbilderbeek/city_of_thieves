@@ -1,0 +1,4 @@
+A small circle of people is standing around a bare-chested man. He is enormous and his muscles are as hard as iron. He is asking the crowd for a volunteer to play catch with a cannon-ball. He starts that whoever drops the cannon-ball must pay the other 5 gold pieces. @
+normal
+option Take him on @ if gold 5 goto 378
+option Ignore the man and walk on @ goto 52

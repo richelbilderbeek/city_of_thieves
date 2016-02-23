@@ -1,0 +1,4 @@
+On the left side of the street is a flower shop. The window is filled with exotic and colourful flowers. @
+normal
+option Enter the shop @ goto 145
+option Keep walking west @ goto 24

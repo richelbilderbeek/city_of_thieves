@@ -1,0 +1,5 @@
+The creature is outraged that you have stolen one of its brooches. It jumps up and you notice flames curling up from its nostrils. Suddenly a blast of fire shoots from its jaw and it moves towards you with outstretched claws. The blast misses you: this creature has a fiery breath! You may escape by running back down the stairs out of the house to head north. @
+fight
+escape 0 334
+monster lizardine 8 5 2+fire
+goto 186

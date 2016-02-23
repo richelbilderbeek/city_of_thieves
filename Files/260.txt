@@ -1,0 +1,3 @@
+The guards take their bribe and let you go. As you walk north you hear the angry shouts of the captured murderer behind you. You leave quickly before he tries to implicate you. @
+normal
+goto 222

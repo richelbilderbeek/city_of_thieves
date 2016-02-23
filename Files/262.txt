@@ -1,0 +1,3 @@
+Wiping the foul-tasting soup from your lips with the back of your hand, you storm out of the house, leaving the crazy ladies to their argument. Once outside you set off east again. @
+normal
+goto 375

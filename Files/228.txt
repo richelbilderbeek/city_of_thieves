@@ -1,0 +1,5 @@
+The key fits the lock, which clicks open as you turn it. You open the door and enter a beautiful marble-floored hallway. On three of the four walls hang portraits of evil-looking men and women, but on the far wall hang two iron shields. The crest on one is a tower and on the other a unicorn. A spiral staircase leads up from the centre of the hallway to a floor above. @
+normal
+option Take the shield with the tower crest? @ goto 125
+option Take the shield with the unicorn crest? @ goto 374
+option Climb the spiral staircase? @ goto 21

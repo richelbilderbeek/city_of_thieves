@@ -1,0 +1,5 @@
+The boy puts down his barrow and asks you what you would like to buy. He recommends his plums as being particularly refreshing. @
+normal
+option Pay 1 gold piece for a bag of plums @ if gold 1 change gold -1 goto 211
+option Buy a bag of red apples for 1 gold piece @ if gold 1 change gold -1 goto 242
+option Do not buy something @ goto 307

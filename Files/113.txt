@@ -1,0 +1,45 @@
+You enter the house and find yourself standing in a room full of toys. But they are not ordinary toys. These are stuffed creatures with nails through their heads, dolls' houses that are made to look as if they are on fire, and many other unpleasant objects. In the middle of the room stand two old women dressed as though they were little girls. They are squabbling over a carved wooden duck. Each looks eager to destroy the duck with the knives they are holding. On seeing you the women both start to shout, 'Give us toys! Give us toys!'. @
+normal
+option Give them the knucklebones @ if has knucklebones change remove knucklebones goto 141
+option Give them the iron spike @ if has iron_spike change remove iron_spike goto 141
+option Give them the meat hook @ if has meat_hook change remove meat_hook goto 141
+option Give them your shield @ if has shield change remove shield goto 141
+option Give them the ring of fire @ if has ring_of_fire change remove ring_of_fire goto 141
+option Give them the black pearls @ if has black_pearls change remove black_pearls goto 141
+option Give them the golden scorpion brooch @ if has golden_scorpion_brooch change remove golden_scorpion_brooch goto 141
+option Give them the silver arrow @ if has silver_arrow change remove silver_arrow goto 141
+option Give them the ring of ice @ if has ring_of_ice change remove ring_of_ice goto 141
+option Give them the invisibility ring @ if has invisibility_ring change remove invisibility_ring goto 141
+option Give them the silver insect bracelet @ if has silver_insect_bracelet change remove silver_insect_bracelet goto 141
+option Give them the throwing_knife @ if has throwing_knife change remove throwing_knife goto 141
+option Give them the climbing_rope @ if has climbing_rope change remove climbing_rope goto 141
+option Give them the lantern @ if has lantern change remove lantern goto 141
+option Give them the merchant pass @ if has merchant_pass change remove merchant_pass goto 141
+option Give them the gold flower @ if has gold_flower change remove gold_flower goto 141
+option Give them the skeleton key @ if has skeleton_key change remove skeleton_key goto 141
+option Give them the iron key @ if has iron_key change remove iron_key goto 141
+option Give them the silver scorpion brooch @ if has silver_scorpion_brooch change remove silver_scorpion_brooch goto 141
+option Give them the glass ball @ if has glass_ball change remove glass_ball goto 141
+option Give them the ivory skull on a silver chain @ if has ivory_skull_on_a_silver_chain change remove ivory_skull_on_a_silver_chain goto 141
+option Give them the garlic @ if has garlic change remove garlic goto 141
+option Give them the potion of mind control @ if has potion_of_mind_control change remove potion_of_mind_control goto 141
+option Give them the set of keys @ if has set_of_keys change remove set_of_keys goto 141
+option Give them the stale white bread @ if has stale_white_bread change remove stale_white_bread goto 141
+option Give them the stale brown bread @ if has stale_brown_bread change remove stale_brown_bread goto 141
+option Give them the two gems @ if has two_gems change remove two_gems goto 141
+option Give them the magnificent shield @ if has magnificent_shield change remove magnificent_shield goto 141
+option Give them the two silver goblets @ if has two_silver_goblets change remove two_silver_goblets goto 141
+option Give them the magic helmet @ if has magic_helmet change remove magic_helmet goto 141
+option Give them the silver flute @ if has silver_flute change remove silver_flute goto 141
+option Give them the eye patch @ if has eye_patch change remove eye_patch goto 141
+option Give them the magic elven boots @ if has magic_elven_boots change remove magic_elven_boots goto 141
+option Give them the piece of chalk @ if has piece_of_chalk change remove piece_of_chalk goto 141
+option Give them the copper scorpion brooch @ if has copper_scorpion_brooch change remove copper_scorpion_brooch goto 141
+option Give them Carralif's sword @ if has carralifs_sword change remove carralifs_sword goto 141
+option Give them the luck potion @ if has luck_potion change remove luck_potion goto 141
+option Give them the stamina potion @ if has stamina_potion change remove stamina_potion goto 141
+option Give them the dexterity potion @ if has dexterity_potion change remove dexterity_potion goto 141
+option Give them the silver chalice @ if has silver_chalice change remove silver_chalice goto 141
+option Give them the silver spoon @ if has silver_spoon change remove silver_spoon goto 141
+option Give them the coloured candle @ if has coloured_candle change remove coloured_candle goto 141
+option Leave these strange old ladies and continue east@ goto 375

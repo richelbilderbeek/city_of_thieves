@@ -1,0 +1,6 @@
+Lose 2 condition points. Despite the pain in your arm you must act quickly to escape the advancing suit of armour. @
+normal
+change condition -2
+option Open the door in front of you @ if has_not_fought first_zombie goto 122
+option Run back to the staircase to climb up to the next floor @ if has_not_fought first_death_hawk goto 207
+option Run back to the staircase to do down @ goto 65

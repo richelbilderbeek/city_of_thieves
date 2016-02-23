@@ -1,0 +1,5 @@
+The ogre is mad with hunger and picks up a large bone off the floor. He raises it above his head and lumbers towards you. You must fight him. After the third attack round, you may escape by running out of the house and heading north. @
+normal
+monster ogre 8 9 2
+escape 3 28
+goto 71

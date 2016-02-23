@@ -1,0 +1,4 @@
+The man-orc tells you that for 1 gold piece he will tell you all he knows. @
+normal
+option Pay for his information @ if gold 1 change gold -1 goto 289
+option Leave the shop and continue your walk north @ goto 93

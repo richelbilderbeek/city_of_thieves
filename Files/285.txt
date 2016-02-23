@@ -1,0 +1,6 @@
+You make a rapid search through the guards' possessions and find 7 gold pieces, a set of keys and a piece of stale white bread. Then you set off north again. @
+normal
+change gold 7
+change add stale_white_bread
+change add set_of_keys
+goto 227

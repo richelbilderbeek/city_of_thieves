@@ -1,0 +1,4 @@
+In the back room of the shop you find a glass jar on a dusty shelf labelled 'Healing Mixture'. @
+normal
+option Apply some of it to your wounds @ goto 83
+option Continue searching the shop @ goto 322

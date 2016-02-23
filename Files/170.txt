@@ -1,0 +1,5 @@
+The man sees you drawing your sword and snatches his battle-axe off the wall. He walks around the counter to fight you. You can escape by running out of the shop and west along the street. @
+fight
+monster jeweller 9 8 2
+escape 0 196
+goto 114

@@ -1,0 +1,5 @@
+A search through the leather bags of the thieves produces 16 gold pieces and a glass vial containing a green liquid. @
+normal
+change gold 16
+option Drink the liquid @ goto 338
+option Just take the gold and press on northwards @ goto 105

@@ -1,0 +1,4 @@
+The man laughs even louder and mocks your attempt to kill him. You decide to leap up and make a dash for the front door, picking up your sword as you run. The man sees what you are doing and fires another lightning bolt at you. @
+test_your_luck
+no_luck The lightning bolt thuds into your back and you cry out in pain @ goto 243
+luck The lightning bolt misses you, and you manage to open the door and run north up the street @ goto 304

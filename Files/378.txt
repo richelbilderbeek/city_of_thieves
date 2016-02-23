@@ -1,0 +1,4 @@
+Roll one die alternately for yourself and for the bare-chested man, to represent the cannon-ball passing between you. Repeat this process until a 1 is thrown, in which case the cannon-tall has been dropped and the loser must pay the winner 5 gold pieces. @
+play_ball
+goto 52
+bye After finishing the game you walk on a bit further. @

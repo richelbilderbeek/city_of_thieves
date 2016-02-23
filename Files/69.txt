@@ -1,0 +1,4 @@
+Just as the guards are about to lead you away, you try with all your might to pull your arms from their grip. @
+test_your_skill
+no_skill you fail to release yourself, and are led away, struggling violently @ goto 151
+skill you succeed @ goto 355

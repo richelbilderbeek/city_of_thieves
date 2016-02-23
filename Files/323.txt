@@ -1,0 +1,4 @@
+The blacksmith looks surprised at your unprovoked aggression and pulls another red-hot iron bar from the fire with his gloved hand. He is very angry and lunges at you with the bar. If the blacksmith wounds you, 3 points from your condition will be removed, because of the burn caused by the iron bar. @
+fight
+monster blacksmith 9 9 3
+goto 395

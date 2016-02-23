@@ -1,0 +1,5 @@
+Key Street makes another sharp turn to the right and you find yourself walking east. Outside one of the houses to your left is a pile of rubbish and broken objects. On top of the pile is a pair of old boots that look about your size. @
+normal
+option Try them on @ goto 362
+option Keep walking east @ goto 103
+

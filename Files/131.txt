@@ -1,0 +1,5 @@
+You walk into a room with sparse furnishings and a polished wooden floor. Silk curtains hang down over an archway on the far wall. As you start to walk across the wooden floor, a woman's voice calls out 'Who is it?'. @
+normal
+option Tell her you are delivering flowers @ goto 67
+option Tell her you have come to collect old rags @ goto 6
+option Tell her you are a tax collector @ goto 179

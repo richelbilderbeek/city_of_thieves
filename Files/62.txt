@@ -1,0 +1,7 @@
+The old wooden doors open into a dingy, smokefilled room. There are eight round tables in the centre of the room with some of the most mean and shifty-looking rogues you have ever seen sitting at them. At the back of the tavern is a long wooden bar covered with bottles and mugs. Behind the bar stands the innkeeper wearing a grubby apron. He is quite old, bald and has an ugly black scar running down his right cheek. Not all the customers are human. @
+normal
+option Walk to the bar to talk to the innkeeper? @ goto 136
+option Sit down at a table with three dwarfs who are playing a dice game? @ goto 173
+option Sit down at a table with two goblins who are arguing? @ goto 22
+option Sit down with three men who are sticking daggers quickly between their fingers on the table? @ goto 190
+option Leave the tavern and walk north? @ goto 296

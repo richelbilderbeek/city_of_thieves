@@ -1,0 +1,4 @@
+Drawing your sword you leap over the counter to attack the man-orc, who swiftly grabs his handaxe. You soon realize that this man-orc has used his weapon before. @
+fight
+monster man-orc 6 5 2
+goto 371

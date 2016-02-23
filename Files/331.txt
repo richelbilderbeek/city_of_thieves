@@ -1,0 +1,4 @@
+As you approach the man, he suddenly springs up and screams at the top of his voice. He produces a dagger from his ragged clothing and leaps at you. His wild eyes belong to a man insane or possessed and you must fight him. @
+fight
+monster madman 5 5 2
+goto 86

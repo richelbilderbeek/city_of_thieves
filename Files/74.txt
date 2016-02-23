@@ -1,0 +1,5 @@
+Through the main gates you see that the rubbish-filled streets of the port are narrow and cobbled. Old and decrepit buildings line them closely, with their upper storeys overhanging menacingly. @
+normal
+option Go west down Key Street@ goto 95
+option Head north along Market Street@ goto 116
+option Go east down Clock Street@ goto 17

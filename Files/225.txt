@@ -1,0 +1,6 @@
+Each vagabond boasts that he can kill you singlehanded. They decide to fight you one at a time. @
+normal
+monster first_vagabond 7 6 2
+monster second_vagabond 6 7 2
+monster third_vagabond 5 6 2
+goto 397

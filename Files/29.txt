@@ -1,0 +1,4 @@
+You squat down on the mattress and consider what to do next. @
+normal
+option Feign illness and throw the iron pail against the bars of the cell to attract the guards' attention@ goto 143
+option Inspect the cell closely in the hope of finding a secret escape route@ goto 230

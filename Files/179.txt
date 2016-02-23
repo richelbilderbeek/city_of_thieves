@@ -1,0 +1,4 @@
+The silk curtains in front of the archway are pulled aside and a brown leather bag flies out and lands in front of you, making a dull jingling sound. @
+normal
+option Open the bag @ goto 16
+option Leave the house without opening the bag and continue north along Stable Street @ goto 333

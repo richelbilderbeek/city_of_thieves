@@ -1,0 +1,14 @@
+She explains that she has just picked one of her golden flowers. There are ten golden petals on the flower, and you are told that if dipped in dog's blood, each petal, plucked and thrown on the ground, will change into a gold piece. Mrs Pipe asks for any magic item, piece of armour or two provisions in exchange for the golden flower. @
+normal
+option Buy the flower for two provisions @ if provisions 2 change provisions -2 goto 434
+option Buy the flower for an invisibility ring @ if has invisibility_ring change remove invisibility_ring goto 434
+option Buy the flower for a ring of ice @ if has ring_of_ice change remove ring_of_ice goto 434
+option Buy the flower for a ring of fire @ if has ring_of_fire change remove ring_of_fire goto 434
+option Buy the flower for the elven boots @ if has magic_elven_boots change remove magic_elven_boots goto 434
+option Buy the flower for a shield @ if has shield change remove shield goto 434
+option Buy the flower for a chainmail coat @ if has chainmail_coat change remove chainmail_coat goto 434
+option Buy the flower for a magnificent shield @ if has magnificent_shield change remove magnificent_shield goto 434
+option Buy the flower for a magic helmet @ if has magic_helmet change remove magic_helmet goto 434
+option Buy the flower for a shield with a unicorn crest @ if has shield_with_unicorn_crest change remove shield_with_unicorn_crest goto 434
+option Leave the shop @ goto 24
+Bye you leave the shop and head west @

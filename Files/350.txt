@@ -1,0 +1,5 @@
+You open your backpack and pretend to search for the flowers. The serpent queen starts to fidget and you can see her becoming increasingly impatient. You cannot think of a good plan and start to panic. @
+normal
+option Run to the front door @ goto 32
+option Draw your sword to attack the serpent queen @ goto 249
+

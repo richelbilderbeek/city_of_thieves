@@ -1,0 +1,4 @@
+You turn on the two guards who were holding you and, before they realize what is happening, you smash their heads together, knocking them unconscious. You dash into the city. @
+normal
+
+goto 74

@@ -1,0 +1,4 @@
+The pirate draws his cutlass. As he approaches, his toothless grin unnerves you a little. @
+normal
+option You do not have time to draw your sword and must fight the pirate with a wooden stick @ if has carralifs_sword change remove carralifs_sword goto 422
+option You fight the pirate with your bare hands as you do not have Carralif's sword anymore @ if has_not carralifs_sword goto 424

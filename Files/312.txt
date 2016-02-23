@@ -1,0 +1,4 @@
+You notice that the ape man's left hand is curled into a fist. You prise open the fingers and find a tiny gold trinket in the shape of an owl. It is a magic talisman which will allow you to see in the dark. You place the owl carefully in your pocket and continue your journey. @
+normal
+change add golden_owl
+goto 217

@@ -1,0 +1,3 @@
+'This city is ruled by Lord Azzur and he is a mean man. When you preside over the chaotic inhabitants of Port Blacksand you have to be mean. And he's the meanest. I should warn you that if you are found without a pass, you are as good as dead. I would get one if I were you, pretty quickly.' He then makes a sweeping gesture of the arm and you walk past him into the city. @
+normal
+goto 74

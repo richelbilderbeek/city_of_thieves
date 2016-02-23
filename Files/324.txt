@@ -1,0 +1,6 @@
+The box shatters and you see two gems, 15 gold pieces and a white silk glove lying amidst the broken pieces of wood. @
+normal
+option Try on the glove @ goto 89
+option Leave the house, taking only the gems and the gold, and continue north @ goto 282
+change gold 15
+change add two_gems

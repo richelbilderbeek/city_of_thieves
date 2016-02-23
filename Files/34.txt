@@ -1,0 +1,3 @@
+The carriage thunders by and you see its driver urging on the four horses as though his life depended on it. As the noise of the carriage fades into the distance, you step out on to the street and continue west. @
+normal
+goto 171

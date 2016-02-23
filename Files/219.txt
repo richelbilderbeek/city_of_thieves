@@ -1,0 +1,4 @@
+The larger of the two trolls tells you that his name is Sourbelly and it is his duty to track down unwelcome visitors to Port Blacksand. He looks at the pass and says, 'You don't look much like a merchant to me. Are you one of those fancy folk who have been attending the spice sales in Pepper Street?' @
+normal
+option Answer 'Yes' @ goto 150
+option Answer 'No' @ goto 393

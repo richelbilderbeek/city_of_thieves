@@ -1,0 +1,4 @@
+The serpent queen's head darts about you very quickly as she tries to bite you with her poisonous fangs. She will be difficult to defeat. @
+normal
+monster serpent_queen 9 7 2
+goto 295

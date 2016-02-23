@@ -1,0 +1,7 @@
+You drop the goblet and pull your hand away. The scorpion scurries a metre across the floor before you step on it with your boot. @
+normal
+change add lifted_goblet_a
+option Lift goblet B @ if has_not lifted_goblet_b goto 209
+option Lift goblet C @ if has_not lifted_goblet_c goto 43
+option Walk through the archway @ goto 107
+option Climb the stairs @ goto 60

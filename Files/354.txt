@@ -1,0 +1,20 @@
+The tattooist looks at you with a bored expression on his face and says, 'Well, you don't expect me to do it for free, do you? If you've got anything worth selling, go next door. My step-brother lives there and he's a pawnbroker. Tell him I sent you and maybe he'll give you a good price.' You walk outside and knock on the wooden door of the next house. A squint-eyed man opens the door and you tell him that you want to sell some items so that you can afford to have a tattoo. The man asks you to come into his house and you enter a room piled high with all kinds of objects, furniture, armour, curiosities and pottery. He explains that he has a stall in the market which he rents once a week. He then tells you what he is currently interested in buying, and the prices he is offering. You may sell the pawnbroker any of your possessions. @
+pawn_shop
+sell_items
+  two_silver_goblets 8
+  skeleton_key 15
+  silver_scorpion_brooch 10
+  golden_scorpion_brooch 10
+  ring_of_fire 15
+  ring_of_ice 15
+  invisibility_ring 15
+  silver_insect_bracelet 5
+  magic_helmet 10
+  silver_flute 5
+  eye_patch 5
+  knucklebones 1
+  mirror 1
+@
+goto 417
+bye You bid him farewell and walk outside @
+

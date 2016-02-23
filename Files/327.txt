@@ -1,0 +1,5 @@
+You feel like a pincushion and although the pain is almost unbearable, you manage to stagger on down the street. Ahead to your right you see the door of one of the houses opening and a little girl looking out apprehensively. She beckons you to enter the house. @
+normal
+option Enter the house @ goto 126
+option Continue walking north, following Key Street @ goto 164
+

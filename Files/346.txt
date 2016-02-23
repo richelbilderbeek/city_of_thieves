@@ -1,0 +1,2 @@
+The distance to the ground is too great even for a great warrior like yourself. You land badly and break your neck. Your adventure ends here. @
+game_lost

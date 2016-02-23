@@ -1,0 +1,4 @@
+When you hear the guards coming down the stairs, you lie on the floor and start to groan. They unlock the cell door and enter. @
+normal
+option Continue with your feigned illness and tell them that you think you've got the plague @ goto 306
+option Fight them unarmed @ goto 157

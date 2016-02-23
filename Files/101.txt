@@ -1,0 +1,4 @@
+You enter the shop and see the man-orc standing behind the counter. He is smiling at your misfortune and says  'Huh, can't even take Old Trollbom. And don't think I am going to give you your money back.'. @
+normal
+option Attack the impudent man-orc@ goto 5
+option Leave the shop and head north again@ goto 93

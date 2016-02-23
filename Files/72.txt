@@ -1,0 +1,4 @@
+As you bend down to help the injured boy, he suddenly rolls over and you see the flashing blade of a dagger before your eyes. The boy is in fact a gobin thief and you must fight him for your life. @
+fight
+monster goblin_thief 5 4 2
+goto 208

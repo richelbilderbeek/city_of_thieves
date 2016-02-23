@@ -1,0 +1,4 @@
+The boots fit perfectly and walking about you feel very sure-footed. They are magic elven boots, adding 1 skill point to your total. You set off east again. @
+normal
+change add magic_elven_boots
+goto 103

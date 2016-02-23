@@ -1,0 +1,4 @@
+You hear growls and loud barking coming from inside the kennel, and suddenly an enormous black wolf rushes out of the kennel straight at you. A long chain is attached to its collar and this may stop it from reaching you. @
+test_your_luck
+no_luck the chain remains slack and the wolf leaps up and bites your arm! You lose 1 condition point @ change condition -1 goto 309
+luck The chain pulls to the end and the wolf jerks to a halt! @ goto 353

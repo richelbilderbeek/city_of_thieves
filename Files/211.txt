@@ -1,0 +1,4 @@
+The plums are sweet and juicy and taste delicious. Add 1 condition point. You wipe your mouth with the back of your hand and continue west. @
+normal
+change condition 1
+goto 307

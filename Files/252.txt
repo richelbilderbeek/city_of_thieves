@@ -1,0 +1,4 @@
+The carriage is not going to stop! Suddenly the four horses, their eyes wide with terror, are almost on top of you. You must dive to one side to avoid being run down. @
+test_your_luck
+no_luck You are trampled underfoot by one of the horses @ goto 155
+luck You escape injury from the horses as you land in the gutter @ goto 275

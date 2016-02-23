@@ -1,0 +1,4 @@
+Walking north along the street you see the entrance to a small herbalist's shop to your left. Looking through the window you see a wooden counter with a pair of scales upon it, and many sacks of different herbs crowding the floor. There is a small archway leading out of the back of the shop to another room. There is an 'Open' sign on the door but the shop is empty. @
+normal
+option Enter the shop @ goto 250
+option Continue walking north up Market Street @ goto 93
