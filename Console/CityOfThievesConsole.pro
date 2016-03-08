@@ -3,27 +3,27 @@ INCLUDEPATH += ../Classes
 win32 {
   # Windows only
   message("Console application, built for Windows")
-  QMAKE_CXXFLAGS += -std=c++1y -Wall -Wextra -Weffc++
+  QMAKE_CXXFLAGS += -std=c++0x -Wall -Wextra -Weffc++
 }
 
 macx {
   # Mac only
   message("Console application, built for Mac")
   QMAKE_CXXFLAGS = -mmacosx-version-min=10.7 -std=gnu0x -stdlib=libc+
-  CONFIG +=c++11
+  CONFIG +=c++0x
 }
 
 unix:!macx{
   # Linux only
   message("Console application, built for Linux")
   QMAKE_CXXFLAGS += -Werror
-  QMAKE_CXXFLAGS += -std=c++1y -Wall -Wextra -Weffc++
+  QMAKE_CXXFLAGS += -std=c++0x -Wall -Wextra -Weffc++
 }
 
 cross_compile {
   # Crosscompile only
   message("Console application, cross-compiling from Linux to Windows")
-  QMAKE_CXXFLAGS += -std=c++1y -Wall -Wextra -Weffc++
+  QMAKE_CXXFLAGS += -std=c++0x -Wall -Wextra -Weffc++
 }
 
 

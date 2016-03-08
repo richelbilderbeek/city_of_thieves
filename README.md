@@ -1,5 +1,7 @@
 # City Of Thieves
 
+[![Build Status](https://travis-ci.org/richelbilderbeek/CityOfThieves.svg?branch=master)](https://travis-ci.org/richelbilderbeek/CityOfThieves)
+
 City Of Thieves is a text adventure game after the English gamebook with the same name by Ian Livingstone. 
 
  * [Wikipedia](https://en.wikipedia.org/wiki/City_of_Thieves_%28gamebook%29)
