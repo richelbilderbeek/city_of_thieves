@@ -34,3 +34,4 @@ Makefile
 ui_*
 build-*
 moc_*
+qrc_*
