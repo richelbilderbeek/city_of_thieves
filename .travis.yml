@@ -25,7 +25,7 @@ addons:
     - gcc-5
 
 script:
- - ./Files/FilesToFunctions.sh
+ - cd Files; ./FilesToFunctions.sh
  - qmake Console/CityOfThievesConsole.pro
  - make
  - qmake Console/CityOfThievesDesktop.pro
