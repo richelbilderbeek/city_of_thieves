@@ -79,9 +79,6 @@ QScrollBar::handle {
      <property name="centerOnScroll">
       <bool>false</bool>
      </property>
-     <property name="placeholderText">
-      <string/>
-     </property>
     </widget>
    </item>
    <item row="0" column="1">

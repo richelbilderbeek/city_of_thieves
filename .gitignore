@@ -30,3 +30,5 @@ Files/*.h
 Files/*.cpp
 Console/Makefile
 *.pro.user
+Makefile
+ui_*
