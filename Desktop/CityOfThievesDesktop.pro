@@ -4,14 +4,14 @@ win32 {
   # Windows only
   message("Desktop application, no effc++, built for Windows")
   greaterThan(QT_MAJOR_VERSION, 4): QT += svg
-  QMAKE_CXXFLAGS += -std=c++1y -Wall -Wextra #-Weffc++
+  QMAKE_CXXFLAGS += -std=c++11 -Wall -Wextra #-Weffc++
 }
 
 macx {
   # Mac only
   message("Desktop application, no effc++, built for Mac")
   QMAKE_CXXFLAGS = -mmacosx-version-min=10.7 -std=gnu0x -stdlib=libc+
-  CONFIG +=c++1y
+  CONFIG +=c++11
 }
 
 unix:!macx{
@@ -19,14 +19,14 @@ unix:!macx{
   message("Desktop application, no effc++, built for Linux")
   equals(QT_MAJOR_VERSION, 4): LIBS +=  -lQtSvg
   greaterThan(QT_MAJOR_VERSION, 4): QT +=  concurrent opengl printsupport svg
-  QMAKE_CXXFLAGS += -std=c++1y -Wall -Wextra -Werror #-Weffc++
+  QMAKE_CXXFLAGS += -std=c++11 -Wall -Wextra -Werror #-Weffc++
 }
 
 cross_compile {
   # Crosscompile only
   message("Desktop application, no effc++, cross-compiling from Linux to Windows")
   greaterThan(QT_MAJOR_VERSION, 4): QT += svg
-  QMAKE_CXXFLAGS += -std=c++1y -Wall -Wextra #-Weffc++
+  QMAKE_CXXFLAGS += -std=c++11 -Wall -Wextra #-Weffc++
 }
 
 

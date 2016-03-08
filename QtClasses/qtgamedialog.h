@@ -8,7 +8,7 @@
 
 namespace Ui { class QtGameDialog; }
 
-class QtGameDialog final : public QDialog, public Observer
+class QtGameDialog : public QDialog, public Observer
 {
   Q_OBJECT
 

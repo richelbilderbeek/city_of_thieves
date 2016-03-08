@@ -32,3 +32,5 @@ Console/Makefile
 *.pro.user
 Makefile
 ui_*
+build-*
+moc_*
