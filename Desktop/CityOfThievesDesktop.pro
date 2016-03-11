@@ -1,34 +1,10 @@
 # -Weffc++ does not go with apfloat, Qwt
 
-win32 {
-  # Windows only
-  message("Desktop application, no effc++, built for Windows")
-  greaterThan(QT_MAJOR_VERSION, 4): QT += svg
-  QMAKE_CXXFLAGS += -std=c++0x -Wall -Wextra #-Weffc++
-}
+# Use a new version
+QMAKE_CXX = g++-4.9
+QMAKE_CC = gcc-4.9
 
-macx {
-  # Mac only
-  message("Desktop application, no effc++, built for Mac")
-  QMAKE_CXXFLAGS = -mmacosx-version-min=10.7 -std=gnu0x -stdlib=libc+
-  CONFIG +=c++0x
-}
-
-unix:!macx{
-  # Linux only
-  message("Desktop application, no effc++, built for Linux")
-  equals(QT_MAJOR_VERSION, 4): LIBS +=  -lQtSvg
-  greaterThan(QT_MAJOR_VERSION, 4): QT +=  concurrent opengl printsupport svg
-  QMAKE_CXXFLAGS += -std=c++0x -Wall -Wextra -Werror #-Weffc++
-}
-
-cross_compile {
-  # Crosscompile only
-  message("Desktop application, no effc++, cross-compiling from Linux to Windows")
-  greaterThan(QT_MAJOR_VERSION, 4): QT += svg
-  QMAKE_CXXFLAGS += -std=c++0x -Wall -Wextra #-Weffc++
-}
-
+QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
 
 QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets

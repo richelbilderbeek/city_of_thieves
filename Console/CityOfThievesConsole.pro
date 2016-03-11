@@ -1,31 +1,10 @@
 INCLUDEPATH += ../Classes
 
-win32 {
-  # Windows only
-  message("Console application, built for Windows")
-  QMAKE_CXXFLAGS += -std=c++0x -Wall -Wextra -Weffc++
-}
+# Use a new version
+QMAKE_CXX = g++-4.9
+QMAKE_CC = gcc-4.9
 
-macx {
-  # Mac only
-  message("Console application, built for Mac")
-  QMAKE_CXXFLAGS = -mmacosx-version-min=10.7 -std=gnu0x -stdlib=libc+
-  CONFIG +=c++0x
-}
-
-unix:!macx{
-  # Linux only
-  message("Console application, built for Linux")
-  QMAKE_CXXFLAGS += -Werror
-  QMAKE_CXXFLAGS += -std=c++0x -Wall -Wextra -Weffc++
-}
-
-cross_compile {
-  # Crosscompile only
-  message("Console application, cross-compiling from Linux to Windows")
-  QMAKE_CXXFLAGS += -std=c++0x -Wall -Wextra -Weffc++
-}
-
+QMAKE_CXXFLAGS += -Wall -Wextra -Weffc++ -Werror -std=c++14
 
 # No use of QT, as the Nintendo DS does not support Qt
 QT -= core gui

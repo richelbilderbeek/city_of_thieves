@@ -18,10 +18,9 @@ addons:
     - g++-4.9
     - libboost1.55-all-dev
 
-install:
-  # g++4.8.1
-  - if [ "$CXX" = "g++" ]; then sudo apt-get install -qq g++-4.8; fi
-  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8"; fi
+#install:
+  - if [ "$CXX" = "g++" ]; then sudo apt-get install -qq g++-4.9; fi
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9"; fi
 
 script: 
  # There is a difference in versions
