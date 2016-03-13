@@ -1,5 +1,4 @@
 #!/bin/bash
-
 apt-get install \
   qtcreator \
   qt4-demos \

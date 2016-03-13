@@ -43,5 +43,5 @@ else
 fi
 
 
-mv $CONSOLE_EXE GameCityOfThievesConsole.exe
-mv $DESKTOP_EXE GameCityOfThievesDesktop.exe
+mv $CONSOLE_EXE CityOfThievesConsole.exe
+mv $DESKTOP_EXE CityOfThievesDesktop.exe
