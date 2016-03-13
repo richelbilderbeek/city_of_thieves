@@ -1,6 +1,12 @@
 # City Of Thieves
 
+[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
+![Whitespace](Whitespace.png)
+[![Codecov logo](Codecov.png)](https://www.codecov.io)
+[![gplv3](http://www.gnu.org/graphics/gplv3-88x31.png)](http://www.gnu.org/licenses/gpl.html)[![cc-by-sa](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
 [![Build Status](https://travis-ci.org/richelbilderbeek/CityOfThieves.svg?branch=master)](https://travis-ci.org/richelbilderbeek/CityOfThieves)
+[![codecov.io](https://codecov.io/github/richelbilderbeek/CityOfThieves/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/CityOfThieves?branch=master)
 
 City Of Thieves is a text adventure game after the English gamebook with the same name by Ian Livingstone. 
 
