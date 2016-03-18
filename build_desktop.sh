@@ -1,8 +1,5 @@
 #!/bin/bash
-cd Files
-./FilesToFunctions.sh
-cd ..
-
+./build_files.sh
 cd Desktop
 qmake
 make
