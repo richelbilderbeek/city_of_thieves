@@ -35,3 +35,4 @@ ui_*
 build-*
 moc_*
 qrc_*
+build/

@@ -16,8 +16,8 @@ include $(DEVKITARM)/ds_rules
 #---------------------------------------------------------------------------------
 TARGET		:=	$(shell basename $(CURDIR))
 BUILD		:=	build
-SOURCES		:=	gfx source data  
-INCLUDES	:=	include build
+SOURCES		:=	gfx source data ../Classes
+INCLUDES	:=	include build ../Classes
 
 #---------------------------------------------------------------------------------
 # options for code generation
@@ -30,7 +30,7 @@ CFLAGS	:=	-g -Wall -O2\
 			$(ARCH)
 
 CFLAGS	+=	$(INCLUDE) -DARM9
-CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions
+CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions -std=c++11
 
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=ds_arm9.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
