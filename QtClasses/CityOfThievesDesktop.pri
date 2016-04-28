@@ -1,13 +1,13 @@
 INCLUDEPATH += ../QtClasses
 
 SOURCES += \
-    ../QtClasses/qtgamedialog.cpp
+    $$PWD/qtgamedialog.cpp
 
 FORMS += \
-    ../QtClasses/qtgamedialog.ui
+    $$PWD/qtgamedialog.ui
 
 HEADERS += \
-    ../QtClasses/qtgamedialog.h
+    $$PWD/qtgamedialog.h
 
 RESOURCES += \
-    ../QtClasses/QtResources.qrc
+    $$PWD/QtResources.qrc

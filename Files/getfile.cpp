@@ -1,5 +1,4 @@
 #include "getfile.h"
-
 #include <cassert>
 #include <sstream>
 #include <stdexcept>
@@ -439,7 +438,7 @@
 #include "ZanbarBone59.h"
 #include "ZanbarBone80.h"
 
-std::string GetFile(const std::string s)
+std::string GetFile(const std::string& s)
 {
   if (s == "100") return Get100();
   if (s == "101") return Get101();
