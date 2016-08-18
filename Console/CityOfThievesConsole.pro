@@ -4,7 +4,7 @@ win32 {
   QMAKE_CXXFLAGS += -Wall -Wextra -Weffc++ -Werror -std=c++1y
 }
 
-linux {
+unix:!macx {
   QMAKE_CXX = g++-4.9
   QMAKE_CC = gcc-4.9
   QMAKE_CXXFLAGS += -Wall -Wextra -Weffc++ -Werror -std=c++14
