@@ -11,7 +11,7 @@ win32 {
   LIBS += C:/Boost/stage/lib/libboost_system-mgw49-mt-d-1_59.a
 }
 
-linux {
+unix:!macx {
   QMAKE_CXX = g++-4.9
   QMAKE_CC = gcc-4.9
   QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
