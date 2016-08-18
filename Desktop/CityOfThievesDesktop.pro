@@ -1,10 +1,21 @@
 # -Weffc++ does not go with apfloat, Qwt
 
 # Use a new version
-QMAKE_CXX = g++-4.9
-QMAKE_CC = gcc-4.9
+win32 {
+  QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++1y
 
-QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
+  INCLUDEPATH += C:/Boost/include
+
+  INCLUDEPATH += C:/Boost
+  LIBS += C:/Boost/stage/lib/libboost_filesystem-mgw49-mt-1_59.a
+  LIBS += C:/Boost/stage/lib/libboost_system-mgw49-mt-d-1_59.a
+}
+
+linux {
+  QMAKE_CXX = g++-4.9
+  QMAKE_CC = gcc-4.9
+  QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
+}
 
 QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
