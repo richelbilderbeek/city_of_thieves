@@ -138,6 +138,7 @@ Option QtGameDialog::RequestOption(const std::vector<Option>& options)
     {
       int key_pressed = m_key_pressed;
       assert(key_pressed >= 0);
+      if(key_pressed >= static_cast<int>(options.size())) continue;
       assert(key_pressed < static_cast<int>(options.size()));
       m_key_pressed = -1;
       return options[key_pressed];
