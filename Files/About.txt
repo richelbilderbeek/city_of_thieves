@@ -1,5 +1,5 @@
 City Of Thieves 
-version 1.6
+version 1.7
 
 (C) 2015 Richel Bilderbeek.
 
@@ -9,6 +9,7 @@ The original text is by Ian Livingstone. Thanks to Fighting Fantasy for cordiall
 
 Contributors: 
  * Richel Bilderbeek: lead developer
+ * Jeroen Niemandal: added autofight
  * Sander Kooi: Dutch translation
  * Same Drenth: Dutch translation
  * Redmar van Sinderen: Dutch translation
