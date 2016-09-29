@@ -128,25 +128,29 @@ void FightingChapter::DoFightTwoMonsters(std::vector<Monster> monsters,Character
       }
       else if (player_attack < monster_attack)
       {
-        m_chapter.ShowText("You were hit by the " + monster_name_0 + ".\n");
-        m_chapter.ShowText("Do you want to use luck?\n");
-
-        const auto options = CreateYesNoOptions();
-        const Option selected_option{m_chapter.RequestOption(options)};
-        assert(selected_option.GetConsequence().GetType() == ConsequenceType::yes
-          || selected_option.GetConsequence().GetType() == ConsequenceType::no
-        );
-        int damage{monsters[0].GetAttackDamage()};
-        if (selected_option.GetConsequence().GetType() == ConsequenceType::yes)
+        if(character.GetAutoAttack()==false)
         {
-          const bool has_luck{character.TestLuck()};
-          damage += ( (damage/2) * (has_luck ? 1 : -1) );
-        }
-        character.ChangeCondition(-damage);
-        m_chapter.ShowText(
-          "The " + monster_name_0
-          + " hit you with " + h.ToStr(damage) + " points of damage \n"
-        );
+
+            m_chapter.ShowText("You were hit by the " + monster_name_0 + ".\n");
+            m_chapter.ShowText("Do you want to use luck?\n");
+
+            const auto options = CreateYesNoOptions();
+            const Option selected_option{m_chapter.RequestOption(options)};
+            assert(selected_option.GetConsequence().GetType() == ConsequenceType::yes
+              || selected_option.GetConsequence().GetType() == ConsequenceType::no
+            );
+            int damage{monsters[0].GetAttackDamage()};
+            if (selected_option.GetConsequence().GetType() == ConsequenceType::yes)
+            {
+              const bool has_luck{character.TestLuck()};
+              damage += ( (damage/2) * (has_luck ? 1 : -1) );
+            }
+            character.ChangeCondition(-damage);
+            m_chapter.ShowText(
+              "The " + monster_name_0
+              + " hit you with " + h.ToStr(damage) + " points of damage \n"
+            );
+         }
       }
       else
       {
@@ -163,21 +167,25 @@ void FightingChapter::DoFightTwoMonsters(std::vector<Monster> monsters,Character
       }
       else if (player_attack < monster_attack)
       {
-        m_chapter.ShowText("You were hit by the " + monster_name_1 + ".\n");
-        m_chapter.ShowText("Do you want to use luck?\n");
-
-        const auto options = CreateYesNoOptions();
-        const Option selected_option{m_chapter.RequestOption(options)};
-        assert(selected_option.GetConsequence().GetType() == ConsequenceType::yes
-          || selected_option.GetConsequence().GetType() == ConsequenceType::no
-        );
-
         int damage{monsters[1].GetAttackDamage()};
-        if (selected_option.GetConsequence().GetType() == ConsequenceType::yes)
+        if(character.GetAutoAttack()==false)
         {
-          const bool has_luck{character.TestLuck()};
-          damage += ( (damage/2) * (has_luck ? -1 : 1) );
-        }
+            m_chapter.ShowText("You were hit by the " + monster_name_1 + ".\n");
+            m_chapter.ShowText("Do you want to use luck?\n");
+
+            const auto options = CreateYesNoOptions();
+            const Option selected_option{m_chapter.RequestOption(options)};
+            assert(selected_option.GetConsequence().GetType() == ConsequenceType::yes
+              || selected_option.GetConsequence().GetType() == ConsequenceType::no
+            );
+
+
+            if (selected_option.GetConsequence().GetType() == ConsequenceType::yes)
+            {
+              const bool has_luck{character.TestLuck()};
+              damage += ( (damage/2) * (has_luck ? -1 : 1) );
+            }
+         }
         character.ChangeCondition(-damage);
         m_chapter.ShowText(
           "The " + monster_name_1
@@ -254,17 +262,20 @@ void FightingChapter::DoFight(Monster monster,Character& character) const
       int damage{2};
       if (monster.GetCondition() > damage)
       {
-        m_chapter.ShowText("Do you want to use luck?\n");
-        const auto options = CreateYesNoOptions();
-        const Option selected_option{m_chapter.RequestOption(options)};
-        assert(selected_option.GetConsequence().GetType() == ConsequenceType::yes
-          || selected_option.GetConsequence().GetType() == ConsequenceType::no
-        );
-        if (selected_option.GetConsequence().GetType() == ConsequenceType::yes)
+        if(character.GetAutoAttack()==false)
         {
-          const bool has_luck{character.TestLuck()};
-          damage += has_luck ? 1 : -1;
-        }
+            m_chapter.ShowText("Do you want to use luck?\n");
+            const auto options = CreateYesNoOptions();
+            const Option selected_option{m_chapter.RequestOption(options)};
+            assert(selected_option.GetConsequence().GetType() == ConsequenceType::yes
+              || selected_option.GetConsequence().GetType() == ConsequenceType::no
+            );
+            if (selected_option.GetConsequence().GetType() == ConsequenceType::yes)
+            {
+              const bool has_luck{character.TestLuck()};
+              damage += has_luck ? 1 : -1;
+            }
+         }
       }
       monster.ChangeCondition(-damage);
       m_chapter.ShowText("You did the " + monster_name
@@ -277,19 +288,22 @@ void FightingChapter::DoFight(Monster monster,Character& character) const
       int damage{monster.GetAttackDamage()};
       if (character.GetCondition() >= monster.GetAttackDamage())
       {
-        m_chapter.ShowText("Do you want to use luck?\n");
-
-        const auto options = CreateYesNoOptions();
-        const Option selected_option{m_chapter.RequestOption(options)};
-        assert(selected_option.GetConsequence().GetType() == ConsequenceType::yes
-          || selected_option.GetConsequence().GetType() == ConsequenceType::no
-        );
-
-        if (selected_option.GetConsequence().GetType() == ConsequenceType::yes)
+        if(character.GetAutoAttack()==false)
         {
-          const bool has_luck{character.TestLuck()};
-          damage += ( (damage / 2 ) * (has_luck ? -1 : 1) );
-        };
+            m_chapter.ShowText("Do you want to use luck?\n");
+
+            const auto options = CreateYesNoOptions();
+            const Option selected_option{m_chapter.RequestOption(options)};
+            assert(selected_option.GetConsequence().GetType() == ConsequenceType::yes
+              || selected_option.GetConsequence().GetType() == ConsequenceType::no
+            );
+
+            if (selected_option.GetConsequence().GetType() == ConsequenceType::yes)
+            {
+              const bool has_luck{character.TestLuck()};
+              damage += ( (damage / 2 ) * (has_luck ? -1 : 1) );
+            };
+        }
       }
       character.ChangeCondition(-damage);
       m_chapter.ShowText("The " + monster_name

@@ -13,6 +13,7 @@
 Character::Character(const Character& other)
   :
     m_arrows{other.m_arrows},
+    m_auto_attack{other.m_auto_attack},
     m_chapters{other.m_chapters},
     m_condition{other.m_condition},
     m_fought{other.m_fought},
@@ -34,10 +35,12 @@ Character::Character(
   const int skill,
   const int condition,
   const int luck,
-  const Item initial_item
+  const Item initial_item,
+  const bool auto_attack
 )
   :
     m_arrows{0},
+    m_auto_attack{auto_attack},
     m_chapters{std::vector<int>(1,1)},
     m_condition{condition},
     m_fought{},
