@@ -72,7 +72,25 @@ Character MenuDialog::CreateCharacter() const noexcept
     assert(chosen.GetConsequence().GetItemsToAdd().size() == 1);
     initial_potion = chosen.GetConsequence().GetItemsToAdd()[0];
   }
-  const Character character(skill,condition,luck,initial_potion);
+  ShowText("\n");
+
+  ShowText("Do you want to play with auto combat? \n");
+  ShowText("\n");
+  const auto option = RequestOption(CreateYesNoOptions());
+  assert(option.GetText() == "Yes" || option.GetText() == "No");
+  bool autoAttack = false;
+  if (option.GetText() == "Yes")
+  {
+     autoAttack=true;
+  }
+
+  const Character character(
+    skill,
+    condition,
+    luck,
+    initial_potion,
+    autoAttack
+  );
   return character;
 }
 

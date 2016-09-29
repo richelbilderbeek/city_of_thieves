@@ -15,7 +15,8 @@ struct Character
     const int skill,
     const int condition,
     const int luck,
-    const Item initial_item
+    const Item initial_item,
+    const bool auto_attack = false
   );
 
   Character(const Character& other);
@@ -35,6 +36,7 @@ struct Character
   void ChangeLuck(const int change);
   void DrinkPotion();
   int GetArrows() const noexcept { return m_arrows; }
+  bool GetAutoAttack() const noexcept { return m_auto_attack; }
   const std::vector<int>& GetChapters() const noexcept { return m_chapters; }
   int GetCurrentChapter() const noexcept { return m_chapters.back(); }
   int GetSkill() const noexcept;
@@ -64,6 +66,9 @@ struct Character
 
   ///How much arrows does the character have sticking out his/her body?
   int m_arrows;
+
+  ///Is auto attack on?
+  bool m_auto_attack;
 
   std::vector<int> m_chapters;
   int m_condition;

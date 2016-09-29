@@ -304,7 +304,8 @@ void Ai::Start()
     const int skill = 3 + Dice::Get()->Throw();
     const int condition = Dice::Get()->Throw() + Dice::Get()->Throw();
     const int luck = 6 + Dice::Get()->Throw();
-    Character character(skill,condition,luck,Item::luck_potion);
+    const bool autoAttack=false;
+    Character character(skill,condition,luck,Item::luck_potion,autoAttack);
     Game game(51,character);
     m_game = &game;
 
