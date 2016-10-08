@@ -18,21 +18,16 @@ CONFIG   += console
 CONFIG   -= app_bundle
 TEMPLATE = app
 
-#
-#
-# Type of compile
-#
-#
-
-CONFIG(release, debug|release) {
-  DEFINES += NDEBUG NTRACE_BILDERBIKKEL
-}
-
 include(../Classes/CityOfThievesConsole.pri)
 include(../Classes/CityOfThievesConsoleTest.pri)
 include(../Files/Files.pri)
-
 SOURCES += main_test.cpp
+
+# Debug and release mode
+CONFIG += debug_and_release
+CONFIG(release, debug|release) {
+  DEFINES += NDEBUG NTRACE_BILDERBIKKEL
+}
 
 # gcov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
@@ -40,3 +35,4 @@ LIBS += -lgcov
 
 # Boost.Test
 LIBS += -lboost_unit_test_framework
+
