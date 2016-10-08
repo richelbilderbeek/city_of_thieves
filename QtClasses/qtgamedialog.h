@@ -1,7 +1,10 @@
 #ifndef QTGAMEDIALOG_H
 #define QTGAMEDIALOG_H
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Weffc++"
 #include <QDialog>
+#pragma GCC diagnostic pop
 #include "observer.h"
 #include "option.h"
 #include "character.h"
@@ -10,10 +13,12 @@ namespace Ui { class QtGameDialog; }
 
 class QtGameDialog : public QDialog, public Observer
 {
-  Q_OBJECT
+  Q_OBJECT //!OCLINT
 
 public:
   explicit QtGameDialog(QWidget *parent = 0);
+  QtGameDialog(const QtGameDialog&) = delete;
+  QtGameDialog& operator=(const QtGameDialog&) = delete;
   ~QtGameDialog();
 
 

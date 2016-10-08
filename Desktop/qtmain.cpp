@@ -1,4 +1,8 @@
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Weffc++"
 #include <QApplication>
+#pragma GCC diagnostic pop
+
 #include "qtgamedialog.h"
 
 int main(int argc, char *argv[])

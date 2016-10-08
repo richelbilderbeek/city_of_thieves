@@ -1,16 +1,23 @@
 #include "qtgamedialog.h"
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Weffc++"
 #include <QKeyEvent>
 #include <QTimer>
 #include <QTextCursor>
+#pragma GCC diagnostic pop
 
 #include <boost/lexical_cast.hpp>
 
-#include "ui_qtgamedialog.h"
 #include "chapter.h"
 #include "menudialog.h"
 #include "helper.h"
 #include "dice.h"
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Weffc++"
+#include "ui_qtgamedialog.h"
+#pragma GCC diagnostic pop
 
 QtGameDialog::QtGameDialog(QWidget *parent) :
   QDialog(parent),
