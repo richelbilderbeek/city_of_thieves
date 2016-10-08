@@ -41,10 +41,6 @@ struct Helper
   ///each line has length characters at most
   std::string StrToLines(std::string s, const int length) const;
 
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif // NDEBUG
-
   int ToInt(const std::string& s) const;
 
   ///Replace 'two_words' by 'two words'

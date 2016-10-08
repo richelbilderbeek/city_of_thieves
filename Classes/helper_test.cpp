@@ -12,14 +12,13 @@
 #include "game.h"
 #include "item.h"
 
-#ifndef NDEBUG
-void Helper::Test() noexcept
+// Boost.Test does not play well with -Weffc++
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Weffc++"
+#include <boost/test/unit_test.hpp>
+
+BOOST_AUTO_TEST_CASE(test_helper)
 {
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
   const Helper h;
   const bool verbose{false};
   if (verbose) { std::clog << __func__ << std::endl; }
@@ -83,4 +82,4 @@ void Helper::Test() noexcept
   }
   if (verbose) { std::clog << "Finished " << __func__ << std::endl; }
 }
-#endif
+#pragma GCC diagnostic pop

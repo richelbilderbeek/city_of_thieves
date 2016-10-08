@@ -1,4 +1,3 @@
-#ifndef NDEBUG
 #include <cassert>
 #include <fstream>
 #include <iostream>
@@ -7,21 +6,19 @@
 #include "chapter.h"
 #include "terminal.h"
 
-void Chapter::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
+// Boost.Test does not play well with -Weffc++
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Weffc++"
+#include <boost/test/unit_test.hpp>
 
+BOOST_AUTO_TEST_CASE(test_chapter)
+{
   const bool verbose{false};
   if (verbose) { std::clog << __func__ << std::endl; }
 
   Terminal d;
   d.SetAutoPlay(true);
   d.SetSilent(true);
-
 
   if (verbose) { std::clog << "Sequential fight" << std::endl; }
   {
@@ -616,5 +613,4 @@ void Chapter::Test() noexcept
     }
   }
 }
-#endif
-
+#pragma GCC diagnostic pop

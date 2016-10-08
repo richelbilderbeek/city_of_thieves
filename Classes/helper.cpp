@@ -18,9 +18,7 @@
 
 Helper::Helper()
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
+
 }
 
 void Helper::Cout(const char c) const

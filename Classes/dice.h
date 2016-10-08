@@ -20,10 +20,6 @@ struct Dice
 
   std::uniform_int_distribution<int> m_distribution;
   Engine m_engine;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 #endif // DICE_H

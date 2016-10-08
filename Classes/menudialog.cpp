@@ -21,9 +21,6 @@ MenuDialog::MenuDialog()
   : m_observer{nullptr}
 {
   if (m_verbose) { std::clog << __func__ << std::endl; }
-  #ifndef NDEBUG
-  Test();
-  #endif
   if (m_verbose) { std::clog << "Finished " << __func__ << std::endl; }
 }
 
@@ -241,37 +238,3 @@ void MenuDialog::Wait() const
   assert(m_observer);
   m_observer->Wait();
 }
-
-#ifndef NDEBUG
-void MenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  if (m_verbose) { std::clog << __func__ << std::endl; }
-
-  Helper();
-  const Character character(6+6,12+6,6+6,Item::luck_potion);
-  const int seed{42};
-  Game game(seed,character);
-
-  if (m_verbose) { std::clog << "Create terminal" << std::endl; }
-
-  Terminal dialog;
-  dialog.SetSilent(true);
-
-  if (m_verbose) { std::clog << "Create menu dialog" << std::endl; }
-
-  MenuDialog menu;
-  menu.SetObserver(&dialog);
-  menu.ShowAbout();
-  menu.ShowHints();
-  menu.ShowIntroduction();
-  menu.ShowManual();
-  menu.ShowTeaser();
-
-  if (m_verbose) { std::clog << "Finished " << __func__ << std::endl; }
-}
-#endif

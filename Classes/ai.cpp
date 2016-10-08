@@ -24,9 +24,6 @@ Ai::Ai()
     m_silent{true},
     m_tally{}
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   m_tally[Item::black_pearls] = 0;
   m_tally[Item::hags_hair] = 0;
   m_tally[Item::lotus_flower] = 0;
@@ -325,58 +322,6 @@ void Ai::Start()
   //std::cout << "FINISHED THE GAME, CREATING GRAPH" << std::endl;
   //this->CreateGraph();
 }
-
-#ifndef NDEBUG
-void Ai::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  //See that payoffs increase
-  if (1==2)
-  {
-    Ai ai;
-    Character character(6+6,12+6,6+6,Item::luck_potion);
-    character.SetChapter(2); //Make the Character have travelled a bit
-    character.SetChapter(3); //Make the Character have travelled a bit
-    const double a{ai.CalcFinalPayoff(character)};
-    character.AddItem(Item::black_pearls);
-    const double b{ai.CalcFinalPayoff(character)};
-    assert(b > a);
-    character.AddItem(Item::lotus_flower);
-    const double c{ai.CalcFinalPayoff(character)};
-    assert(c > b);
-    character.AddItem(Item::hags_hair);
-    const double d{ai.CalcFinalPayoff(character)};
-    assert(d > c);
-    character.AddItem(Item::tattoo);
-    const double e{ai.CalcFinalPayoff(character)};
-    assert(e > d);
-    character.AddItem(Item::silver_arrow);
-    const double f{ai.CalcFinalPayoff(character)};
-    assert(f > e);
-    character.SetChapter(400);
-    const double g{ai.CalcFinalPayoff(character)};
-    assert(g > f);
-  }
-  //Do one run
-  {
-    Ai ai;
-    const Character character(6+6,12+6,6+6,Item::luck_potion);
-    Game game(42,character);
-    game.SetObserver(&ai);
-
-    while (1)
-    {
-      game.DoChapter();
-      if (game.HasLost() || game.HasWon()) break;
-    }
-    ai.SetFinalPayoff(ai.CalcFinalPayoff(game.GetCharacter()));
-  }
-}
-#endif
 
 std::ostream& operator<<(std::ostream& os, const Ai& ai)
 {

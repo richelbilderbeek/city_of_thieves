@@ -54,10 +54,6 @@ Character::Character(
     m_provisions{10},
     m_skill{skill}
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
-
   m_items.push_back(Item::shield);
   m_items.push_back(Item::carralifs_sword);
   assert(
@@ -496,20 +492,6 @@ bool Character::TestLuck() noexcept
 
   return has_luck;
 }
-
-#ifndef NDEBUG
-void Character::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  Character a(1,2,3,Item::luck_potion);
-  Character b(a);
-  assert(a==b);
-}
-#endif
 
 bool operator==(const Character& lhs, const Character& rhs)
 {

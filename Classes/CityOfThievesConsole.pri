@@ -4,7 +4,6 @@ SOURCES += \
     $$PWD/ai.cpp \
     $$PWD/ballgamechapter.cpp \
     $$PWD/chapter.cpp \
-    $$PWD/chapter_test.cpp \
     $$PWD/chaptertype.cpp \
     $$PWD/character.cpp \
     $$PWD/condition.cpp \
@@ -17,7 +16,6 @@ SOURCES += \
     $$PWD/gamelostchapter.cpp \
     $$PWD/gamewonchapter.cpp \
     $$PWD/helper.cpp \
-    $$PWD/helper_test.cpp \
     $$PWD/item.cpp \
     $$PWD/luckchapter.cpp \
     $$PWD/menudialog.cpp \

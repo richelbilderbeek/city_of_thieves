@@ -42,10 +42,6 @@ struct Game
   Option SlotRequestOption(const std::vector<Option>& valid_inputs);
   void SlotShowText(const std::string& text);
   void SlotWait();
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 #endif // GAME_H

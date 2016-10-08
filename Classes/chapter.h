@@ -116,10 +116,6 @@ struct Chapter
   mutable bool m_verbose;
 
   void CharacterChanged(const Character& character) const;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 std::ostream& operator<<(std::ostream& os, const Chapter& chapter);

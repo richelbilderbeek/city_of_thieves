@@ -1,5 +1,5 @@
 #!/bin/bash
 ./build_files.sh
 cd Console
-qmake CityOfThievesConsole.pro
+qmake CityOfThievesConsoleTest.pro
 make

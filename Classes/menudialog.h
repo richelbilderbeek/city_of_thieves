@@ -12,6 +12,11 @@ struct MenuDialog
   void Execute();
 
   void SetObserver(Observer * const observer) { m_observer = observer; }
+  void ShowAbout();
+  void ShowIntroduction();
+  void ShowManual();
+  void ShowTeaser();
+  void ShowHints();
 
   private:
 
@@ -32,11 +37,6 @@ struct MenuDialog
   std::string GetStartGameText() const noexcept { return "Start game"; }
   std::string GetTeaserText() const noexcept { return "Teaser"; }
 
-  void ShowAbout();
-  void ShowIntroduction();
-  void ShowManual();
-  void ShowTeaser();
-  void ShowHints();
 
   void CharacterChanged(const Character& character) const;
   Option RequestOption(const std::vector<Option>& valid_inputs) const;
@@ -44,10 +44,6 @@ struct MenuDialog
   void Wait() const;
 
   void StartGame();
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 #endif // MENUDIALOG_H

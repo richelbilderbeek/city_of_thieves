@@ -25,9 +25,6 @@ Terminal::Terminal()
 #endif
 {
   if (m_verbose) { std::clog << __func__ << std::endl; }
-  #ifndef NDEBUG
-  Test();
-  #endif
 }
 
 void Terminal::ConnectTo(const Chapter& chapter)
@@ -139,20 +136,6 @@ void Terminal::SpeakText(const std::string& text)
   assert(!error);
   if (error) {;}
 }
-
-#ifndef NDEBUG
-void Terminal::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  Terminal t;
-  t.SetSilent(true);
-  t.ShowText(GetFile("Changelog"));
-}
-#endif
 
 void Terminal::Wait()
 {

@@ -29,11 +29,13 @@ before_script:
 
 script: 
   - ./build_files.sh
-  - ./build_console.sh
-  - ./build_desktop.sh
+  - ./build_console_test.sh
+  - ./Console/CityOfThievesConsoleTest
   # Code coverage
   - ./get_code_cov.sh >/dev/null
   - codecov >/dev/null
+  - ./build_console.sh
+  - ./build_desktop.sh
   # OCLint
   - ./do_oclint.sh
 

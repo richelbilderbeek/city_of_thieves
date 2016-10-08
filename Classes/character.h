@@ -86,10 +86,6 @@ struct Character
 
   static const bool m_verbose{false};
 
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
-
   friend bool operator==(const Character& lhs, const Character& rhs);
 };
 

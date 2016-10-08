@@ -66,9 +66,6 @@ struct Ai final : public Observer
   void ShowText(const std::string& text) override;
   void Wait() override;
 
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 void SolveGame();

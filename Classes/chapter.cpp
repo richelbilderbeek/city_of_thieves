@@ -34,9 +34,6 @@ Chapter::Chapter(const int chapter_number)
     m_verbose{false}
 {
   if (m_verbose) { std::clog << __func__ << std::endl; }
-  #ifndef NDEBUG
-  Test();
-  #endif
   Helper h;
 
   if (m_verbose) { std::clog << __func__ << std::endl; }
