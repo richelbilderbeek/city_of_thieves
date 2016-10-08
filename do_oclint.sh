@@ -10,6 +10,7 @@ oclint -o oclint.log \
   -- \
   -c -std=c++11 -fPIC \
   -I../BoostGraphTutorial \
+  -I./Files \
   -I/usr/include/c++/5 \
   -I/usr/include/x86_64-linux-gnu/c++/5
 
