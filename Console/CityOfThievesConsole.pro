@@ -32,3 +32,7 @@ include(../Classes/CityOfThievesConsole.pri)
 include(../Files/Files.pri)
 
 SOURCES += main.cpp
+
+# gcov
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+LIBS += -lgcov

@@ -37,3 +37,7 @@ SOURCES += qtmain.cpp
 include(../Classes/CityOfThievesConsole.pri)
 include(../Files/Files.pri)
 include(../QtClasses/CityOfThievesDesktop.pri)
+
+# gcov
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+LIBS += -lgcov
