@@ -23,6 +23,10 @@ City Of Thieves is a text adventure game after the English gamebook with the sam
 
 ## Building
 
+Always do first: `./build_files.sh`.
+
+Then:
+
  * Console version: `cd Console`, `qmake`,`make`
  * Desktop version: `cd Desktop`, `qmake`,`make`
  * Nintendo DS version: `cd Nds`, `make`
