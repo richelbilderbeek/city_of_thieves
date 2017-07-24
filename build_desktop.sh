@@ -1,5 +1,5 @@
 #!/bin/bash
 ./build_files.sh
 cd Desktop
-qmake
+qmake -qt=qt5
 make
