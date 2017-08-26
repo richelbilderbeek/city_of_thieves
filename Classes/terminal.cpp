@@ -20,7 +20,7 @@ Terminal::Terminal()
     m_wait_character_msec{0.0},
     m_wait_suspense{0.0}
 #else
-    m_wait_character_msec{0.01},
+    m_wait_character_msec{0.05},
     m_wait_suspense{0.5}
 #endif
 {
