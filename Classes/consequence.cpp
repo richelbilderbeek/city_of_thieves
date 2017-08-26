@@ -196,9 +196,9 @@ void Consequence::Apply(Character& character) const
     else if (item == Item::all_silver_items)
     {
       const auto items = character.GetItems();
-      for (const auto item: items)
+      for (const auto this_item: items)
       {
-        if (IsSilver(item)) character.RemoveItem(item);
+        if (IsSilver(this_item)) character.RemoveItem(this_item);
       }
       continue;
     }
