@@ -1,25 +1,43 @@
-sudo: true
 language: cpp
 compiler: gcc
-
-addons:
-  apt:
-    sources:
-    - boost-latest
-    - ubuntu-toolchain-r-test
-    packages:
-    - libboost1.55-all-dev
+dist: trusty
 
 before_install:
+  # Qt5, from https://gist.github.com/jreese/6207161#gistcomment-1462109
+  - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
+  - sudo apt-get update -qq
+  # C++14
   - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
   - sudo apt-get update -qq
-  - sudo pip install codecov # From https://github.com/travis-ci/travis-ci/issues/1705
-  - sudo apt-get install -qq graphviz
 
-install:
+install: 
+  # Qt5
+  - sudo apt-get install -qq libqt5webkit5-dev qtdeclarative5-dev
+  - export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
+  # C++14
   - sudo apt-get install -qq g++-5
-  - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-5 90  # OCLint
-  - if [ $TRAVIS_OS_NAME == linux ]; then eval "$(curl -sL https://raw.githubusercontent.com/ryuichis/oclint-cpp-travis-ci-examples/master/oclint-ci-install.sh)"; fi
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
+  # cppcheck
+  - sudo apt-get install -qq cppcheck
+  # GraphViz
+  - sudo apt-get install -qq graphviz
+  # Codecov
+  - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-5 90
+  - sudo pip install codecov
+  # OCLint
+  - ./install_oclint
+  # GSL and other GitHubs
+  - my_github=${PWD##*/}  
+  - cd ..
+  - git clone https://github.com/Microsoft/GSL
+  - git clone https://github.com/richelbilderbeek/BoostGraphTutorial
+  - git clone https://github.com/richelbilderbeek/RibiClasses
+  - git clone https://github.com/richelbilderbeek/RibiLibraries
+  - cd $my_github
+
+addons:
+  apt: 
+    packages: libboost-all-dev
 
 # Start virtual X server, from https://docs.travis-ci.com/user/gui-and-headless-browsers/
 before_script:
@@ -28,16 +46,21 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 script: 
-  - ./build_files.sh
-  - ./build_console_test.sh
+  # Build and run tests
+  - ./build_files
+  - ./build_console_test
   - ./Console/CityOfThievesConsoleTest
-  # Code coverage
-  - ./get_code_cov.sh >/dev/null
-  - codecov >/dev/null
-  - ./build_console.sh
-  - ./build_desktop.sh
+  - ./build_console
+  - ./build_desktop
+  # cppcheck
+  - cppcheck --quiet --error-exitcode=1 . 
+  # Codecov
+  - ./get_code_cov
+  - codecov
   # OCLint
-  - ./do_oclint.sh
+  - ./do_oclint
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+
