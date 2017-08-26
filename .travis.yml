@@ -26,14 +26,6 @@ install:
   - sudo pip install codecov
   # OCLint
   - ./install_oclint
-  # GSL and other GitHubs
-  - my_github=${PWD##*/}  
-  - cd ..
-  - git clone https://github.com/Microsoft/GSL
-  - git clone https://github.com/richelbilderbeek/BoostGraphTutorial
-  - git clone https://github.com/richelbilderbeek/RibiClasses
-  - git clone https://github.com/richelbilderbeek/RibiLibraries
-  - cd $my_github
 
 addons:
   apt: 
