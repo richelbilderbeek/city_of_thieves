@@ -149,7 +149,7 @@ double Ai::CalcFinalPayoff(const Character& character) const noexcept
   //The rarer an item is discovered, the higher its value
   const int sum{
     std::accumulate(std::begin(m_tally),std::end(m_tally),0,
-    [](const int sum,const auto& p) { return sum + p.second; }
+    [](const int init,const auto& p) { return init + p.second; }
     )
   };
   const double average{static_cast<double>(sum) / 5.0 };
