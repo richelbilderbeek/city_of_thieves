@@ -36,3 +36,10 @@ build-*
 moc_*
 qrc_*
 build/
+Arduino/CityOfThieves/option.h
+Arduino/CityOfThieves/option.cpp
+Arduino/CityOfThieves/condition.cpp
+Arduino/CityOfThieves/condition.h
+Arduino/CityOfThieves/character.*
+Arduino/CityOfThieves/helper.*
+Arduino/CityOfThieves/item.*
