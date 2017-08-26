@@ -22,8 +22,6 @@ struct Terminal final : public Observer
   void SetAutoPlay(const bool auto_play) { m_auto_play = auto_play; }
   void SetSilent(const bool silent) { m_silent = silent; }
 
-  //void SetNumberOfCharsPerLine(const int n_chars) { m_n_chars = n_chars; }
-
   void SpeakText(const std::string& text);
 
 
