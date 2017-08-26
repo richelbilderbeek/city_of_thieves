@@ -4,6 +4,14 @@ include(../Classes/CityOfThievesConsoleTest.pri)
 include(../Files/Files.pri)
 SOURCES += main_test.cpp
 
+# C++14
+CONFIG += c++14
+QMAKE_CXXFLAGS += -std=c++14
+
+# High warning levels
+# Qt does not go well with -Weffc++
+QMAKE_CXXFLAGS += -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Werror
+
 # Debug and release mode
 CONFIG += debug_and_release
 
