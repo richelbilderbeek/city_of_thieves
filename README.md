@@ -18,15 +18,33 @@ City Of Thieves is a text adventure game after the English gamebook with the sam
 
  * [here](http://richelbilderbeek.nl/GameCityOfThieves.htm).
 
-## Building
+## How to install `devkitPro` and `libnds`?
 
-Always do first: `./build_files.sh`.
+Do:
+
+ * `sudo ./build_libnds_32`: when your computer is 32 bit
+ * `sudo ./build_libnds_64`: when your computer is 64 bit
+
+Add to `~/bashrc`:
+
+```
+export DEVKITPRO=/opt/devkitpro
+export DEVKITARM=$DEVKITPRO/devkitARM
+```
+
+Restart the terminal for these exports to have an effect
+
+Then, in the `CityOfThieves` folder:
+
+```
+./build_files.sh
+```
 
 Then:
 
  * Console version: `cd Console`, `qmake`,`make`
  * Desktop version: `cd Desktop`, `qmake`,`make`
- * Nintendo DS version: `cd Nds`, `make`
+ * Nintendo DS version: `cd Nds`, `make`, `desmume CityOfThieves.nds`
  * Crosscompile to Windows: `./crosscompile.sh`
 
 ## I want to help!
@@ -41,3 +59,8 @@ The `.txt` files contain the story of 'City Of Thieves'.
 These are converted to C++ headers and source files by the `FilesToFunctions.sh` scripts. 
 This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does not support a filesystem on the NDS hardware.
 
+
+## External links
+
+ * [libnds_example_1](https://github.com/richelbilderbeek/libnds_example_1)
+ * [libnds_example_2](https://github.com/richelbilderbeek/libnds_example_2)
