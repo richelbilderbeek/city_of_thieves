@@ -46,6 +46,7 @@ script:
   - ./Console/CityOfThievesConsoleTest
   - ./build_console
   - ./build_desktop
+  - ./build_nds
   # cppcheck
   - cppcheck --quiet --error-exitcode=1 . 
   # Codecov
