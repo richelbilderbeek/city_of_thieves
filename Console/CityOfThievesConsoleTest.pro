@@ -1,6 +1,6 @@
 INCLUDEPATH += ../Classes
 include(../Classes/CityOfThievesConsole.pri)
-include(../Classes/CityOfThievesConsoleTest.pri)
+include(../ClassesTest/CityOfThievesConsoleTest.pri)
 include(../Files/Files.pri)
 SOURCES += main_test.cpp
 

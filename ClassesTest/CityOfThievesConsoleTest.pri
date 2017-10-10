@@ -1,4 +1,4 @@
-INCLUDEPATH += ../Classes
+INCLUDEPATH += ../ClassesTest
 
 SOURCES += \
   $$PWD/ai_test.cpp	\
