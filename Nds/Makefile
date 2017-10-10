@@ -14,7 +14,7 @@ include $(DEVKITARM)/ds_rules
 # SOURCES is a list of directories containing source code
 # INCLUDES is a list of directories containing extra header files
 #---------------------------------------------------------------------------------
-TARGET		:=	$(shell basename $(CURDIR))
+TARGET		:=	CityOfThieves
 BUILD		:=	build
 SOURCES		:=	gfx source data ../Classes ../Files
 INCLUDES	:=	include build ../Classes ../Files /usr/include/boost
@@ -37,7 +37,7 @@ LDFLAGS	=	-specs=ds_arm9.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 #---------------------------------------------------------------------------------
 # any extra libraries we wish to link with the project
 #---------------------------------------------------------------------------------
-LIBS	:= -lnds9
+LIBS	:= -lnds9 -lmm9
  
  
 #---------------------------------------------------------------------------------
