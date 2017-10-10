@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/devkitpro/devkitARM/bin/mmutil -d music/123benjl_-_chip02.mod -osource/soundbank.bin -hsource/soundbank.h
+/opt/devkitpro/devkitARM/bin/mmutil -d music/69008-experience.mod -osource/soundbank.bin -hsource/soundbank.h
