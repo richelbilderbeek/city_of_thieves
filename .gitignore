@@ -43,3 +43,5 @@ Arduino/CityOfThieves/condition.h
 Arduino/CityOfThieves/character.*
 Arduino/CityOfThieves/helper.*
 Arduino/CityOfThieves/item.*
+Nds/source/soundbank.bin
+Nds/source/soundbank.h
