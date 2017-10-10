@@ -3,7 +3,7 @@ export DEVKITPRO=/opt/devkitpro
 export DEVKITARM=$DEVKITPRO/devkitARM
 make
 
-if [ ! -e travis_qmake_gcc_cpp98_libnds.nds ]
+if [ ! -e CityOfThieves.nds ]
 then
   echo "Build failed, retry build with more info"
   make -d --debug=v
