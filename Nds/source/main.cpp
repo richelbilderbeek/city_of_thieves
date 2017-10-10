@@ -4,6 +4,10 @@
 #include "helper.h"
 #include "ndsgamedialog.h"
 
+// For 32 bit systems, add this line:
+// https://github.com/devkitPro/buildscripts/issues/26
+extern "C" void __sync_synchronize() {}
+
 int main(int argc, char* argv[0])
 {
   #ifndef NDEBUG

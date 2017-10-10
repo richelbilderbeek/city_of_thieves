@@ -14,6 +14,7 @@
 
 #ifdef ARM9
 #include <nds.h>
+#include <stdio.h>
 #endif
 
 Helper::Helper()
@@ -28,7 +29,7 @@ void Helper::Cout(const char c) const
   char buffer[2];
   buffer[0] = c;
   buffer[1] = '\0';
-  iprintf(buffer);
+  printf(buffer);
   #else
   std::cout << c;
   #endif
@@ -37,7 +38,7 @@ void Helper::Cout(const char c) const
 void Helper::Cout(const std::string& s) const
 {
   #ifdef ARM9
-  iprintf(s.c_str());
+  printf(s.c_str());
   #else
   std::cout << s;
   #endif
