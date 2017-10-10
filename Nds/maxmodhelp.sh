@@ -1,3 +1,3 @@
 #!/bin/bash
 
-~/devkitPro/devkitARM/bin/mmutil --help
+/opt/devkitpro/devkitARM/bin/mmutil --help
