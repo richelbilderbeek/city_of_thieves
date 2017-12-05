@@ -37,14 +37,14 @@ Restart the terminal for these exports to have an effect
 Then, in the `CityOfThieves` folder:
 
 ```
-./build_files.sh
+./build_files
 ```
 
 Then:
 
- * Console version: `cd Console`, `qmake`,`make`
- * Desktop version: `cd Desktop`, `qmake`,`make`
- * Nintendo DS version: `cd Nds`, `make`, `desmume CityOfThieves.nds`
+ * Console version: `./build_console`
+ * Desktop version: `./build_desktop`
+ * Nintendo DS version: `./build_nds`
  * Crosscompile to Windows: `./crosscompile.sh`
 
 ## I want to help!

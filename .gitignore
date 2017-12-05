@@ -47,3 +47,11 @@ Nds/source/soundbank.bin
 Nds/source/soundbank.h
 Nds/CityOfThieves.elf
 Nds/CityOfThieves.nds
+Desktop/.qmake.stash
+Desktop/CityOfThievesDesktop
+Console/.qmake.stash
+Console/CityOfThievesConsole
+Console/Makefile.Debug
+Console/Makefile.Release
+Desktop/Makefile.Release
+Desktop/Makefile.Debug
