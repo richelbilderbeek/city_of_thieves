@@ -28,6 +28,8 @@ install:
   - ./install_oclint
   # libnds
   - sudo ./build_libnds_64
+  - echo "export DEVKITPRO=/opt/devkitpro" >> ~/.bashrc
+  - echo "export DEVKITARM=$DEVKITPRO/devkitARM" >> ~/.bashrc
 
 addons:
   apt: 
