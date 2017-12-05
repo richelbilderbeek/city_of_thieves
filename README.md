@@ -42,9 +42,9 @@ Then, in the `CityOfThieves` folder:
 
 Then:
 
- * Console version: `./build_console`
- * Desktop version: `./build_desktop`
- * Nintendo DS version: `./build_nds`
+ * Console version: `./build_console`, then `./Console/CityOfThievesConsole`
+ * Desktop version: `./build_desktop`, then `./Desktop/CityOfThievesDesktop`
+ * Nintendo DS version: `./build_nds`, then `desmume ./Nds/CityOfThieves.nds`
  * Crosscompile to Windows: `./crosscompile.sh`
 
 ## I want to help!
