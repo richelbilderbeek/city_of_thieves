@@ -11,7 +11,7 @@ apt-get install \
   qtbase5-doc-html \
   make \
   g++ \
-  g++-5 \
+  g++-6 \
   libboost-all-dev \
   qt4-qmake
 
