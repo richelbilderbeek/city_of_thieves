@@ -48,6 +48,8 @@ script:
   - ./Console/CityOfThievesConsoleTest
   - ./build_console
   - ./build_desktop
+  # Build libnds
+  - ./build_libnds_64 
   - ./build_nds
   # cppcheck
   - cppcheck --quiet --error-exitcode=1 . 
