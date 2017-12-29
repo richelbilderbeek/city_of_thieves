@@ -49,7 +49,7 @@ script:
   - ./build_console > /dev/null
   - ./build_desktop > /dev/null
   # Build libnds
-  - travis_wait 30 export DEVKITPRO=/opt/devkitpro; export DEVKITARM=$DEVKITPRO/devkitARM; ./build_nds
+  - travis_wait 40 ./build_nds
   # cppcheck
   - cppcheck --quiet --error-exitcode=1 . 
   # Codecov
