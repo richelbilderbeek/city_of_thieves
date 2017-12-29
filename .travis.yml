@@ -53,8 +53,8 @@ script:
   # cppcheck
   - cppcheck --quiet --error-exitcode=1 . 
   # Codecov
-  - ./get_code_cov > /dev/null
-  - codecov > /dev/null
+  - ./get_code_cov &> /dev/null
+  - codecov > &/dev/null
   # OCLint
   - ./do_oclint || true
 
