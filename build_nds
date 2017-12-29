@@ -1,5 +1,7 @@
 #!/bin/bash
-./build_files.sh
+export DEVKITPRO=/opt/devkitpro
+export DEVKITARM=$DEVKITPRO/devkitARM
+./build_files
 cd Nds
 ./build_music
 make
