@@ -27,7 +27,7 @@ install:
   # OCLint
   - ./install_oclint
   # libnds
-  - sudo ./build_libnds_64
+  - sudo ./build_libnds_64 > /dev/null
   - echo "export DEVKITPRO=/opt/devkitpro" >> ~/.bashrc
   - echo "export DEVKITARM=$DEVKITPRO/devkitARM" >> ~/.bashrc
 
@@ -43,19 +43,18 @@ before_script:
 
 script: 
   # Build and run tests
-  - ./build_files
-  - ./build_console_test
-  - ./Console/CityOfThievesConsoleTest
-  - ./build_console
-  - ./build_desktop
+  - ./build_files > /dev/null
+  - ./build_console_test > /dev/null
+  - ./Console/CityOfThievesConsoleTest > /dev/null
+  - ./build_console > /dev/null
+  - ./build_desktop > /dev/null
   # Build libnds
-  - ./build_libnds_64 
-  - ./build_nds
+  - export DEVKITPRO=/opt/devkitpro; export DEVKITARM=$DEVKITPRO/devkitARM; ./build_nds
   # cppcheck
   - cppcheck --quiet --error-exitcode=1 . 
   # Codecov
-  - ./get_code_cov
-  - codecov
+  - ./get_code_cov > /dev/null
+  - codecov > /dev/null
   # OCLint
   - ./do_oclint || true
 
