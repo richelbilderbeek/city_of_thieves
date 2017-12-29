@@ -60,12 +60,14 @@ NdsGameDialog::NdsGameDialog(const int argc, char* argv[])
     s << "argc:" << argc << '\n'
       << "argv[0]:" << std::string(argv[0]) << '\n'
     ;
-    h.CoutNl(s.str());
+    Helper().CoutNl(s.str());
   }
 
-  if (m_verbose) { h.CoutNl("Done initializing game"); }
+  if (m_verbose) { Helper().CoutNl("Done initializing game"); }
 
   ZanbarBoneBackground().Draw(VRAM_A,0,0);
+
+  if (m_verbose) { Helper().CoutNl("Done showing picture"); }
 }
 
 
@@ -175,9 +177,14 @@ void NdsGameDialog::ShowText(const std::string& text)
 
 void NdsGameDialog::Start()
 {
-
+  if (m_verbose) { Helper().CoutNl("MOD_69008_EXPERIENCE"); }
+  if (m_verbose) { Helper().CoutNl(MOD_69008_EXPERIENCE); }
+  if (m_verbose) { Helper().CoutNl("Before mmLoad"); }
 
   mmLoad(MOD_69008_EXPERIENCE);
+
+  if (m_verbose) { Helper().CoutNl("Before mmStart"); }
+
   mmStart(MOD_69008_EXPERIENCE,MM_PLAY_LOOP);
 
   if (m_verbose) { Helper().Cout(__func__); Helper().CoutNl(": 1"); }
