@@ -57,9 +57,11 @@ NdsGameDialog::NdsGameDialog(const int argc, char* argv[])
   if (m_verbose)
   {
     std::stringstream s;
-    s << "argc:" << argc << '\n'
-      << "argv[0]:" << std::string(argv[0]) << '\n'
-    ;
+    s << "argc:" << argc << '\n';
+    for (int i=0; i!=argc; ++i)
+    {
+      s << "argv[" << i << "]:" << std::string(argv[i]) << '\n';
+    }
     Helper().CoutNl(s.str());
   }
 
