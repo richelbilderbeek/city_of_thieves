@@ -1,5 +1,6 @@
 #include <cassert>
 #include <stdexcept>
+#include <iostream>
 
 #include "helper.h"
 #include "ndsgamedialog.h"
@@ -21,12 +22,19 @@ int main(int argc, char* argv[0])
     NdsGameDialog d(argc,argv);
     d.Start();
   }
-  catch (std::logic_error& e)
+  catch (std::exception& e)
   {
+    fprintf(stderr, "debug message in no$gba window %s", e.what());
+    std::cout << "Error: " << e.what() << '\n';
+    std::clog << "Error: " << e.what() << '\n';
+    std::cerr << "Error: " << e.what() << '\n';
     Helper().Cout(e.what());
   }
-  catch (std::runtime_error& e)
+  catch (...)
   {
-    Helper().Cout(e.what());
+    fprintf(stderr, "Unknown error");
+    std::cout << "Unknown error\n";
+    std::clog << "Unknown error\n";
+    std::cerr << "Unknown error\n";
   }
 }

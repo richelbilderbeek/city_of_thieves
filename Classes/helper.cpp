@@ -39,6 +39,7 @@ void Helper::Cout(const std::string& s) const
 {
   #ifdef ARM9
   printf(s.c_str());
+  fflush(stdout);
   #else
   std::cout << s;
   #endif
@@ -406,7 +407,7 @@ std::string Helper::Trim(const std::string& s) const
 
 void Helper::Wait(const double n_secs) const noexcept
 {
-  const bool verbose{false};
+  const bool verbose{true};
   if (verbose) { std::clog << __func__ << std::endl; }
   #ifndef ARM9
   const auto t = std::chrono::high_resolution_clock::now();
@@ -421,7 +422,12 @@ void Helper::Wait(const double n_secs) const noexcept
   #else
   //std::chrono::high_resolution_clock does not work on NDS
   const int n{static_cast<int>(n_secs * 200.0)};
-  for (int i=0; i!=n; ++i) { swiWaitForVBlank(); }
+  if (verbose) { std::clog << "n: " << n << std::endl; }
+  for (int i=0; i!=n; ++i)
+  {
+    //swiWaitForVBlank();
+    if (verbose) std::cout << i << ' ';
+  }
   #endif
-
+  if (verbose) { std::clog << "End of " << __func__ << std::endl; }
 }

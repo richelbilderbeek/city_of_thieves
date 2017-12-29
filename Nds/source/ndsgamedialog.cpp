@@ -26,14 +26,15 @@ NdsGameDialog::NdsGameDialog(const int argc, char* argv[])
     m_screen_bottom{}
 {
   consoleDemoInit();
+  //consoleDebugInit(DebugDevice_NOCASH);
+  consoleDebugInit(DebugDevice_CONSOLE);
+
   videoSetMode(MODE_FB0);
   vramSetBankA(VRAM_A_LCD);
 
   mmInitDefaultMem((mm_addr)soundbank_bin);
 
-
   consoleInit(&m_screen_bottom, 3,BgType_Text4bpp, BgSize_T_256x256, 31, 0, false, true);
-
 
   consoleSelect(&m_screen_bottom);
 
@@ -65,9 +66,9 @@ NdsGameDialog::NdsGameDialog(const int argc, char* argv[])
     Helper().CoutNl(s.str());
   }
 
-  if (m_verbose) { Helper().CoutNl("Done initializing game"); }
+  if (m_verbose) { Helper().CoutNl("Drawing Zandar Bone picture"); }
 
-  ZanbarBoneBackground().Draw(VRAM_A,0,0);
+  //ZanbarBoneBackground().Draw(VRAM_A,0,0);
 
   if (m_verbose) { Helper().CoutNl("Done showing picture"); }
 }
@@ -181,13 +182,13 @@ void NdsGameDialog::Start()
 {
   if (m_verbose) { Helper().CoutNl("MOD_69008_EXPERIENCE"); }
   if (m_verbose) { Helper().CoutNl(MOD_69008_EXPERIENCE); }
-  if (m_verbose) { Helper().CoutNl("Before mmLoad"); }
+  if (m_verbose) { Helper().CoutNl("Before disabled mmLoad"); }
 
-  mmLoad(MOD_69008_EXPERIENCE);
+  //mmLoad(MOD_69008_EXPERIENCE);
 
-  if (m_verbose) { Helper().CoutNl("Before mmStart"); }
+  if (m_verbose) { Helper().CoutNl("Before disabled mmStart"); }
 
-  mmStart(MOD_69008_EXPERIENCE,MM_PLAY_LOOP);
+  //mmStart(MOD_69008_EXPERIENCE,MM_PLAY_LOOP);
 
   if (m_verbose) { Helper().Cout(__func__); Helper().CoutNl(": 1"); }
 
@@ -243,5 +244,5 @@ void NdsGameDialog::Wait()
     scanKeys(); //Don't forget!
     if (keysDown()) break;
   }
-
+  if (m_verbose) { Helper().Cout("End of: "); Helper().CoutNl(__func__); }
 }
