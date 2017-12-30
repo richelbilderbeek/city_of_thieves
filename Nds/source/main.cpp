@@ -29,6 +29,8 @@ int main(int argc, char* argv[0])
     std::clog << "Error: " << e.what() << '\n';
     std::cerr << "Error: " << e.what() << '\n';
     Helper().Cout(e.what());
+    for (int i=0; i!=1000; ++i) swiWaitForVBlank();
+    return 1;
   }
   catch (...)
   {
@@ -36,5 +38,7 @@ int main(int argc, char* argv[0])
     std::cout << "Unknown error\n";
     std::clog << "Unknown error\n";
     std::cerr << "Unknown error\n";
+    for (int i=0; i!=1000; ++i) swiWaitForVBlank();
+    return 1;
   }
 }

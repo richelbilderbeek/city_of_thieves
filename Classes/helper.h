@@ -53,7 +53,7 @@ struct Helper
   //From http://www.richelbilderbeek.nl/CppTrim.htm
   std::string Trim(const std::string& s) const;
 
-  void Wait(const double n_secs) const noexcept;
+  void Wait(const double n_secs, const bool verbose = false) const noexcept;
 };
 
 #endif // HELPER_H

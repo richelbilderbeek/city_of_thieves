@@ -41,7 +41,7 @@ private:
 
   void UpdateStats();
 
-  static const bool m_verbose{true};
+  static const bool m_verbose{false};
 };
 
 #endif // NDSGAMEDIALOG_H

@@ -405,9 +405,8 @@ std::string Helper::Trim(const std::string& s) const
   return s.substr(pos_begin,pos_end-pos_begin+1);
 }
 
-void Helper::Wait(const double n_secs) const noexcept
+void Helper::Wait(const double n_secs, const bool verbose) const noexcept
 {
-  const bool verbose{true};
   if (verbose) { std::clog << __func__ << std::endl; }
   #ifndef ARM9
   const auto t = std::chrono::high_resolution_clock::now();

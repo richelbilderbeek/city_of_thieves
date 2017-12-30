@@ -45,7 +45,7 @@ NdsGameDialog::NdsGameDialog(const int argc, char* argv[])
   if (m_verbose)
   {
     h.CoutNl("Test waiting: wait 1 second");
-    h.Wait(1.0);
+    h.Wait(1.0, m_verbose);
   }
 
   if (m_verbose)
@@ -68,7 +68,7 @@ NdsGameDialog::NdsGameDialog(const int argc, char* argv[])
 
   if (m_verbose) { Helper().CoutNl("Drawing Zandar Bone picture"); }
 
-  //ZanbarBoneBackground().Draw(VRAM_A,0,0);
+  ZanbarBoneBackground().Draw(VRAM_A,0,0);
 
   if (m_verbose) { Helper().CoutNl("Done showing picture"); }
 }
@@ -174,17 +174,17 @@ void NdsGameDialog::ShowText(const std::string& text)
     if (keys_down) { wait_character_msec = 0.0; }
 
     Helper().Cout(c);
-    Helper().Wait(wait_character_msec);
+    Helper().Wait(wait_character_msec, m_verbose);
   }
 }
 
 void NdsGameDialog::Start()
 {
   if (m_verbose) { Helper().CoutNl("MOD_69008_EXPERIENCE"); }
-  if (m_verbose) { Helper().CoutNl(MOD_69008_EXPERIENCE); }
+  if (m_verbose) { Helper().CoutNl(std::to_string(MOD_69008_EXPERIENCE)); }
   if (m_verbose) { Helper().CoutNl("Before disabled mmLoad"); }
 
-  //mmLoad(MOD_69008_EXPERIENCE);
+  //mmLoad(MOD_69008_EXPERIENCE); //Causes a freeze
 
   if (m_verbose) { Helper().CoutNl("Before disabled mmStart"); }
 
@@ -209,7 +209,7 @@ void NdsGameDialog::Start()
 
 void NdsGameDialog::ProcessEvents()
 {
-  if (m_verbose) { Helper().CoutNl(__func__); }
+  if (m_verbose) { static int n = 0; Helper().Cout(std::to_string(n++)); Helper().CoutNl(__func__); }
 
   scanKeys(); //Don't forget!
   const int keys_down = keysDown();
