@@ -8,6 +8,8 @@
 // For 32 bit systems, add this line:
 // https://github.com/devkitPro/buildscripts/issues/26
 extern "C" void __sync_synchronize() {}
+// richelbilderbeek note: I do not observe a difference by
+// keepinhg or removing this line on a 64 bit system
 
 int main(int argc, char* argv[0])
 {

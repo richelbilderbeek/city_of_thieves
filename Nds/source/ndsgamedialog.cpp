@@ -184,7 +184,7 @@ void NdsGameDialog::Start()
   if (m_verbose) { Helper().CoutNl(std::to_string(MOD_69008_EXPERIENCE)); }
   if (m_verbose) { Helper().CoutNl("Before disabled mmLoad"); }
 
-  //mmLoad(MOD_69008_EXPERIENCE); //Causes a freeze
+  mmLoad(MOD_69008_EXPERIENCE); //Causes a freeze
 
   if (m_verbose) { Helper().CoutNl("Before disabled mmStart"); }
 
