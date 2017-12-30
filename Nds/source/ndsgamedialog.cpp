@@ -180,14 +180,18 @@ void NdsGameDialog::ShowText(const std::string& text)
 
 void NdsGameDialog::Start()
 {
-  if (m_verbose) { Helper().CoutNl("MOD_69008_EXPERIENCE"); }
-  if (m_verbose) { Helper().CoutNl(std::to_string(MOD_69008_EXPERIENCE)); }
+  //if (m_verbose) { Helper().CoutNl("MOD_69008_EXPERIENCE"); }
+  //if (m_verbose) { Helper().CoutNl("MOD_69008_EXPERIENCE"); }
+  //if (m_verbose) { Helper().CoutNl(std::to_string(MOD_69008_EXPERIENCE)); }
+  //if (m_verbose) { Helper().CoutNl(std::to_string(MOD_69008_EXPERIENCE)); }
   if (m_verbose) { Helper().CoutNl("Before disabled mmLoad"); }
 
-  mmLoad(MOD_69008_EXPERIENCE); //Causes a freeze
+  //mmLoad(MOD_69008_EXPERIENCE); //Causes a freeze
+  mmLoad(MOD_MY_MUSIC); //Causes a freeze
 
   if (m_verbose) { Helper().CoutNl("Before disabled mmStart"); }
 
+  mmStart(MOD_MY_MUSIC,MM_PLAY_LOOP);
   //mmStart(MOD_69008_EXPERIENCE,MM_PLAY_LOOP);
 
   if (m_verbose) { Helper().Cout(__func__); Helper().CoutNl(": 1"); }
