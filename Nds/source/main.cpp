@@ -13,11 +13,11 @@ extern "C" void __sync_synchronize() {}
 
 int main(int argc, char* argv[0])
 {
+  // argc will always be one
   #ifndef NDEBUG
   NO DEBUG MODE IN NDS
   #endif
   assert(1==2);
-
 
   try
   {
@@ -26,7 +26,7 @@ int main(int argc, char* argv[0])
   }
   catch (std::exception& e)
   {
-    fprintf(stderr, "debug message in no$gba window %s", e.what());
+    fprintf(stderr, "Error: %s\n", e.what());
     std::cout << "Error: " << e.what() << '\n';
     std::clog << "Error: " << e.what() << '\n';
     std::cerr << "Error: " << e.what() << '\n';
@@ -36,7 +36,7 @@ int main(int argc, char* argv[0])
   }
   catch (...)
   {
-    fprintf(stderr, "Unknown error");
+    fprintf(stderr, "Unknown error\n");
     std::cout << "Unknown error\n";
     std::clog << "Unknown error\n";
     std::cerr << "Unknown error\n";

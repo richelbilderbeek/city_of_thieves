@@ -26,7 +26,6 @@ NdsGameDialog::NdsGameDialog(const int argc, char* argv[])
     m_screen_bottom{}
 {
   consoleDemoInit();
-  //consoleDebugInit(DebugDevice_NOCASH);
   consoleDebugInit(DebugDevice_CONSOLE);
 
   videoSetMode(MODE_FB0);
@@ -46,13 +45,6 @@ NdsGameDialog::NdsGameDialog(const int argc, char* argv[])
   {
     h.CoutNl("Test waiting: wait 1 second");
     h.Wait(1.0, m_verbose);
-  }
-
-  if (m_verbose)
-  {
-    h.Cout("Displaying the character x:"); h.Cout('x'); h.Cout('\n');
-    h.Cout("Displaying the character Y:"); h.Cout('Y'); h.Cout('\n');
-    h.Cout("Displaying the character 0:"); h.Cout('0'); h.Cout('\n');
   }
 
   if (m_verbose)
@@ -160,11 +152,15 @@ Option NdsGameDialog::RequestOption(const std::vector<Option>& options)
 
 void NdsGameDialog::ShowText(const std::string& text)
 {
-  if (m_verbose) { Helper().CoutNl(__func__); }
-
   consoleSelect(&m_screen_bottom);
 
-  double wait_character_msec{0.01};
+  // From https://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension:
+  // the number of characters per minute tends to be around 1000 for all the tested languages
+  // Human:
+  double wait_character_msec{2500.0};
+
+  //Debug
+  //double wait_character_msec{0.01};
 
   const std::string lines = Helper().StrToLines(text,GetNumberOfCharsPerLine());
   for (const char c: lines)
@@ -180,41 +176,17 @@ void NdsGameDialog::ShowText(const std::string& text)
 
 void NdsGameDialog::Start()
 {
-  //if (m_verbose) { Helper().CoutNl("MOD_69008_EXPERIENCE"); }
-  //if (m_verbose) { Helper().CoutNl("MOD_69008_EXPERIENCE"); }
-  //if (m_verbose) { Helper().CoutNl(std::to_string(MOD_69008_EXPERIENCE)); }
-  //if (m_verbose) { Helper().CoutNl(std::to_string(MOD_69008_EXPERIENCE)); }
-  if (m_verbose) { Helper().CoutNl("Before disabled mmLoad"); }
-
-  //mmLoad(MOD_69008_EXPERIENCE); //Causes a freeze
   mmLoad(MOD_MY_MUSIC); //Causes a freeze
-
-  if (m_verbose) { Helper().CoutNl("Before disabled mmStart"); }
-
   mmStart(MOD_MY_MUSIC,MM_PLAY_LOOP);
-  //mmStart(MOD_69008_EXPERIENCE,MM_PLAY_LOOP);
-
-  if (m_verbose) { Helper().Cout(__func__); Helper().CoutNl(": 1"); }
 
   Dice::Get()->SetSeed(42);
-
-  if (m_verbose) { Helper().CoutNl(__func__); Helper().CoutNl(": 2"); }
-
   MenuDialog menu;
-
-  if (m_verbose) { Helper().CoutNl(__func__); Helper().CoutNl(": 3"); }
-
   menu.SetObserver(this);
-
-  if (m_verbose) { Helper().CoutNl(__func__); Helper().CoutNl(": 4"); }
-
   menu.Execute();
 }
 
 void NdsGameDialog::ProcessEvents()
 {
-  if (m_verbose) { static int n = 0; Helper().Cout(std::to_string(n++)); Helper().CoutNl(__func__); }
-
   scanKeys(); //Don't forget!
   const int keys_down = keysDown();
   if (keys_down)
@@ -239,7 +211,6 @@ void NdsGameDialog::ProcessEvents()
 
 void NdsGameDialog::Wait()
 {
-  if (m_verbose) { Helper().CoutNl(__func__); }
   const double n_secs{1.0};
   const int n{static_cast<int>(n_secs * 200.0)};
   for (int i=0; i!=n; ++i)
@@ -248,5 +219,4 @@ void NdsGameDialog::Wait()
     scanKeys(); //Don't forget!
     if (keysDown()) break;
   }
-  if (m_verbose) { Helper().Cout("End of: "); Helper().CoutNl(__func__); }
 }
