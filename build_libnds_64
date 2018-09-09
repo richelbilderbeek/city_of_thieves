@@ -34,5 +34,10 @@ cd ..
 # Examples
 mkdir -p examples/nds
 cd examples/nds
-sudo wget https://sourceforge.net/projects/devkitpro/files/examples/nds/nds-examples-20170915.tar.bz2
-sudo tar -xvjf nds-examples-20170915.tar.bz2
+
+
+sudo wget https://github.com/devkitPro/nds-examples/releases/download/v20180516/nds-examples-20180516.tar.bz2
+sudo tar -xvjf nds-examples-20180516.tar.bz2
+# Before migration
+#sudo wget https://sourceforge.net/projects/devkitpro/files/examples/nds/nds-examples-20170915.tar.bz2
+#sudo tar -xvjf nds-examples-20170915.tar.bz2
