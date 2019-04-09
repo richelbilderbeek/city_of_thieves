@@ -27,9 +27,9 @@ install:
   # OCLint
   - ./install_oclint
   # libnds
-  - sudo ./build_libnds_64 > /dev/null
-  - echo "export DEVKITPRO=/opt/devkitpro" >> ~/.bashrc
-  - echo "export DEVKITARM=$DEVKITPRO/devkitARM" >> ~/.bashrc
+  # - sudo ./build_libnds_64 > /dev/null
+  # - echo "export DEVKITPRO=/opt/devkitpro" >> ~/.bashrc
+  # - echo "export DEVKITARM=$DEVKITPRO/devkitARM" >> ~/.bashrc
 
 addons:
   apt: 
@@ -54,7 +54,7 @@ script:
   - ./build_console > /dev/null
   - ./build_desktop > /dev/null
   # Build libnds
-  - travis_wait 40 ./build_nds
+  # - travis_wait 40 ./build_nds
   # cppcheck
   - cppcheck --quiet --error-exitcode=1 . 
   # Codecov
