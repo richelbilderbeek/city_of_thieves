@@ -14,9 +14,10 @@ City Of Thieves is a text adventure game after the English gamebook with the sam
 ![Nintendo DS version](Screenshots/CityOfThievesNds_1_0.jpg)
 ![Nintendo DS version on emulator](Screenshots/CityOfThievesNdsEmulator_1_0.png)
 
-## Downloading
+## Downloads
 
- * [here](http://richelbilderbeek.nl/GameCityOfThieves.htm).
+ * [Windows executable](http://richelbilderbeek.nl/CityOfThievesExe.zip)
+ * [NDS](http://richelbilderbeek.nl/CityOfThievesNds.zip)
 
 ## How to install `devkitPro` and `libnds`?
 
