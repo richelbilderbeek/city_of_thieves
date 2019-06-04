@@ -19,6 +19,10 @@ City Of Thieves is a text adventure game after the English gamebook with the sam
  * [Windows executable](http://richelbilderbeek.nl/CityOfThievesExe.zip)
  * [NDS](http://richelbilderbeek.nl/CityOfThievesNds.zip)
 
+## Video
+
+ * General gameplay: [YouTube](https://youtu.be/0QeDhZQGPFo) [download (.ogv)](http://richelbilderbeek.nl/city_of_thieves.ogv)
+
 ## How to install `devkitPro` and `libnds`?
 
 Do:
