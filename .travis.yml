@@ -20,10 +20,6 @@ install:
   # - echo "export DEVKITPRO=/opt/devkitpro" >> ~/.bashrc
   # - echo "export DEVKITARM=$DEVKITPRO/devkitARM" >> ~/.bashrc
 
-addons:
-  apt: 
-    packages: libboost-all-dev
-
 services:
   - xvfb
 
