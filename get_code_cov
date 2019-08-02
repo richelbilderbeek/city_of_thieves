@@ -1,6 +1,5 @@
 #!/bin/bash
-#GCOV_EXE=gcov # gcov and g++ versions must match
-GCOV_EXE=gcov-6 # gcov and g++ versions must match
+GCOV_EXE=gcov
 
 OBJ_FILES_PATH=.
 
