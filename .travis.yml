@@ -11,7 +11,6 @@ install:
   # GraphViz
   - sudo apt-get install -qq graphviz
   # Codecov
-  - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-6 90
   - sudo pip install codecov
   # OCLint
   - ./install_oclint
