@@ -308,7 +308,7 @@ void Character::RemoveItem(Item item)
       Item::silver_scorpion_brooch,
       Item::silver_spoon
     };
-    for (const auto silver_item: silver_items)
+    for (const auto& silver_item: silver_items)
     {
       if (HasItem(silver_item)) RemoveItem(silver_item);
     }
@@ -459,7 +459,7 @@ std::string Character::ShowInventory()
   }
 
   s << "monsters fought: \n";
-  for (const auto monster_name: m_fought)
+  for (const auto& monster_name: m_fought)
   {
     s << " * " << Helper().ToPretty(monster_name) << '\n';
   }

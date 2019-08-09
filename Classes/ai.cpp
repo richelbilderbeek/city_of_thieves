@@ -65,6 +65,7 @@ void Ai::CreateGraph() const noexcept
         case 279: //Tattoo
         case 163: //Ring of the golden eye
           shape = "doublecircle";
+          break;
         default: break;
       }
       f << i
@@ -94,7 +95,7 @@ void Ai::CreateGraph() const noexcept
       }
       else if (!chapter.GetOptions().GetOptions().empty())
       {
-        for (const auto option: chapter.GetOptions().GetOptions())
+        for (const auto& option: chapter.GetOptions().GetOptions())
         {
           //No payoff
           //f << i << "->" << option.GetNextChapter() << " [ label = \"Choice\"];\n";
@@ -116,11 +117,11 @@ void Ai::CreateGraph() const noexcept
         f << i << "-> GameWon;\n";
       }
     }
-    catch (std::logic_error& e)
+    catch (const std::logic_error&)
     {
       //f << i << ": FAIL" << std::endl;
     }
-    catch (std::runtime_error& e)
+    catch (const std::runtime_error&)
     {
       //f << i << ": not present" << std::endl;
     }
@@ -160,17 +161,6 @@ double Ai::CalcFinalPayoff(const Character& character) const noexcept
   values[Item::hags_hair] = average  / static_cast<double>(m_tally[Item::hags_hair]);
   values[Item::lotus_flower] = average  / static_cast<double>(m_tally[Item::lotus_flower]);
   values[Item::tattoo] = average  / static_cast<double>(m_tally[Item::tattoo]);
-
-  if (1==2)
-  {
-    std::clog
-      << character.HasItem(Item::black_pearls) << ":" << m_tally[Item::black_pearls] << " " << values[Item::black_pearls] << " "
-      << character.HasItem(Item::silver_arrow) << ":" << m_tally[Item::silver_arrow] << " " << values[Item::silver_arrow] << " "
-      << character.HasItem(Item::hags_hair) << ":" << m_tally[Item::hags_hair] << " " << values[Item::hags_hair] << " "
-      << character.HasItem(Item::lotus_flower) << ":" << m_tally[Item::lotus_flower] << " " << values[Item::lotus_flower] << " "
-      << character.HasItem(Item::tattoo) << ":" << m_tally[Item::tattoo] << " " << values[Item::tattoo] << " "
-      << std::endl;
-  }
 
   const auto visited = character.GetChapters();
   const bool got_in_city{std::count(std::begin(visited),std::end(visited),74) == 1 ? true : false};
@@ -317,16 +307,16 @@ void Ai::Start()
     }
 
     SetFinalPayoff(CalcFinalPayoff(game.GetCharacter()));
-    //if (game.HasWon()) { break; }
+    if (game.HasWon()) { break; }
   }
-  //std::cout << "FINISHED THE GAME, CREATING GRAPH" << std::endl;
-  //this->CreateGraph();
+  std::cout << "FINISHED THE GAME, CREATING GRAPH" << '\n';
+  this->CreateGraph();
 }
 
 std::ostream& operator<<(std::ostream& os, const Ai& ai)
 {
   const auto payoffs = ai.GetPayoffs();
-  for (const auto payoff: payoffs)
+  for (const auto& payoff: payoffs)
   {
     os << "(" << payoff.first << "," << payoff.second << ")\n";
   }
@@ -335,7 +325,7 @@ std::ostream& operator<<(std::ostream& os, const Ai& ai)
 
 Option Ai::RequestOption(const std::vector<Option>& options)
 {
-  for (const auto option: options)
+  for (const auto& option: options)
   {
     ShowText(" * " + option.GetText() + "\n");
   }

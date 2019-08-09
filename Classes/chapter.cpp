@@ -512,7 +512,7 @@ std::ostream& operator<<(std::ostream& os, const Chapter& chapter)
     << "text: " << chapter.GetText() << '\n'
     << "# monsters: " << chapter.GetFighting().GetMonsters().size() << '\n'
   ;
-  for (const auto monster: chapter.GetFighting().GetMonsters())
+  for (const auto& monster: chapter.GetFighting().GetMonsters())
   {
     os << monster << '\n';
   }

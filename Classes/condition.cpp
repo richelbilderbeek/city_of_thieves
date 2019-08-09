@@ -57,17 +57,17 @@ bool Condition::IsSatisfied(const Character &character) const
   if (GetGoldNeeded() > character.GetGold()) return false;
   if (GetProvisionsNeeded() > character.GetProvisions()) return false;
 
-  for (const auto monster_name: m_fought)
+  for (const auto& monster_name: m_fought)
   {
     if (!character.HasFought(monster_name)) return false;
   }
 
-  for (const auto monster_name: m_not_fought)
+  for (const auto& monster_name: m_not_fought)
   {
     if (character.HasFought(monster_name)) return false;
   }
 
-  for (const auto item_needed: GetItemsNeeded())
+  for (const auto& item_needed: GetItemsNeeded())
   {
     if (item_needed == Item::all_needed_to_slay_zanbar_bone)
     {
@@ -93,7 +93,7 @@ bool Condition::IsSatisfied(const Character &character) const
       if (!character.HasItem(item_needed)) return false;
     }
   }
-  for (const auto item_not_needed: GetItemsNotNeeded())
+  for (const auto& item_not_needed: GetItemsNotNeeded())
   {
     if (item_not_needed == Item::any_scorpion_brooch)
     {
@@ -142,7 +142,7 @@ Condition ParseCondition(std::stringstream& s)
 
   if (what.empty())
   {
-    assert(!"Should not get here");
+    assert(false);
   }
   else if (what == "fought" || what == "has_fought")
   {
@@ -160,7 +160,7 @@ Condition ParseCondition(std::stringstream& s)
     if (!IsItem(item))
     {
       std::cerr << "Unknown item " << item << std::endl;
-      assert(!"Should not get here");
+      assert(false);
     }
     const Item item_needed{ToItem(item)};
     condition.AddItemNeeded(item_needed);
@@ -171,7 +171,7 @@ Condition ParseCondition(std::stringstream& s)
     if (!IsItem(item))
     {
       std::cerr << "Unknown item " << item << std::endl;
-      assert(!"Should not get here");
+      assert(false);
     }
     const Item item_not_needed{ToItem(item)};
     condition.AddItemNotNeeded(item_not_needed);
@@ -194,7 +194,7 @@ Condition ParseCondition(std::stringstream& s)
   else
   {
     std::cerr << "Unknown option after if: " << what << std::endl;
-    assert(!"Should not get here");
+    assert(false);
   }
   return condition;
 }
@@ -205,12 +205,12 @@ std::ostream& operator<<(std::ostream& os, const Condition& condition)
     << "gold needed: " << condition.GetGoldNeeded()
     << ", items needed: {"
   ;
-  for (const auto item: condition.GetItemsNeeded())
+  for (const auto& item: condition.GetItemsNeeded())
   {
     os << ToStr(item) << ", ";
   }
   os << "}, items not_needed: {";
-  for (const auto item: condition.GetItemsNotNeeded())
+  for (const auto& item: condition.GetItemsNotNeeded())
   {
     os << ToStr(item) << ", ";
   }

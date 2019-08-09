@@ -35,7 +35,7 @@ void Walkthrough::Start()
 
 Option Walkthrough::RequestOption(const std::vector<Option>& options)
 {
-  for (const auto option: options)
+  for (const auto& option: options)
   {
     ShowText(" * " + option.GetText() + "\n");
   }
@@ -145,7 +145,7 @@ Option Walkthrough::RequestOption(const std::vector<Option>& options)
   if (chapter_number == 52)
   {
     ///Buy all needed
-    for (const auto option: options)
+    for (const auto& option: options)
     {
       if (option.GetConsequence().GetItemsToAdd().empty()) continue;
       assert(option.GetConsequence().GetItemsToAdd().size() == 1);
@@ -158,7 +158,7 @@ Option Walkthrough::RequestOption(const std::vector<Option>& options)
         return option;
       }
     }
-    for (const auto option: options)
+    for (const auto& option: options)
     {
       if (option.GetConsequence().GetType() == ConsequenceType::leave)
       {
@@ -171,7 +171,7 @@ Option Walkthrough::RequestOption(const std::vector<Option>& options)
   if (chapter_number == 354)
   {
     ///Buy all needed
-    for (const auto option: options)
+    for (const auto& option: options)
     {
       if (option.GetConsequence().GetItemsToRemove().empty()) continue;
       assert(option.GetConsequence().GetItemsToRemove().size() == 1);
@@ -184,7 +184,7 @@ Option Walkthrough::RequestOption(const std::vector<Option>& options)
         return option;
       }
     }
-    for (const auto option: options)
+    for (const auto& option: options)
     {
       if (option.GetConsequence().GetType() == ConsequenceType::leave)
       {
@@ -194,20 +194,20 @@ Option Walkthrough::RequestOption(const std::vector<Option>& options)
   }
 
 
-  if (solution[chapter_number] == 0)
+  if (solution[static_cast<size_t>(chapter_number)] == 0)
   {
     std::cerr << "Do not know where to go from chapter " << chapter_number << std::endl;
   }
-  assert(solution[chapter_number] != 0);
-  const int target_chapter{solution[chapter_number]};
-  for (const auto option: options)
+  assert(solution[static_cast<size_t>(chapter_number)] != 0);
+  const int target_chapter{solution[static_cast<size_t>(chapter_number)]};
+  for (const auto& option: options)
   {
     if (option.GetConsequence().GetNextChapter() == target_chapter)
     {
       return option;
     }
   }
-  assert(!"Should not get here");
+  assert(false);
   return options[1];
 }
 

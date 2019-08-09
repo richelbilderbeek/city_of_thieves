@@ -33,11 +33,11 @@ void Consequence::Add(const Consequence& other)
   this->m_change_provisions += other.m_change_provisions;
 
   this->m_change_sta += other.m_change_sta;
-  for (const auto item_to_add: other.GetItemsToAdd())
+  for (const auto& item_to_add: other.GetItemsToAdd())
   {
     this->m_add_items.push_back(item_to_add);
   }
-  for (const auto item_to_remove: other.GetItemsToRemove())
+  for (const auto& item_to_remove: other.GetItemsToRemove())
   {
     this->m_remove_items.push_back(item_to_remove);
   }
@@ -132,12 +132,12 @@ void Consequence::Apply(Character& character) const
       character.ChangeCondition(change_sta);
     }
   }
-  for (const auto item: this->GetItemsToAdd())
+  for (const auto& item: this->GetItemsToAdd())
   {
     if (verbose) { std::clog << "Obtained item " << ToPrettyStr(item) << std::endl; }
     character.AddItem(item);
   }
-  for (const auto item: this->GetItemsToRemove())
+  for (const auto& item: this->GetItemsToRemove())
   {
     if (item == Item::all_gold)
     {
@@ -196,7 +196,7 @@ void Consequence::Apply(Character& character) const
     else if (item == Item::all_silver_items)
     {
       const auto items = character.GetItems();
-      for (const auto this_item: items)
+      for (const auto& this_item: items)
       {
         if (IsSilver(this_item)) character.RemoveItem(this_item);
       }
