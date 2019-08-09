@@ -18,6 +18,11 @@ City Of Thieves is a text adventure game after the English gamebook with the sam
 
  * [Windows executable](http://richelbilderbeek.nl/CityOfThievesExe.zip)
  * [NDS](http://richelbilderbeek.nl/CityOfThievesNds.zip)
+ * Download the Singularity image:
+
+```
+singularity pull library://richelbilderbeek/default/city_of_thieves 
+```
 
 ## Video
 
@@ -70,3 +75,4 @@ This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does 
  * [libnds_example_1](https://github.com/richelbilderbeek/libnds_example_1): minimal NDS example
  * [libnds_example_2](https://github.com/richelbilderbeek/libnds_example_2): minimal NDS example with Madmax audio
  * [Richel Bilderbeek's games](https://github.com/richelbilderbeek/Games)
+ * [Singularity scriptlet for City of Thieves](https://github.com/richelbilderbeek/singularity_example_6)
