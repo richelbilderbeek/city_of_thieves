@@ -2,4 +2,4 @@
 ./build_files
 cd Console
 qmake -qt=qt5 CityOfThievesConsole.pro
-make
+make --silent

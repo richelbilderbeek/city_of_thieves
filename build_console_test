@@ -2,4 +2,4 @@
 ./build_files
 cd Console
 qmake CityOfThievesConsoleTest.pro
-make debug
+make --silent debug

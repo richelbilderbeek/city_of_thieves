@@ -4,4 +4,4 @@ export DEVKITARM=$DEVKITPRO/devkitARM
 ./build_files
 cd Nds
 ./build_music
-make
+make --silent

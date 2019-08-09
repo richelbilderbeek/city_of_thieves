@@ -2,4 +2,4 @@
 ./build_files
 cd Desktop
 qmake -qt=qt5
-make
+make --silent
