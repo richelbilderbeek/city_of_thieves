@@ -4,10 +4,6 @@ include(../Classes/CityOfThievesConsole.pri)
 include(../Files/Files.pri)
 include(../QtClasses/CityOfThievesDesktop.pri)
 
-# C++17
-CONFIG += c++17
-QMAKE_CXXFLAGS += -std=c++17
-
 # High warning levels
 # Qt does not go well with -Weffc++
 QMAKE_CXXFLAGS += -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Werror

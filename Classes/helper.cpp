@@ -110,7 +110,7 @@ void Helper::CreateGraph() const
       }
       else if (!chapter.GetOptions().GetOptions().empty())
       {
-        for (const auto option: chapter.GetOptions().GetOptions())
+        for (const auto& option: chapter.GetOptions().GetOptions())
         {
           f << i << "->" << option.GetNextChapter() << " [ label = \"Choice\"];\n";
         }
@@ -129,11 +129,11 @@ void Helper::CreateGraph() const
         f << i << "-> GameWon;\n";
       }
     }
-    catch (std::logic_error& e)
+    catch (const std::logic_error& )
     {
       //f << i << ": FAIL" << std::endl;
     }
-    catch (std::runtime_error& e)
+    catch (const std::runtime_error&)
     {
       //f << i << ": not present" << std::endl;
     }
