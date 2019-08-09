@@ -6,6 +6,8 @@ install:
   - sudo apt update -qq
   # Boost
   - sudo apt install -qq libboost-all-dev
+  # Qt5
+  - sudo apt-get install -qq qt5-qmake qt5-default
   # cppcheck
   - sudo apt-get install -qq cppcheck
   # GraphViz
