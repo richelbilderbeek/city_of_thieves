@@ -17,6 +17,7 @@ City Of Thieves is a text adventure game after the English gamebook with the sam
 ## Downloads
 
  * [Windows executable](http://richelbilderbeek.nl/CityOfThievesExe.zip)
+ * [Arch Linux AUR package](https://aur.archlinux.org/packages/cityofthieves-cli/) (Console version only for the moment)
  * [NDS](http://richelbilderbeek.nl/CityOfThievesNds.zip)
  * Download the Singularity image:
 
