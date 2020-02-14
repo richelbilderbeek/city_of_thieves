@@ -60,8 +60,8 @@ similar to most RPGs.
 For one or more times, 4 dice are rolled.
 In a pre-defined order, the dice values determine the
 player's characteristics.
-A player's skill equals the first dice roll value plus three [this 
-deviates from the game], the condition is the sum of two dice rolls,
+A player's skill equals the first dice roll value plus three (this 
+deviates from the game, see 'Discussion'), the condition is the sum of two dice rolls,
 where luck is the last dice roll value plus six.
 The player may roll as often as possible, allowing to get the best values,
 but this is quite dull.
@@ -211,7 +211,21 @@ strategy.
 
 ## Discussions
 
-There are some minor deviations from the book.
+There are some minor deviations from the book:
+
+In the character generation, a player's skill equals the first dice roll value 
+plus three, where in the book, one is allowed to add six to the dice roll 
+instead. This difference is due to consistency and results in the
+same behavior: the book ignores that the initial armor and sword of the
+player are already accounting for three skill points. These values are
+known because in chapter [?] the starting armor is lost (2 skill points)
+and in chapter [?] the starting sword is lost (1 skill point). 
+
+Chapter 130 has a fight that has a maximum number of rounds.
+In the current implementation of the game, this fight has
+an indefinite number of possible rounds, similar to any regular fight.
+Because the optimal strategy avoids this fight, we expect this has no
+consequence on our conclusions.
 
 ## Acknowledgements
 
