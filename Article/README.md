@@ -24,6 +24,10 @@ to do one of multiple actions. Each action takes the player
 to a next chapter. The player ultimately completes the game
 or dies.
 
+![](Ff5puffin.jpg)
+
+> Cover of the first edition of 'City of Thieves'
+
 City of Thieves is a an adventure book written by Ian Livingstone in 1984.
 The player should venture to the castle of the protagonist,
 after having visited a certain person in a medieval city,
@@ -193,7 +197,10 @@ Instead, picking a [some] potions gives the highest chance of success.
 > Figure 2: graph of the game, in which the nodes are the chapters,
 > and edges denotes the possible actions. The number within the node
 > denotes the chapter number as used in the book. The value next to each
-> edge denotes the expected payoff.
+> edge denotes the expected payoff. Node 1 is the starting chapter,
+> where node 74 is the focal junction. The transitions between nodes 1 and
+> 74 are summarized by a grey rectangle. Target nodes are [?] Street (17), 
+> [?] Street (116) and [?] Street (95).
 
 As can bee seen in figure 2, our algorithm assigned different 
 payoffs going from the junction (74) to [location] (114). Therefore, H_2 
@@ -212,6 +219,11 @@ RJCB was the main writer of the manuscript.
 RJCB rewrote the book as a text adventure.
 RG, RK, RvP, ... wrote the code for the 'Methods' section.
 RJCB co-authored the 'Methods' and 'Conclusion' section with RG, RK and RvP.
+
+## Images
+
+Cover of the first edition, featuring art by Iain McCaig, 
+from [https://en.wikipedia.org/wiki/File:Ff5puffin.jpg](https://en.wikipedia.org/wiki/File:Ff5puffin.jpg)
 
 ## References
 
