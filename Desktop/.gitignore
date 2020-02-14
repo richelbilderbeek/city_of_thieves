@@ -1,2 +1,4 @@
 *_plugin_import.cpp
 *.pro.user
+*.gcda
+*.gcno
