@@ -1,10 +1,10 @@
 # City of Thieves solved
 
  * Authors: Richel J.C. Bilderbeek [1], Rafayel Garishyan [2], Rob Krueger [2], 
-   Rijk van Putten [2]
+   Rijk van Putten, Joshua van Waardenberg [2]
 
  * [1] Corresponding author
- * [2] Contributed to the work equally
+ * [2] Contributed to the work equally, sorted alphabetically on last name 
 
 ## Abstract
 
