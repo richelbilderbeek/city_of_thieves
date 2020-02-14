@@ -53,13 +53,15 @@ killing one of the key characters.
 
 The game starts with a character generation session, 
 similar to most RPGs. [elaborate on exact process, with dice rolls etc.].
-According to Livingstone, the adventure is constructed
+According to Livingstone, the adventure is constructed in such
+a way, that these dice rolls are of less importance. It is unknown,
+however, if the game can be completed with the worst dice rolls.
 
 After the character generation session, a player may pick
 one of three potions, for either of the three statistics.
 Where the health and skill potion refresh their respective value
 to the initial value, a luck potion does so, as well as add one additional 
-point.
+point. It is an open question, which potion is best to pick
 
 At the start of the game, the player starts with [items] and [number] 
 gold coins. These items may be lost or sold. 
@@ -121,16 +123,26 @@ vary in the items a player can find as well as the amount of danger.
 It is unknown which of these three streets results in the
 highest chance of success.
 
+This research answers all the questions a player of 'City of Thieves'
+may have, solving one more puzzle that has plagued humanity for decades.
+
 ## Hypotheses
 
- * H_0: it does not matter which of the three streets is picked at the initial
-   junction for the chance of winning the game
-
+ * H_0: the dice rolls at the start of the game do not influence the
+   chance of winning the game, when the game is played optimally
+ * H_1: the potion picked at the start of the game do not influence the
+   chance of winning the game, when the game is played optimally
+ * H_2: it does not matter which of the three streets is picked at the initial
+   junction for the chance of winning the game, when the game is played optimally
 
 ## Methods
 
 To allow the game to be solved by a computer, it has been converted
-to a computer game.
+to a computer game. 
+
+We used [a] technique to answer the hypotheses.
+
+We picked this technique, because [...]
 
 Assigning pay-off values to certain location is expected to fail,
 as only a location is uninformative. For example, one can reach a certain
@@ -139,6 +151,20 @@ location by taking a short-cut, yet without acquiring an essential item.
 Assigning pay-off values to certain choices is expected to be more 
 viable, as this will allow an algorithm to take a detour to obtain
 a vital item.
+
+To answer H_0, we [...]
+
+To answer H_1, we [...]
+
+To answer H_2, we [...]
+
+## Results
+
+```
+
+```
+
+H_0 is rejected
 
 ## Conclusions
 
