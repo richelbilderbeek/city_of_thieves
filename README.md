@@ -14,18 +14,36 @@ City Of Thieves is a text adventure game after the English gamebook with the sam
 ![Nintendo DS version](Screenshots/CityOfThievesNds_1_0.jpg)
 ![Nintendo DS version on emulator](Screenshots/CityOfThievesNdsEmulator_1_0.png)
 
+## Building
+
+### Console
+
+```
+./build_console
+```
+
+### Desktop
+
+```
+./build_console
+```
+
+### Only building files
+
+```
+./build_files
+```
+
 ## Running
 
-First, the C++ functions need to be created by the text files
-in the `Files` folder:
+Be sure to have already build the files.
 
-```
-cd Files
-./FilesToFunctions.sh
-```
+Then open the correct Qt Creator project:
 
-Now, in Qt Creator, run either `Console/CityOfThievesConsole.pro` for the
-console version, or `Desktop/CityOfThievesDesktop.pro` for a GUI version.
+ * Console: `Console/CityOfThievesConsole.pro`
+ * Console (test only): `Console/CityOfThievesConsoleTest.pro`
+ * Desktop: `Desktop/CityOfThievesDesktop.pro` :warning: unsure if this still works
+ * NDS: `Nds/source/GameCityOfThievesNds.pro`
 
 ## Downloads
 
