@@ -52,7 +52,15 @@ Luck decreases mostly by using it (see below) or by certain events, such as
 killing one of the key characters.
 
 The game starts with a character generation session, 
-similar to most RPGs. [elaborate on exact process, with dice rolls etc.].
+similar to most RPGs.
+For one or more times, 4 dice are rolled.
+In a pre-defined order, the dice values determine the
+player's characteristics.
+A player's skill equals the first dice roll value plus three [this 
+deviates from the game], the condition is the sum of two dice rolls,
+where luck is the last dice roll value plus six.
+The player may roll as often as possible, allowing to get the best values,
+but this is quite dull.
 According to Livingstone, the adventure is constructed in such
 a way, that these dice rolls are of less importance. It is unknown,
 however, if the game can be completed with the worst dice rolls.
@@ -152,23 +160,51 @@ Assigning pay-off values to certain choices is expected to be more
 viable, as this will allow an algorithm to take a detour to obtain
 a vital item.
 
-To answer H_0, we [...]
+To answer H_0 and H_1, we measure the change to win the game, when played
+optimally, for the different initial statistics and potion. If all chances
+are all equal, H_0 and H_1 is accepted. If chances differ between the
+different statistics, H0 is rejected. If chances are all identical, yet
+differ per initial potion, H_1 is rejected.
 
-To answer H_1, we [...]
-
-To answer H_2, we [...]
+To answer H_2, we measure the payoff the optimal stategy assigns to
+either of the three streets. If these payoffs are equal, H_2 is accepted,
+else H2 is rejected.
 
 ## Results
 
-```
+![](fig_1.png)
 
-```
+> Figure 1: the chance to win the game when played optimally,
+> for the different initial statistics
+> and initial potion.
+> Colors denote this chance, from red (0%) to green (100%) [let the
+> plotting algorithm decide]
 
-H_0 is rejected
+As can be seen in figure 1, there are different probabilies to win
+the game regarding the initial dice rolls. Therefore, H_0 is rejected.
+Instead, [interpret]
+
+As can be seen in figure 1, there are different probabilies to win
+the game regarding the initial choice of potion. Therefore, H_1 is rejected.
+Instead, picking a [some] potions gives the highest chance of success.
+
+![](fig_2.png)
+
+> Figure 2: graph of the game, in which the nodes are the chapters,
+> and edges denotes the possible actions. The number within the node
+> denotes the chapter number as used in the book. The value next to each
+> edge denotes the expected payoff.
+
+As can bee seen in figure 2, our algorithm assigned different 
+payoffs going from the junction (74) to [location] (114). Therefore, H_2 
+is reject. Instead, selecting to go to [location] is part of the optimal 
+strategy.
 
 ## Conclusions
 
 ## Discussions
+
+There are some minor deviations from the book.
 
 ## Acknowledgements
 
