@@ -174,6 +174,23 @@ To answer H_2, we measure the payoff the optimal stategy assigns to
 either of the three streets. If these payoffs are equal, H_2 is accepted,
 else H2 is rejected.
 
+Rob's idea, Q-Learning:
+
+Q-learning works with rewards, so you can get a reward for acquiring a good 
+item or for completing the game. For every state, the chapter and all
+the items in this case, it gives a certain value to every possible action. 
+It isn't 'short-sighted', so it won't do a certain action if that action gives 
+him a reward but there aren't any good moves afterwards. The rewards are values 
+between -1 and 1. The tricky part is assigning the rewards. What do you define 
+as a good move? 
+I think the reward should be a small negative reward if the action didn't 
+result in a condition loss, but also not resulted in acquiring a good item. 
+This will prevent it for walking in a loop. If a action resulted in a condition 
+loss, then it should get a slightly bigger negative reward. For losing the game, 
+the reward is obviously -1. For winning the game, the reward is 1. Acquiring a 
+vital item results in a reward of 0.5-0.6. Acquiring a regular item results in a
+small reward of 0.2.
+
 ## Results
 
 ![](fig_1.png)
