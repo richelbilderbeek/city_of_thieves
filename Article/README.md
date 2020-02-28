@@ -174,7 +174,7 @@ To answer H_2, we measure the payoff the optimal stategy assigns to
 either of the three streets. If these payoffs are equal, H_2 is accepted,
 else H2 is rejected.
 
-Rob's idea, Q-Learning:
+### Rob's idea, Q-Learning:
 
 Q-learning works with rewards, so you can get a reward for acquiring a good 
 item or for completing the game. For every state, the chapter and all
@@ -190,6 +190,19 @@ loss, then it should get a slightly bigger negative reward. For losing the game,
 the reward is obviously -1. For winning the game, the reward is 1. Acquiring a 
 vital item results in a reward of 0.5-0.6. Acquiring a regular item results in a
 small reward of 0.2.
+
+[RJCB: that's a good first start! As you already mentioned, one needs to define
+the rewards. There are multiple rational ways to do so, just pick one and 
+describe it well. AFAIK, the scale does not matter much. For the lower value,
+maybe it is logical to assign zero to a game over, 
+as the chance of winning the game there is zero.
+As of items: vital items should have a very high reward, as without them,
+the game is lost for sure. For regular items: some items are good (e.g. a
+pair of magic boots), some are
+neutral (the knucklebones, they do nothing) and some are even bad (e.g.
+a cursed glove).
+The game has no loops, except for one in the tower. Because the questions are
+about optimal play, we can forbid the AI to go looping :-)]
 
 ## Results
 
