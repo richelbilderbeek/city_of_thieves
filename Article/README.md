@@ -204,6 +204,11 @@ a cursed glove).
 The game has no loops, except for one in the tower. Because the questions are
 about optimal play, we can forbid the AI to go looping :-)]
 
+### Rafayel's idea: Multi-run
+
+As we already know, Richel has an algorithm which can give scores to nodes based by their chance to lead to a win state. This algorithm is nog very effective though. The solution I think would work is to run that same algorithm for a little longer (approximately 10 to 20 times win state) and based on the results elliminate the "zero-chance" nodes for the next algorithm which then will run trough the game but not from top to bottom but otherwise. So you begin with the win state and trace your way back. This way you have to check less nodes and the process will go faster.
+In the end we would have a graph with the best working routes.
+
 ## Results
 
 ![](fig_1.png)
