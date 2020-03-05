@@ -209,6 +209,17 @@ about optimal play, we can forbid the AI to go looping :-)]
 
 ### Rafayel's idea: Multi-run
 
+(I, Rob, accidentally overwritten your part and don't know if I restored it correctly. Sorry)
+
+The game has a class `ai.cpp` which generates a `.dot` file at startup. This contains all the nodes and the connections between them. Also it contains all the vital items.
+It would be logical to use this file instead of the whole game to make the process simpler.
+The process begins with an algorithm which runs trough the game many times and gives each node a score. At startup all nodes have a score of `1` which changes every time the bot reaches the end (`game win` or `game over`). This happens with the following rules:
+1. The bot, when it gets started travels downwards the graph by choosing the node with the highest score. If the scores are equal one of the nodes is being chosen randomly.
+2. If the bot reaches a dead end the node which has led the bot to the end gets a 100% substraction of it's score. Every node in the path the bot has traveled in gets also a part of it's score substracted. Every step further from the lethal node reduces the substraction amount by 50%. This would then be like node 1: -100%; node 2: -50%; node 3: -25%; node 4: -12.4% etc.
+3. If the bot reaches a win state the node that led the bot to winning gets additional 100% of score. If the node already has a `0` score then it just gets 2 points. The nodes in the path the bot used get additional score in the same way as described above, thus: node 1: +100%/+2pt; node 2: +50%/+1pt; node 3: +25%/+0.5pt; node 4: +12.5%/0.25pt ect.
+4. The scores are being saved.
+5. The bot get's restarted and travels his way down the graph again.
+
 As we already know, Richel has an algorithm which can give scores to nodes based by their chance to lead to a win state. This algorithm is nog very effective though. The solution I think would work is to run that same algorithm for a little longer (approximately 10 to 20 times win state) and based on the results elliminate the "zero-chance" nodes for the next algorithm which then will run trough the game but not from top to bottom but otherwise. So you begin with the win state and trace your way back. This way you have to check less nodes and the process will go faster.
 In the end we would have a graph with the best working routes.
 
