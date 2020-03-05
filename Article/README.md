@@ -224,6 +224,10 @@ This pattern has to be repeated as often as needed for the bot to win 10 to 15 t
 The scores are then compared by a human and the nodes with the lowest score have to be eliminated/removed from the graph. 
 Then a new algorithm begins tracing the route back from the end (`win state`). This happens by choosing the node with the highest score untill you reach the top and then you've found (one) optimal route.
 
+Below an illustration of the algorithms work.
+
+![](https://github.com/richelbilderbeek/CityOfThieves/blob/master/Article/rafayelsalgo.png)
+
 ## Results
 
 ![](fig_1.png)
