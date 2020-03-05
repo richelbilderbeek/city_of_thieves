@@ -220,8 +220,9 @@ The process begins with an algorithm which runs trough the game many times and g
 4. The scores are being saved.
 5. The bot get's restarted and travels his way down the graph again.
 
-As we already know, Richel has an algorithm which can give scores to nodes based by their chance to lead to a win state. This algorithm is nog very effective though. The solution I think would work is to run that same algorithm for a little longer (approximately 10 to 20 times win state) and based on the results elliminate the "zero-chance" nodes for the next algorithm which then will run trough the game but not from top to bottom but otherwise. So you begin with the win state and trace your way back. This way you have to check less nodes and the process will go faster.
-In the end we would have a graph with the best working routes.
+This pattern has to be repeated as often as needed for the bot to win 10 to 15 times.
+The scores are then compared by a human and the nodes with the lowest score have to be eliminated/removed from the graph. 
+Then a new algorithm begins tracing the route back from the end (`win state`). This happens by choosing the node with the highest score untill you reach the top and then you've found (one) optimal route.
 
 ## Results
 
