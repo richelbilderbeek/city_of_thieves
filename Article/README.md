@@ -182,9 +182,24 @@ the items in this case, it gives a certain value to every possible action.
 It isn't 'short-sighted', so it won't do a certain action if that action gives 
 him a reward but there aren't any good moves afterwards. 
 ![](Q-Learning_1.jpg)
+
+[RJCB: I enjoy this figure! Also what the values on nodes and the
+values next to the edges are]
+
 It does this because of a special formula:
 ![](Q-Learning_2.png)
-The rewards are values between -1 and 1. The tricky part is assigning the rewards. 
+
+[RJCB: This is great! Even with coloring around the elements! Describe what
+the Q value is and connect it to the figure, for example, describe on 
+(node + action)'s Q value in detail. How will you set alpha? Could
+you elaborate on the newly arrived 'Discount rate', e.g.
+what it is and how it will be set and/or change? Describe what is that
+maxQ thingie :+1:]
+
+The rewards are values between -1 and 1 [RJCB: For figure 1, using values
+for zero (always die) to 1.0 (win the game) would probably be more
+natural. Feel free to ignore this though :+1:]. 
+The tricky part is assigning the rewards [RJCB: the rewards at the nodes, and/or at the edges?]. 
 What do you define as a good move? 
 I think the reward should be a small negative reward if the action didn't 
 result in a condition loss, but also not resulted in acquiring a good item. 
@@ -192,20 +207,10 @@ This will prevent it for walking in a loop. If a action resulted in a condition
 loss, then it should get a slightly bigger negative reward. For losing the game, 
 the reward is obviously -1. For winning the game, the reward is 1. Acquiring a 
 vital item results in a reward of 0.5-0.6. Acquiring a regular item results in a
-small reward of 0.2.
+small reward of 0.2 [RJCB: again, not all items are positive to have!].
 
-[RJCB: that's a good first start! As you already mentioned, one needs to define
-the rewards. There are multiple rational ways to do so, just pick one and 
-describe it well. AFAIK, the scale does not matter much. For the lower value,
-maybe it is logical to assign zero to a game over, 
-as the chance of winning the game there is zero.
-As of items: vital items should have a very high reward, as without them,
-the game is lost for sure. For regular items: some items are good (e.g. a
-pair of magic boots), some are
-neutral (the knucklebones, they do nothing) and some are even bad (e.g.
-a cursed glove).
-The game has no loops, except for one in the tower. Because the questions are
-about optimal play, we can forbid the AI to go looping :-)]
+[RJCB: make the link to the results. Does this method help accept/reject all three
+hypotheses?]
 
 ### Rafayel's idea: Multi-run
 
@@ -213,20 +218,32 @@ about optimal play, we can forbid the AI to go looping :-)]
 
 The game has a class `ai.cpp` which generates a `.dot` file at startup. This contains all the nodes and the connections between them. Also it contains all the vital items.
 It would be logical to use this file instead of the whole game to make the process simpler.
+[RJCB: agreed. These technicalities, however, will not make it into the Methods
+section of the article]
+
 The process begins with an algorithm which runs trough the game many times and gives each node a score. At startup all nodes have a score of `1` which changes every time the bot reaches the end (`game win` or `game over`). This happens with the following rules:
 1. The bot, when it gets started travels downwards the graph by choosing the node with the highest score. If the scores are equal one of the nodes is being chosen randomly.
 2. If the bot reaches a dead end the node which has led the bot to the end gets a 100% substraction of it's score. Every node in the path the bot has traveled in gets also a part of it's score substracted. Every step further from the lethal node reduces the substraction amount by 50%. This would then be like node 1: -100%; node 2: -50%; node 3: -25%; node 4: -12.4% etc.
-3. If the bot reaches a win state the node that led the bot to winning gets additional 100% of score. If the node already has a `0` score then it just gets 2 points. The nodes in the path the bot used get additional score in the same way as described above, thus: node 1: +100%/+2pt; node 2: +50%/+1pt; node 3: +25%/+0.5pt; node 4: +12.5%/0.25pt ect.
+3. If the bot reaches a win state the node that led the bot to winning gets additional 100% of score [RJCB: why not just set it to 100%: that value *is* the actual chance to win the game]. If the node already has a `0` score [RJCB: how is it possible that a win state has a score of 0?]then it just gets 2 points. The nodes in the path the bot used get additional score in the same way as described above, thus: node 1: +100%/+2pt; node 2: +50%/+1pt; node 3: +25%/+0.5pt; node 4: +12.5%/0.25pt ect [RJCB: this method sounds unelegant/clunky/weird. Peek at how Rob updates his states: this can work similar to what you propose at step 0]
 4. The scores are being saved.
 5. The bot get's restarted and travels his way down the graph again.
 
-This pattern has to be repeated as often as needed for the bot to win 10 to 15 times.
-The scores are then compared by a human and the nodes with the lowest score have to be eliminated/removed from the graph. 
+This pattern has to be repeated as often as needed for the bot to win 10 to 15 
+times [RJCB: specify how 10 and 15 are picked].
+The scores are then compared by a human [RJCB: no humans are needed here. Describe
+what the human (which will be an algorithm) does instead] and the nodes with the lowest score have to be eliminated/removed from the graph [Describe why nodes with lose
+states need to be elimainated: there is no need to; the algorithm already will never pick these anyways]. 
 Then a new algorithm begins tracing the route back from the end (`win state`). This happens by choosing the node with the highest score untill you reach the top and then you've found (one) optimal route.
 
 Below an illustration of the algorithms work.
 
 ![](https://github.com/richelbilderbeek/CityOfThieves/blob/master/Article/rafayelsalgo.png)
+
+[RJCB: I enjoy the picture a lot! Describe what the numbers are in the legend, like
+I do below in Figure 1]
+
+[RJCB: make the link to the results. Does this method help accept/reject all three
+hypotheses?]
 
 ## Results
 
