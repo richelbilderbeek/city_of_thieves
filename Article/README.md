@@ -1,6 +1,6 @@
 # City of Thieves solved
 
-![Logo of 'Team Spoiler' by Rijk van Putten](logo_team_spoiler)
+![Logo of 'Team Spoiler' by Rijk van Putten](logo_team_spoiler.png)
 
  * Authors: Richel J.C. Bilderbeek [1], Rafayel Gardishyan [2], Rob Krueger [2], 
    Rijk van Putten, Joshua van Waardenberg [2]
