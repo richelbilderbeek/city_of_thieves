@@ -81,5 +81,9 @@ BOOST_AUTO_TEST_CASE(test_helper)
     }
   }
   if (verbose) { std::clog << "Finished " << __func__ << std::endl; }
+  // Create the graph
+  {
+    h.CreateGraph();
+  }
 }
 #pragma GCC diagnostic pop
