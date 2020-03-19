@@ -101,25 +101,25 @@ void Helper::CreateGraph() const
       {
         if (chapter.GetFighting().GetEscapeToChapter() != -1)
         {
-          f << i << "->" << chapter.GetFighting().GetEscapeToChapter() << " [ label = \"Escape\"];\n";
+          f << i << "->" << chapter.GetFighting().GetEscapeToChapter() << " [ label=\"Escape\"];\n";
         }
       }
       else if (!chapter.GetLuck().GetLuckText().empty())
       {
-        f << i << "->" << chapter.GetLuck().GetLuckChapter() << " [ label = \"Luck\"];\n";
-        f << i << "->" << chapter.GetLuck().GetNoLuckChapter() << " [ label = \"No luck\"];\n";
+        f << i << "->" << chapter.GetLuck().GetLuckChapter() << " [ label=\"Luck\"];\n";
+        f << i << "->" << chapter.GetLuck().GetNoLuckChapter() << " [ label=\"No luck\"];\n";
       }
       else if (!chapter.GetOptions().GetOptions().empty())
       {
         for (const auto& option: chapter.GetOptions().GetOptions())
         {
-          f << i << "->" << option.GetNextChapter() << " [ label = \"Choice\"];\n";
+          f << i << "->" << option.GetNextChapter() << " [ label=\"Choice\"];\n";
         }
       }
       else if (!chapter.GetSkill().GetSkillText().empty())
       {
-        f << i << "->" << chapter.GetSkill().GetSkillConsequence().GetNextChapter() << " [ label = \"Skill\"];\n";
-        f << i << "->" << chapter.GetSkill().GetNoSkillConsequence().GetNextChapter() << " [ label = \"No skill\"];\n";
+        f << i << "->" << chapter.GetSkill().GetSkillConsequence().GetNextChapter() << " [ label=\"Skill\"];\n";
+        f << i << "->" << chapter.GetSkill().GetNoSkillConsequence().GetNextChapter() << " [ label=\"No skill\"];\n";
       }
       else if (chapter.GetType() == ChapterType::game_lost)
       {
