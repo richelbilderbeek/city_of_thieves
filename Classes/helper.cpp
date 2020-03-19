@@ -87,7 +87,7 @@ void Helper::CreateGraph() const
       }
       f << i
         << "["
-        << "label =\""
+        << "label=\""
         << ToStr(chapter.GetChapterNumber())
         << "\" shape=" << shape
         << " color=" << node_color
