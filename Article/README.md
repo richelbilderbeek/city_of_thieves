@@ -213,13 +213,8 @@ small reward of 0.2 [RJCB: again, not all items are positive to have!].
 hypotheses?]
 
 ### Rafayel's idea: Multi-run
-
-(I, Rob, accidentally overwritten your part and don't know if I restored it correctly. Sorry)
-
 The game has a class `ai.cpp` which generates a `.dot` file at startup. This contains all the nodes and the connections between them. Also it contains all the vital items.
 It would be logical to use this file instead of the whole game to make the process simpler.
-[RJCB: agreed. These technicalities, however, will not make it into the Methods
-section of the article]
 
 The process begins with an algorithm which runs trough the game many times and gives each node a score. At startup all nodes have a score of `1` which changes every time the bot reaches the end (`game win` or `game over`). This happens with the following rules:
 1. The bot, when it gets started travels downwards the graph by choosing the node with the highest score. If the scores are equal one of the nodes is being chosen randomly.
@@ -228,22 +223,21 @@ The process begins with an algorithm which runs trough the game many times and g
 4. The scores are being saved.
 5. The bot get's restarted and travels his way down the graph again.
 
-This pattern has to be repeated as often as needed for the bot to win 10 to 15 
-times [RJCB: specify how 10 and 15 are picked].
-The scores are then compared by a human [RJCB: no humans are needed here. Describe
-what the human (which will be an algorithm) does instead] and the nodes with the lowest score have to be eliminated/removed from the graph [Describe why nodes with lose
-states need to be elimainated: there is no need to; the algorithm already will never pick these anyways]. 
+This pattern should be run for 1000 times. This way it's also possible to determine a promillage of games that are won
 Then a new algorithm begins tracing the route back from the end (`win state`). This happens by choosing the node with the highest score untill you reach the top and then you've found (one) optimal route.
 
 Below an illustration of the algorithms work.
 
 ![](https://github.com/richelbilderbeek/CityOfThieves/blob/master/Article/rafayelsalgo.png)
 
-[RJCB: I enjoy the picture a lot! Describe what the numbers are in the legend, like
-I do below in Figure 1]
+> Figure 1: Simple tree with the algorithm applied. The score is based on the probability to end in Game Over as described above.
+> The other numbers are just the node number.
+> The optimal path to winning is in this case: 1 - 5 - 7
 
-[RJCB: make the link to the results. Does this method help accept/reject all three
-hypotheses?]
+After running this a 1000 times with the same start potion and characteristics this should be done for an other potion. If the results are different then H_1 will be disproven. Otherwise this should be repeated with the third and the last potion.
+Also the experiment should be repeated with different start characteristics as luck, skill etc. (The "dice-roll-parameters").
+If the results are different H_0 will also be disproven.
+If while running the result are different when choosing an other street of the 3 and the results are different H_2 will also be disproven.
 
 ## Results
 
