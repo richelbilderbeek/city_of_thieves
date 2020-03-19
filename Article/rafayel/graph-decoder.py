@@ -24,8 +24,10 @@ for line in g_file:
         node_nr = re.findall(r'[0-9]{1,3}', params)
 
         if node_nr[0] in story_tree:
-            story_tree[node_nr[0]]["connections"].append(node_nr[1])
-            print("Adding to:", node_nr[0])
+            story_tree[node_nr[0]]["connections"].append({
+                "to": node_nr[1],
+                "score": 1
+            })
 
         print("Connection: from {} to {}".format(node_nr[0], node_nr[1]))
 
