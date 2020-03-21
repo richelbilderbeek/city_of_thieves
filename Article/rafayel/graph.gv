@@ -19,7 +19,6 @@ digraph CityOfThieves {
 6->88 [ label="Choice"];
 7[label="7" shape=doublecircle color=black];
 7->78 [ label="Choice"];
-7->232 [ label="Choice"];
 8[label="8" shape=ellipse color=black];
 8->334;
 9[label="9" shape=ellipse color=black];
@@ -267,7 +266,6 @@ digraph CityOfThieves {
 95->224 [ label="Choice"];
 95->300 [ label="Choice"];
 96[label="96" shape=ellipse color=black];
-96->319 [ label="Choice"];
 96->197 [ label="Choice"];
 96->257 [ label="Choice"];
 97[label="97" shape=ellipse color=black];
@@ -287,7 +285,6 @@ digraph CityOfThieves {
 103[label="103" shape=ellipse color=black];
 103->148;
 104[label="104" shape=ellipse color=black];
-104->118 [ label="Choice"];
 104->205 [ label="Choice"];
 105[label="105" shape=ellipse color=black];
 105->304 [ label="Choice"];
@@ -307,7 +304,6 @@ digraph CityOfThieves {
 110->239;
 111[label="111" shape=doublecircle color=black];
 111->78 [ label="Choice"];
-111->232 [ label="Choice"];
 112[label="112" shape=ellipse color=black];
 112->154 [ label="Choice"];
 112->334 [ label="Choice"];
@@ -380,7 +376,6 @@ digraph CityOfThieves {
 121->140 [ label="Choice"];
 122[label="122" shape=ellipse color=black];
 122->361 [ label="Choice"];
-122->197 [ label="Choice"];
 123[label="123" shape=ellipse color=black];
 123->300;
 124[label="124" shape=ellipse color=black];
@@ -476,7 +471,6 @@ digraph CityOfThieves {
 157->54;
 158[label="158" shape=ellipse color=black];
 158->122 [ label="Choice"];
-158->65 [ label="Choice"];
 158->207 [ label="Choice"];
 159[label="159" shape=ellipse color=black];
 159->278 [ label="Choice"];
@@ -555,7 +549,6 @@ digraph CityOfThieves {
 185[label="185" shape=ellipse color=black];
 185->122 [ label="Choice"];
 185->207 [ label="Choice"];
-185->65 [ label="Choice"];
 186[label="186" shape=ellipse color=black];
 186->334 [ label="Choice"];
 186->387 [ label="Choice"];
@@ -599,7 +592,6 @@ digraph CityOfThieves {
 197->207 [ label="Choice"];
 197->122 [ label="Choice"];
 197->301 [ label="Choice"];
-197->65 [ label="Choice"];
 198[label="198" shape=ellipse color=black];
 198->296;
 199[label="199" shape=ellipse color=black];
@@ -618,9 +610,7 @@ digraph CityOfThieves {
 203->411 [ label="No luck"];
 204[label="204" shape=ellipse color=black];
 204->107 [ label="Choice"];
-204->43 [ label="Choice"];
 204->60 [ label="Choice"];
-204->209 [ label="Choice"];
 205[label="205" shape=ellipse color=black];
 205->127 [ label="Choice"];
 205->44 [ label="Choice"];
@@ -633,7 +623,6 @@ digraph CityOfThieves {
 209[label="209" shape=ellipse color=black];
 209->175 [ label="Choice"];
 209->107 [ label="Choice"];
-209->43 [ label="Choice"];
 209->60 [ label="Choice"];
 210[label="210" shape=ellipse color=black];
 210-> GameOver;
@@ -698,7 +687,7 @@ digraph CityOfThieves {
 233[label="233" shape=ellipse color=black];
 233->247;
 234[label="234" shape=ellipse color=black];
-234->96;
+234-> GameOver;
 235[label="235" shape=ellipse color=black];
 235->65;
 236[label="236" shape=ellipse color=black];
@@ -810,7 +799,6 @@ digraph CityOfThieves {
 272->174 [ label="Choice"];
 272->377 [ label="Choice"];
 273[label="273" shape=ellipse color=black];
-273->13 [ label="Choice"];
 273->334 [ label="Choice"];
 273->80 [ label="Choice"];
 274[label="274" shape=ellipse color=black];
@@ -846,7 +834,6 @@ digraph CityOfThieves {
 283->217;
 284[label="284" shape=ellipse color=black];
 284->78 [ label="Choice"];
-284->232 [ label="Choice"];
 285[label="285" shape=ellipse color=black];
 285->227;
 286[label="286" shape=ellipse color=black];
@@ -889,7 +876,6 @@ digraph CityOfThieves {
 296->147;
 297[label="297" shape=ellipse color=black];
 297->207 [ label="Choice"];
-297->65 [ label="Choice"];
 298[label="298" shape=ellipse color=black];
 298->75;
 299[label="299" shape=ellipse color=black];
@@ -1081,7 +1067,6 @@ digraph CityOfThieves {
 372->131 [ label="Choice"];
 372->333 [ label="Choice"];
 373[label="373" shape=ellipse color=black];
-373->209 [ label="Choice"];
 373->60 [ label="Choice"];
 373->107 [ label="Choice"];
 373->43 [ label="Choice"];
@@ -1108,7 +1093,6 @@ digraph CityOfThieves {
 381->74 [ label="Choice"];
 382[label="382" shape=ellipse color=black];
 382->189 [ label="Choice"];
-382->305 [ label="Choice"];
 383[label="383" shape=ellipse color=black];
 383->78 [ label="Choice"];
 383->271 [ label="Choice"];
