@@ -216,6 +216,8 @@ hypotheses?]
 
 ### Rafayel's idea: Multi-run
 
+[RJCB: go ahead and remove all comments :+1:]
+
 (I, Rob, accidentally overwritten your part and don't know if I restored it correctly. Sorry)
 
 The game has a class `ai.cpp` which generates a `.dot` file at startup. This contains all the nodes and the connections between them. Also it contains all the vital items.
