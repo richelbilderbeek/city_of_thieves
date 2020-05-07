@@ -1,5 +1,7 @@
 # City of Thieves solved
 
+![Logo of 'Team Spoiler' by Rijk van Putten](logo_team_spoiler.png)
+
  * Authors: Richel J.C. Bilderbeek [1], Rafayel Gardishyan [2], Rob Krueger [2], 
    Rijk van Putten, Joshua van Waardenberg [2]
 
@@ -213,6 +215,9 @@ small reward of 0.2 [RJCB: again, not all items are positive to have!].
 hypotheses?]
 
 ### Rafayel's idea: Multi-run
+
+[RJCB: go ahead and remove all comments :+1:]
+
 The game has a class `ai.cpp` which generates a `.dot` file at startup. This contains all the nodes and the connections between them. Also it contains all the vital items.
 It would be logical to use this file instead of the whole game to make the process simpler.
 
