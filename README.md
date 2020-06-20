@@ -103,8 +103,10 @@ This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does 
 
 ## Contributors
 
- * Greg Fivash: report bug
- * Carmen IJsebaart: report 3 bugs
+ * Richel Bilderbeek: lead developer
+ * Jeroen Niemandal: added autofight
+ * Carmen IJsebaart: testing
+ * Greg Fivash: testing
 
 ## External links
 
