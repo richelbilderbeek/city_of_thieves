@@ -22,9 +22,9 @@ services:
 
 script: 
   # Build and run tests
-  - ./build_files.sh > /dev/null
-  - ./build_console_test.sh > /dev/null
-  - ./Console/CityOfThievesConsoleTest > /dev/null
+  - make console_test
+  - ./Console/CityOfThievesConsoleTest
+  - make console
   - ./build_console.sh > /dev/null
   - ./build_desktop.sh > /dev/null
   # cppcheck
