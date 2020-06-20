@@ -158,7 +158,7 @@ void QtGameDialog::ShowText(const std::string& text)
   QTextCursor d(ui->plainTextEdit->textCursor());
 
   #ifdef NDEBUG
-  double waiting_time{0.01}; //Only have suspense in release mode
+  double waiting_time{0.05}; //Only have suspense in release mode
   #else
   double waiting_time{0.00}; //No suspense in debug mode
   #endif
