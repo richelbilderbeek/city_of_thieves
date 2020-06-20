@@ -1,5 +1,13 @@
 # NEWS
 
+## 2020-06-20: Version 1.8
+
+ * Can `make console`, `make desktop` and `make nds`
+
+## 201?-??-??: Version 1.7
+
+ * Added autofight, thanks Jeroen Niemendal
+
 ## 2015-08-06: Version 1.6
 
  * A dead lizardine does not spew fire anymore
