@@ -1,16 +1,14 @@
 all: console console_test
 
-console: Files/ZanbarBone80.cpp CityOfThievesConsole
-	make --silent
+console: Files/ZanbarBone80.cpp Console/CityOfThievesConsole
 
-CityOfThievesConsole: Console/Makefile
-	cd Console && $(MAKE)
+console_test: Files/ZanbarBone80.cpp Console/CityOfThievesConsoleTest
 
-Console/Makefile: Console/CityOfThievesConsole.pro
-	cd Console && qmake -qt=qt5 CityOfThievesConsole.pro
+Console/CityOfThievesConsole: Console/CityOfThievesConsole.pro
+	cd Console && qmake -qt=qt5 CityOfThievesConsole.pro && $(MAKE) release
 
-console_test: Files/ZanbarBone80.cpp
-	./build_console_test.sh
+Console/CityOfThievesConsoleTest: Console/CityOfThievesConsoleTest.pro
+	cd Console && qmake -qt=qt5 CityOfThievesConsoleTest.pro && $(MAKE) debug
 
 Files/ZanbarBone80.cpp:
 	cd Files && $(MAKE)
