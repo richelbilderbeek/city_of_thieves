@@ -1,2 +1,0 @@
-#!/bin/bash
-/opt/devkitpro/devkitARM/bin/mmutil -d music/my_music.it -osource/soundbank.bin -hsource/soundbank.h
