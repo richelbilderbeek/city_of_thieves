@@ -1,8 +1,8 @@
 # City Of Thieves
 
-Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
----|---
-master|[![Build Status](https://travis-ci.org/richelbilderbeek/CityOfThieves.svg?branch=master)](https://travis-ci.org/richelbilderbeek/CityOfThieves)
+Branch |[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
+-------|------------------------------------------------------------------------------------------------------------------------------------------------
+master |[![Build Status](https://travis-ci.org/richelbilderbeek/CityOfThieves.svg?branch=master)](https://travis-ci.org/richelbilderbeek/CityOfThieves)
 develop|[![Build Status](https://travis-ci.org/richelbilderbeek/CityOfThieves.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/CityOfThieves)
 
 City Of Thieves is a text adventure game after the English gamebook with the same name by Ian Livingstone. 
@@ -42,7 +42,7 @@ Then open the correct Qt Creator project:
 
  * Console: `Console/CityOfThievesConsole.pro`
  * Console (test only): `Console/CityOfThievesConsoleTest.pro`
- * Desktop: `Desktop/CityOfThievesDesktop.pro` :warning: unsure if this still works
+ * Desktop: `Desktop/CityOfThievesDesktop.pro`
  * NDS: `Nds/source/GameCityOfThievesNds.pro`
 
 ## Downloads
@@ -59,35 +59,6 @@ singularity pull library://richelbilderbeek/default/city_of_thieves
 ## Video
 
  * General gameplay: [YouTube](https://youtu.be/0QeDhZQGPFo) [download (.ogv)](http://richelbilderbeek.nl/city_of_thieves.ogv)
-
-## How to install `devkitPro` and `libnds`?
-
-Do:
-
- * `sudo ./build_libnds_32`: when your computer is 32 bit
- * `sudo ./build_libnds_64`: when your computer is 64 bit
-
-Add to `~/bashrc`:
-
-```
-export DEVKITPRO=/opt/devkitpro
-export DEVKITARM=$DEVKITPRO/devkitARM
-```
-
-Restart the terminal for these exports to have an effect
-
-Then, in the `CityOfThieves` folder:
-
-```
-./build_files
-```
-
-Then:
-
- * Console version: `./build_console`, then `./Console/CityOfThievesConsole`
- * Desktop version: `./build_desktop`, then `./Desktop/CityOfThievesDesktop`
- * Nintendo DS version: `./build_nds`, then `desmume ./Nds/CityOfThieves.nds`
- * Crosscompile to Windows: `./crosscompile.sh`
 
 ## I want to help!
 
@@ -114,3 +85,4 @@ This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does 
  * [libnds_example_2](https://github.com/richelbilderbeek/libnds_example_2): minimal NDS example with Madmax audio
  * [Richel Bilderbeek's games](https://github.com/richelbilderbeek/Games)
  * [Singularity scriptlet for City of Thieves](https://github.com/richelbilderbeek/singularity_example_6)
+
