@@ -15,25 +15,25 @@ install:
   # Codecov
   - sudo pip install codecov
   # OCLint
-  - ./install_oclint
+  - ./install_oclint.sh
 
 services:
   - xvfb
 
 script: 
   # Build and run tests
-  - ./build_files > /dev/null
-  - ./build_console_test > /dev/null
+  - ./build_files.sh > /dev/null
+  - ./build_console_test.sh > /dev/null
   - ./Console/CityOfThievesConsoleTest > /dev/null
-  - ./build_console > /dev/null
-  - ./build_desktop > /dev/null
+  - ./build_console.sh > /dev/null
+  - ./build_desktop.sh > /dev/null
   # cppcheck
   - cppcheck --quiet --error-exitcode=1 . 
   # Codecov
-  - ./get_code_cov &> /dev/null
+  - ./get_code_cov.sh &> /dev/null
   - codecov &> /dev/null
   # OCLint
-  - ./do_oclint || true
+  - ./do_oclint.sh || true
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
