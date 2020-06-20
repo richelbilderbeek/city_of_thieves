@@ -1,5 +1,0 @@
-#!/bin/bash
-./build_files
-cd Desktop
-qmake -qt=qt5
-make --silent

@@ -16,22 +16,22 @@ City Of Thieves is a text adventure game after the English gamebook with the sam
 
 ## Building
 
+To build all:
+
+```
+make
+```
+
 ### Console
 
 ```
-./build_console
+make console
 ```
 
 ### Desktop
 
 ```
-./build_console
-```
-
-### Only building files
-
-```
-./build_files
+make desktop
 ```
 
 ## Running
@@ -101,6 +101,10 @@ The `.txt` files contain the story of 'City Of Thieves'.
 These are converted to C++ headers and source files by the `FilesToFunctions.sh` scripts. 
 This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does not support a filesystem on the NDS hardware.
 
+## Contributors
+
+ * Greg Fivash: report bug
+ * Carmen IJsebaart: report 3 bugs
 
 ## External links
 
