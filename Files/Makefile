@@ -5,4 +5,6 @@ ZanbarBone80.cpp:
 	./CheckFiles.sh
 
 clean:
-	rm -f $(ls {*.cpp,*.h} | egrep -v "^getfile.(h|cpp)$")
+	rm -f *.cpp *.h
+	git checkout getfile.cpp
+	git checkout getfile.h
