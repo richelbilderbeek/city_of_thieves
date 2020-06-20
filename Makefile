@@ -39,6 +39,13 @@ Desktop/CityOfThievesDesktop: Desktop/CityOfThievesDesktop.pro
 Files/ZanbarBone80.cpp:
 	cd Files && $(MAKE)
 
+zip:
+	zip CityOfThieves.zip \
+	  Console/CityOfThievesConsole \
+	  Console/CityOfThievesConsoleTest \
+	  Desktop/CityOfThievesDesktop \
+	  Nds/CityOfThieves.nds
+
 clean:
 	cd Files && $(MAKE) clean
 	cd Console && $(MAKE) clean
