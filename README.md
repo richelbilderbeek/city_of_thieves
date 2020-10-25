@@ -78,6 +78,7 @@ This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does 
  * Jeroen Niemandal: added autofight
  * Carmen IJsebaart: testing
  * Greg Fivash: testing
+ * Sander van Kasteel: [Arch linux package maintainer](https://aur.archlinux.org/packages/cityofthieves-cli/), bug reporting
 
 ## External links
 
