@@ -1,7 +1,7 @@
 City Of Thieves 
-version 1.7
+version 1.8
 
-(C) 2015 Richel Bilderbeek.
+(C) 2015-2020 Richel Bilderbeek.
 
 This game is made after the 5th Fighting Fantasy gamebook 'City Of Thieves' by Ian Livingstone.
 
