@@ -1,9 +1,9 @@
 # City Of Thieves
 
-Branch |[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
+Branch |[![Travis CI logo](TravisCI.png)](https://travis-ci.com)
 -------|------------------------------------------------------------------------------------------------------------------------------------------------
-master |[![Build Status](https://travis-ci.org/richelbilderbeek/CityOfThieves.svg?branch=master)](https://travis-ci.org/richelbilderbeek/CityOfThieves)
-develop|[![Build Status](https://travis-ci.org/richelbilderbeek/CityOfThieves.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/CityOfThieves)
+master |[![Build Status](https://travis-ci.com/richelbilderbeek/CityOfThieves.svg?branch=master)](https://travis-ci.com/richelbilderbeek/CityOfThieves)
+develop|[![Build Status](https://travis-ci.com/richelbilderbeek/CityOfThieves.svg?branch=develop)](https://travis-ci.com/richelbilderbeek/CityOfThieves)
 
 City Of Thieves is a text adventure game after the English gamebook with the same name by Ian Livingstone. 
 
