@@ -1,0 +1,58 @@
+on:
+  push:
+  pull_request:
+
+name: check
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run headless test
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          run: npm test
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v2
+
+      - name: Install Boost
+        run: sudo apt install -qq libboost-all-dev
+
+      - name: Install cppcheck
+        run: sudo apt-get install -qq cppcheck
+
+      - name: Install GraphViz
+        run: sudo apt-get install -qq graphviz
+
+      - name: Install codecov
+        run: sudo pip install codecov
+
+      - name: Install OCLint
+        run: ./install_oclint.sh
+
+      - name: make console_test
+        run: make console_test
+
+      - name: Run CityOfThievesConsoleTest
+        run: ./Console/CityOfThievesConsoleTest
+
+      - name: make console
+        run: make console
+
+      - name: make desktop
+        run: make desktop
+
+      - name: cppcheck
+        run: cppcheck --quiet --error-exitcode=1 . 
+
+      - name: Get codecov
+        run: |
+          ./get_code_cov.sh &> /dev/null
+          codecov &> /dev/null
+          bash <(curl -s https://codecov.io/bash)
+
+      - name: Do OCLint
+        run: ./do_oclint.sh || true
