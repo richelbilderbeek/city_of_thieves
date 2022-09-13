@@ -36,10 +36,3 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  # Download thesis
-  - wget https://www.rug.nl/research/portal/files/132028374/Complete_thesis.pdf
-
-after_failure:
-  # Download thesis
-  - wget https://www.rug.nl/research/portal/files/132028374/Complete_thesis.pdf
-

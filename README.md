@@ -1,9 +1,9 @@
 # City Of Thieves
 
-Branch |[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
--------|------------------------------------------------------------------------------------------------------------------------------------------------
-master |[![Build Status](https://travis-ci.org/richelbilderbeek/CityOfThieves.svg?branch=master)](https://travis-ci.org/richelbilderbeek/CityOfThieves)
-develop|[![Build Status](https://travis-ci.org/richelbilderbeek/CityOfThieves.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/CityOfThieves)
+Branch     |[![GitHub Actions logo](pics/GitHubActions.png)](https://github.com/richelbilderbeek/city_of_thieves/actions)   |[![Codecov logo](pics/Codecov.png)](https://www.codecov.io)
+-----------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+`master`   |![check](https://github.com/richelbilderbeek/city_of_thieves/workflows/check/badge.svg?branch=master)           |[![codecov.io](https://codecov.io/github/richelbilderbeek/city_of_thieves/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/city_of_thieves/branch/master)
+`develop`  |![check](https://github.com/richelbilderbeek/city_of_thieves/workflows/check/badge.svg?branch=develop)          |[![codecov.io](https://codecov.io/github/richelbilderbeek/city_of_thieves/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/city_of_thieves/branch/develop)
 
 City Of Thieves is a text adventure game after the English gamebook with the same name by Ian Livingstone. 
 
