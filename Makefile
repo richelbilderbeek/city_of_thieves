@@ -28,13 +28,13 @@ build/devkitpro-pacman.deb:
 
 
 Console/CityOfThievesConsole: Console/CityOfThievesConsole.pro
-	cd Console && qmake -qt=qt5 CityOfThievesConsole.pro && $(MAKE) release
+	cd Console && qmake CityOfThievesConsole.pro && $(MAKE) release
 
 Console/CityOfThievesConsoleTest: Console/CityOfThievesConsoleTest.pro
-	cd Console && qmake -qt=qt5 CityOfThievesConsoleTest.pro && $(MAKE) debug
+	cd Console && qmake CityOfThievesConsoleTest.pro && $(MAKE) debug
 
 Desktop/CityOfThievesDesktop: Desktop/CityOfThievesDesktop.pro
-	cd Desktop && qmake -qt=qt5 CityOfThievesDesktop.pro && $(MAKE) release
+	cd Desktop && qmake CityOfThievesDesktop.pro && $(MAKE) release
 
 Files/ZanbarBone80.cpp:
 	cd Files && $(MAKE)
