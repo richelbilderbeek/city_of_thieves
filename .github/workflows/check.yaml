@@ -10,10 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run headless test
-        uses: GabrielBB/xvfb-action@v1
-        with:
-          run: npm test
+      #- name: Run headless test
+      #  uses: GabrielBB/xvfb-action@v1
+      #  with:
+      #    run: npm test
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v2
