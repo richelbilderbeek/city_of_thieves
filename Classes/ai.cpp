@@ -291,10 +291,10 @@ void Ai::Start()
     const int skill = 3 + Dice::Get()->Throw();
     const int condition = Dice::Get()->Throw() + Dice::Get()->Throw();
     const int luck = 6 + Dice::Get()->Throw();
-    const bool autoAttack=false;
-    Character character(skill,condition,luck,Item::luck_potion,autoAttack);
+    const bool autoAttack{true};
+    const Character character(skill,condition,luck,Item::luck_potion, autoAttack);
     Game game(51,character);
-    m_game = &game;
+    m_game = &game; /// !OCLINT game is only used in scope
 
     game.SetObserver(this);
 
@@ -309,6 +309,7 @@ void Ai::Start()
     SetFinalPayoff(CalcFinalPayoff(game.GetCharacter()));
     if (game.HasWon()) { break; }
   }
+  m_game = nullptr;
   std::cout << "FINISHED THE GAME, CREATING GRAPH" << '\n';
   this->CreateGraph();
 }
