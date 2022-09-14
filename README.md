@@ -74,11 +74,11 @@ This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does 
 
 ## Contributors
 
- * Richel Bilderbeek: lead developer
- * Jeroen Niemandal: added autofight
- * Carmen IJsebaart: testing
+ * Richel Bilderbeek [@richelbilderbeek](https://github.com/richelbilderbeek): lead developer
+ * Jeroen Niemandal [@JeroenN](https://github.com/JeroenN): added autofight
+ * Carmen IJsebaart [@CarmenIJsebaart](https://github.com/CarmenIJsebaart): testing
  * Greg Fivash: testing
- * Sander van Kasteel: [Arch linux package maintainer](https://aur.archlinux.org/packages/cityofthieves-cli/), bug reporting
+ * Sander van Kasteel [@sandervankasteel](https://github.com/sandervankasteel): [Arch linux package maintainer](https://aur.archlinux.org/packages/cityofthieves-cli/), bug reporting
 
 ## External links
 
