@@ -118,6 +118,9 @@ struct Chapter
   void CharacterChanged(const Character& character) const;
 };
 
+/// Summarize a normal chapter in a few words
+std::string SummarizeChapter(const int chapter_number);
+
 std::ostream& operator<<(std::ostream& os, const Chapter& chapter);
 
 #endif // CHAPTER_H

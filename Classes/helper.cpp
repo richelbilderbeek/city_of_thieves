@@ -77,6 +77,9 @@ void Helper::CreateGraph() const
           break;
         case ChapterType::test_your_luck: node_color = "blue"; break;
         case ChapterType::test_your_skill: node_color = "green"; break;
+        case ChapterType::normal:
+          labeltext += std::string(" ")
+            + SummarizeChapter(chapter.GetChapterNumber());
         default: break; //OK
       }
       //Shape for special chapter
