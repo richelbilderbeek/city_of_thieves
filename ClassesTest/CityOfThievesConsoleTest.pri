@@ -8,4 +8,5 @@ SOURCES += \
   $$PWD/game_test.cpp \
   $$PWD/helper_test.cpp \
   $$PWD/menudialog_test.cpp \
+  $$PWD/routes_test.cpp \
   $$PWD/terminal_test.cpp

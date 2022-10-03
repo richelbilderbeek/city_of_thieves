@@ -8,8 +8,10 @@
 
 Walkthrough::Walkthrough(
     const int seed,
-    const Character& character
-) : m_game(seed,character)
+    const Character& character,
+    const bool silent
+) : m_game(seed,character),
+    m_silent{silent}
 {
   m_game.SetObserver(this);
 }
@@ -213,6 +215,8 @@ Option Walkthrough::RequestOption(const std::vector<Option>& options)
 
 void Walkthrough::ShowText(const std::string& text)
 {
+  if (m_silent) return;
+
   const std::string lines = Helper().StrToLines(text,GetNumberOfCharsPerLine());
 
   for (const char c: lines)

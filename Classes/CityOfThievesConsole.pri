@@ -24,6 +24,7 @@ SOURCES += \
     $$PWD/optionschapter.cpp \
     $$PWD/pawnshopchapter.cpp \
     $$PWD/pillgamechapter.cpp \
+    $$PWD/routes.cpp \
     $$PWD/shopchapter.cpp \
     $$PWD/skillchapter.cpp \
     $$PWD/terminal.cpp \
@@ -54,6 +55,7 @@ HEADERS += \
     $$PWD/optionschapter.h \
     $$PWD/pawnshopchapter.h \
     $$PWD/pillgamechapter.h \
+    $$PWD/routes.h \
     $$PWD/shopchapter.h \
     $$PWD/skillchapter.h \
     $$PWD/terminal.h \

@@ -59,7 +59,8 @@ BOOST_AUTO_TEST_CASE(test_game_win)
   const int seed{2};
   //Use a maxed-out character
   const Character character(6,12,12,Item::luck_potion);
-  Walkthrough walkthrough(seed,character);
+  const bool silent{true};
+  Walkthrough walkthrough(seed,character,silent);
   walkthrough.Start();
 }
 

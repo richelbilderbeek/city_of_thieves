@@ -12,7 +12,8 @@ struct Walkthrough final : public Observer
 {
   Walkthrough(
     const int seed,
-    const Character& character
+    const Character& character,
+    const bool silent = false
   );
 
   int GetNumberOfCharsPerLine() const noexcept override;
@@ -21,6 +22,7 @@ struct Walkthrough final : public Observer
   private:
 
   Game m_game;
+  bool m_silent;
 
   void CharacterChanged(const Character&) override {} //Ignore
   Option RequestOption(const std::vector<Option>& options) override;
