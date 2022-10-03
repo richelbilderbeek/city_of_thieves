@@ -120,7 +120,8 @@ void Helper::CreateGraph() const
       {
         for (const auto& option: chapter.GetOptions().GetOptions())
         {
-          f << i << "->" << option.GetNextChapter() << " [ label=\"Choice\"];\n";
+          //f << i << "->" << option.GetNextChapter() << " [ label=\"Choice\"];\n";
+          f << i << "->" << option.GetNextChapter() << " [ label=\""<< option.GetText() <<  "\"];\n";
         }
       }
       else if (!chapter.GetSkill().GetSkillText().empty())
