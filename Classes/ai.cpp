@@ -47,9 +47,14 @@ void Ai::CreateGraph() const noexcept
       const Chapter chapter(i);
       //Label node according to chapter type
       std::string node_color = "black";
+      std::string labeltext = Helper().ToStr(chapter.GetChapterNumber());
       switch (chapter.GetType())
       {
-        case ChapterType::fight: node_color = "red"; break;
+        case ChapterType::fight:
+          node_color = "red";
+          labeltext += std::string(" ")
+            + ToStr(chapter.GetFighting().GetMonsters());
+          break;
         case ChapterType::test_your_luck: node_color = "blue"; break;
         case ChapterType::test_your_skill: node_color = "green"; break;
         default: break; //OK
@@ -71,7 +76,7 @@ void Ai::CreateGraph() const noexcept
       f << i
         << "["
         << "label =\""
-        << Helper().ToStr(chapter.GetChapterNumber())
+        << labeltext
         << "\", shape = " << shape
         << "];\n"
       ;

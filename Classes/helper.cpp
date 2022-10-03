@@ -11,6 +11,8 @@
 #include "ai.h"
 #include "chapter.h"
 #include "chaptertype.h"
+#include "fightingchapter.h"
+#include "monster.h"
 
 #ifdef ARM9
 #include <nds.h>
@@ -65,9 +67,14 @@ void Helper::CreateGraph() const
       const Chapter chapter(i);
       //Label node according to chapter type
       std::string node_color = "black";
+      std::string labeltext{Helper().ToStr(chapter.GetChapterNumber())};
       switch (chapter.GetType())
       {
-        case ChapterType::fight: node_color = "red"; break;
+        case ChapterType::fight:
+          node_color = "red";
+          labeltext += std::string(" ")
+            + MonstersToStr(chapter.GetFighting().GetMonsters());
+          break;
         case ChapterType::test_your_luck: node_color = "blue"; break;
         case ChapterType::test_your_skill: node_color = "green"; break;
         default: break; //OK
@@ -88,7 +95,7 @@ void Helper::CreateGraph() const
       f << i
         << "["
         << "label=\""
-        << ToStr(chapter.GetChapterNumber())
+        << labeltext
         << "\" shape=" << shape
         << " color=" << node_color
         << "];\n"

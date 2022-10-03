@@ -41,9 +41,16 @@ struct Monster
   int m_condition;
 };
 
+///@seealso logistic function to call ToStr
+std::string MonstersToStr(const std::vector<Monster>& ms) noexcept;
+
 Monster ParseMonster(std::stringstream& s);
 std::vector<Monster> ParseMonsters(std::stringstream& s);
 
-std::ostream& operator<<(std::ostream& os, const Monster& monster);
+
+std::string ToStr(const Monster& m) noexcept;
+std::string ToStr(const std::vector<Monster>& ms) noexcept;
+std::ostream& operator<<(std::ostream& os, const Monster& monster) noexcept;
+std::ostream& operator<<(std::ostream& os, const std::vector<Monster>& monsters) noexcept;
 
 #endif // MONSTER_H

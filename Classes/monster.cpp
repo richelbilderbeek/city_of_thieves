@@ -2,7 +2,7 @@
 
 #include <cassert>
 #include <iostream>
-
+#include <sstream>
 #include "dice.h"
 #include "helper.h"
 
@@ -38,6 +38,11 @@ int Monster::CalcAttackStrength() const noexcept
     + Dice::Get()->Throw()
     + Dice::Get()->Throw()
   ;
+}
+
+std::string MonstersToStr(const std::vector<Monster>& ms) noexcept
+{
+  return ToStr(ms);
 }
 
 Monster ParseMonster(std::stringstream& s)
@@ -76,12 +81,38 @@ std::vector<Monster> ParseMonsters(std::stringstream& s)
   return monsters;
 }
 
-std::ostream& operator<<(std::ostream& os, const Monster& monster)
+std::string ToStr(const Monster& monster) noexcept
 {
-  os << monster.GetName() << " "
+  std::stringstream s;
+  s << monster.GetName() << " "
      << monster.GetSkill() << " "
      << monster.GetCondition() << " "
      << monster.GetAttackDamage()
   ;
+  return s.str();
+}
+
+std::string ToStr(const std::vector<Monster>& ms) noexcept
+{
+  std::stringstream s;
+  for (const auto& m: ms) s << ToStr(m) << ", ";
+  std::string t{s.str()};
+  if (t.empty()) return t;
+  assert(!t.empty());
+  t.pop_back();
+  assert(!t.empty());
+  t.pop_back();
+  return t;
+}
+
+std::ostream& operator<<(std::ostream& os, const Monster& monster) noexcept
+{
+  os << ToStr(monster);
+  return os;
+}
+
+std::ostream& operator<<(std::ostream& os, const std::vector<Monster>& monsters) noexcept
+{
+  os << ToStr(monsters);
   return os;
 }
