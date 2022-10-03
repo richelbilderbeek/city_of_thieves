@@ -1,4 +1,4 @@
 The food stalls are selling fruit, vegetables, meat and hot soup, corn and chestnuts for hungry shoppers. You may eat some hot food if you wish: pay 1 gold piece and increase your condition by 2 points. @
 normal
-option Eat some food @ if gold 2 change gold -2 goto 412
+option Eat some food @ if gold 1 change gold -1 goto 412
 option Walk on @ goto 413

@@ -551,6 +551,12 @@ BOOST_AUTO_TEST_CASE(test_chapter)
     //Character is dead unless silver scorpion brooch resurrected him/her
     assert(character.IsDead());
   }
+  //Chapter 287: the hot food costs 1 gold piece
+  {
+    const Chapter chapter(287);
+    assert(chapter.GetOptions().GetOptions()[0].GetCondition().GetGoldNeeded() == 1);
+  }
+
   //Parse chapters using Chapter
   {
     std::ofstream f("TODO.txt");
