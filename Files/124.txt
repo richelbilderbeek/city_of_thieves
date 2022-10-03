@@ -1,4 +1,4 @@
 A narrow alleyway runs south off the street between two houses. @
 normal
-option Walk down the  alleyway @ goto 326
+option Walk down the alleyway @ goto 326
 option Continue along Harbour Street @ goto 180
