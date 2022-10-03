@@ -56,7 +56,6 @@ Character::Character(
 {
   m_items.push_back(Item::shield);
   m_items.push_back(Item::carralifs_sword);
-  m_items.push_back(Item::chainmail_coat);
   assert(
     initial_item == Item::dexterity_potion
     || initial_item == Item::luck_potion

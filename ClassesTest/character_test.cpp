@@ -19,8 +19,16 @@
 
 BOOST_AUTO_TEST_CASE(test_character)
 {
-  Character a(1,2,3,Item::luck_potion);
-  Character b(a);
+  const Character a(1,2,3,Item::luck_potion);
+  const Character b(a);
   assert(a==b);
+  BOOST_CHECK(a.HasItem(Item::shield));
+  BOOST_CHECK(a.HasItem(Item::carralifs_sword));
+  BOOST_CHECK(!a.HasItem(Item::chainmail_coat));
+  BOOST_CHECK(
+       a.HasItem(Item::dexterity_potion)
+    || a.HasItem(Item::luck_potion)
+    || a.HasItem(Item::stamina_potion)
+  );
 }
 #pragma GCC diagnostic pop

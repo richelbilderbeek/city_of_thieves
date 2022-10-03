@@ -62,3 +62,4 @@ BOOST_AUTO_TEST_CASE(test_game_win)
   Walkthrough walkthrough(seed,character);
   walkthrough.Start();
 }
+
