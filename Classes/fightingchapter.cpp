@@ -143,7 +143,7 @@ void FightingChapter::DoFightTwoMonsters(std::vector<Monster> monsters,Character
             if (selected_option.GetConsequence().GetType() == ConsequenceType::yes)
             {
               const bool has_luck{character.TestLuck()};
-              damage += ( (damage/2) * (has_luck ? 1 : -1) );
+              damage -= ( (damage/2) * (has_luck ? 1 : -1) );
             }
             character.ChangeCondition(-damage);
             m_chapter.ShowText(
