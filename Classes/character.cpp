@@ -234,6 +234,7 @@ Character GetBestCharacter(
   );
 }
 
+
 int GetCurrentChapter(const Character& c) noexcept
 {
   return c.GetChapters().back();
@@ -279,6 +280,20 @@ int Character::GetLuck() const noexcept
 int Character::GetLuckBase() const noexcept
 {
   return m_luck;
+}
+
+Character GetWorstCharacter(
+  const Item initial_potion,
+  const bool auto_attack
+) noexcept
+{
+  const int skill{GetWorstInitialSkill()};
+  const int condition{GetWorstInitialCondition()};
+  const int luck{GetWorstInitialLuck()};
+  return Character(
+    skill, condition, luck,
+    initial_potion, auto_attack
+  );
 }
 
 bool Character::HasFought(const std::string& monster_name) const noexcept

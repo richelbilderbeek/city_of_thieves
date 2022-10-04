@@ -93,6 +93,11 @@ Character GetBestCharacter(
   const bool auto_attack = true
 ) noexcept;
 
+Character GetWorstCharacter(
+  const Item initial_potion = Item::stamina_potion,
+  const bool auto_attack = true
+) noexcept;
+
 int GetCurrentChapter(const Character& c) noexcept;
 
 bool HasItem(const Character& c, const Item item) noexcept;

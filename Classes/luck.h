@@ -4,7 +4,8 @@
 // You initial luck will be 6 plus one dice roll
 int GetBestInitialLuck() noexcept;
 
-// You initial condition will be the sum two dice rolls.
+// You initial luck will be 6 plus one dice roll
+int GetWorstInitialLuck() noexcept;
 
 
 #endif // LUCK_H
