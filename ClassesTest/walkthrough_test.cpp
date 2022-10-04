@@ -14,7 +14,7 @@ BOOST_AUTO_TEST_CASE(the_winning_route_has_a_final_character)
   Walkthrough w(seed, character,silent,route);
   const Character final{w.Run()};
   assert(final.GetChapters() != character.GetChapters());
-  assert(!final.IsDead());
+  assert(!IsDead(final));
 }
 
 #pragma GCC diagnostic pop

@@ -52,7 +52,6 @@ struct Character
   int GetSkillBase() const noexcept;
   bool HasFought(const std::string& monster_name) const noexcept;
   bool HasPotion() const noexcept;
-  bool IsDead() const noexcept { return m_condition <= 0; }
   void RemoveItem(const Item item);
   void SetChapter(const int chapter);
   void SetIsDead() noexcept { m_condition = 0; }
@@ -95,5 +94,8 @@ Character GetBestCharacter(
 ) noexcept;
 
 bool HasItem(const Character& c, const Item item) noexcept;
+
+bool IsDead(const Character& c) noexcept;
+
 
 #endif // CHARACTER_H

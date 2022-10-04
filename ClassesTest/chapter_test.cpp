@@ -549,7 +549,7 @@ BOOST_AUTO_TEST_CASE(test_chapter)
     chapter.Do(character);
 
     //Character is dead unless silver scorpion brooch resurrected him/her
-    assert(character.IsDead());
+    assert(IsDead(character));
   }
   //Chapter 287: the hot food costs 1 gold piece
   {

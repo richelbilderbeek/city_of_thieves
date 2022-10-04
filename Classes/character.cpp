@@ -317,6 +317,11 @@ bool Character::HasPotion() const noexcept
   ;
 }
 
+bool IsDead(const Character& c) noexcept
+{
+  return c.GetCondition() <= 0;
+}
+
 void Character::RemoveItem(Item item)
 {
   if (m_items.empty()) return;

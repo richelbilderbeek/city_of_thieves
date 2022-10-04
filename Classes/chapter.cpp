@@ -325,7 +325,7 @@ void Chapter::Do(Character& character) const
   if (GetType() == ChapterType::game_lost)
   {
     m_game_lost_chapter.Do(character);
-    assert(character.IsDead());
+    assert(IsDead(character));
     return;
   }
   else if (GetType() == ChapterType::game_won)
@@ -348,7 +348,7 @@ void Chapter::Do(Character& character) const
   else if (GetType() == ChapterType::play_pill)
   {
     m_pill_game_chapter.Do(character);
-    if (character.IsDead()) return;
+    if (IsDead(character)) return;
     m_consequence.Apply(character);
   }
   //Options
@@ -416,7 +416,7 @@ void Chapter::Do(Character& character) const
   {
     const int n_chapters_before{static_cast<int>(character.GetChapters().size())};
     m_fighting_chapter.Do(character);
-    if (character.IsDead())
+    if (IsDead(character))
     {
       m_game_lost_chapter.Do(character);
       return;
@@ -470,7 +470,7 @@ void Chapter::Do(Character& character) const
     assert(!"Should not get here");
   }
 
-  if (character.IsDead())
+  if (IsDead(character))
   {
     m_game_lost_chapter.Do(character);
     return;

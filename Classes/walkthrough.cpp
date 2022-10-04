@@ -31,7 +31,7 @@ Character Walkthrough::Run()
     m_game.DoChapter();
     if (m_game.HasWon() || m_game.HasLost()) break;
     assert(m_game.GetCharacter().GetCondition() > 0);
-    assert(!m_game.GetCharacter().IsDead());
+    assert(!IsDead(m_game.GetCharacter()));
   }
   assert(m_game.HasWon() || m_game.HasLost());
   const Character final_character{m_game.GetCharacter()};

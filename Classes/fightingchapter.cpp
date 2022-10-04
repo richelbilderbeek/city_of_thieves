@@ -37,7 +37,7 @@ void FightingChapter::Do(Character& character) const
   {
     DoFightTwoMonsters(GetMonsters(),character);
   }
-  if (HasItem(character, Item::silver_scorpion_brooch) && !character.IsDead())
+  if (HasItem(character, Item::silver_scorpion_brooch) && !IsDead(character))
   {
     character.ChangeCondition(1);
   }
@@ -58,7 +58,7 @@ void FightingChapter::DoFight(std::vector<Monster> monsters, Character& characte
       return;
     }
 
-    if (character.IsDead()) return;
+    if (IsDead(character)) return;
   }
 }
 
@@ -71,7 +71,7 @@ void FightingChapter::DoFightTwoMonsters(std::vector<Monster> monsters,Character
   const std::string monster_name_1{h.ToPretty(monsters[1].GetName())};
   for (int round=0; ; ++round)
   {
-    if (character.IsDead()) { return; }
+    if (IsDead(character)) { return; }
     if (monsters[0].IsDead())
     {
       m_chapter.ShowText("You defeated the " + monster_name_0 + "!\n");
@@ -226,7 +226,7 @@ void FightingChapter::DoFight(Monster monster,Character& character) const
 
   for (int round = 1; ; ++round)
   {
-    if (character.IsDead()) break;
+    if (IsDead(character)) break;
     if (monster.IsDead()) break;
     {
       std::stringstream s;
@@ -317,7 +317,7 @@ void FightingChapter::DoFight(Monster monster,Character& character) const
 
     m_chapter.Wait();
 
-    if (character.IsDead()) break;
+    if (IsDead(character)) break;
     if (monster.IsDead()) break;
 
     //Fire breath
@@ -338,7 +338,7 @@ void FightingChapter::DoFight(Monster monster,Character& character) const
       }
     }
 
-    if (character.IsDead()) break;
+    if (IsDead(character)) break;
     if (monster.IsDead()) break;
 
     if (round >= this->m_rounds_to_escape && character.GetCondition() > 2)
@@ -356,7 +356,7 @@ void FightingChapter::DoFight(Monster monster,Character& character) const
     }
   }
 
-  if (character.IsDead())
+  if (IsDead(character))
   {
     m_chapter.ShowText("The " + monster_name + " defeated you.\n");
   }
