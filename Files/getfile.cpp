@@ -428,7 +428,6 @@
 #include "99.h"
 #include "9.h"
 #include "About.h"
-#include "Changelog.h"
 #include "getfile.h"
 #include "Hints.h"
 #include "Introduction.h"
@@ -865,7 +864,6 @@ std::string GetFile(const std::string& s)
   if (s == "99") return Get99();
   if (s == "9") return Get9();
   if (s == "About") return GetAbout();
-  if (s == "Changelog") return GetChangelog();
   if (s == "Hints") return GetHints();
   if (s == "Introduction") return GetIntroduction();
   if (s == "Manual") return GetManual();

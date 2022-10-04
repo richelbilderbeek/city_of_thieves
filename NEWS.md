@@ -1,5 +1,15 @@
 # NEWS
 
+## Unreleased: Version 1.10
+
+ * Remove changelog in game
+
+## 2022-06-20: Version 1.9
+
+ * Graph now shows locations' descriptions and monster statistics
+ * Added list of items and their usefulness
+ * Fix minor typos
+
 ## 2020-06-20: Version 1.8
 
  * Can `make console`, `make desktop` and `make nds`

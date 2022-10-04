@@ -136,19 +136,9 @@ void MenuDialog::ShowAbout()
     const std::string filename{Helper().GetFilesFolder() + "About.txt"};
     const std::string text{Helper().FileToString(filename)};
     ShowText(text);
-    //
-  }
-  ShowText("\n");
-  {
-    const std::string filename{Helper().GetFilesFolder() + "Changelog.txt"};
-    const std::string text{Helper().FileToString(filename)};
-    ShowText(text);
-
   }
   #endif
   ShowText(GetFile("About"));
-  ShowText("\n");
-  ShowText(GetFile("Changelog"));
 }
 
 void MenuDialog::ShowIntroduction()

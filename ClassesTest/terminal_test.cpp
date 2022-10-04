@@ -21,6 +21,6 @@ BOOST_AUTO_TEST_CASE(test_terminal)
 {
   Terminal t;
   t.SetSilent(true);
-  t.ShowText(GetFile("Changelog"));
+  t.ShowText(GetFile("About"));
 }
 #pragma GCC diagnostic pop

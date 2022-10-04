@@ -426,7 +426,6 @@ SOURCES += \
   $$PWD/99.cpp \
   $$PWD/9.cpp \
   $$PWD/About.cpp \
-  $$PWD/Changelog.cpp \
   $$PWD/Hints.cpp \
   $$PWD/Introduction.cpp \
   $$PWD/Manual.cpp \
@@ -862,7 +861,6 @@ HEADERS += \
   $$PWD/99.h \
   $$PWD/9.h \
   $$PWD/About.h \
-  $$PWD/Changelog.h \
   $$PWD/Hints.h \
   $$PWD/Introduction.h \
   $$PWD/Manual.h \
