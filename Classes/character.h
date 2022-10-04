@@ -2,13 +2,12 @@
 #define CHARACTER_H
 
 #include <vector>
-#include "item.h"
+#include "items.h"
 
 struct Observer;
 
 struct Character
 {
-  using Items = std::vector<Item>;
   using MonsterNames = std::vector<std::string>;
 
   Character(
@@ -40,6 +39,7 @@ struct Character
   const std::vector<int>& GetChapters() const noexcept { return m_chapters; }
   int GetCondition() const noexcept { return m_condition; }
   int GetCurrentChapter() const noexcept { return m_chapters.back(); }
+  const auto& GetFought() const noexcept { return m_fought; }
   int GetGold() const noexcept { return m_gold; }
   const Items& GetItems() const noexcept { return m_items; }
   int GetInitialSkill() const noexcept { return m_initial_skill; }
@@ -51,7 +51,7 @@ struct Character
   int GetSkill() const noexcept;
   int GetSkillBase() const noexcept;
   bool HasFought(const std::string& monster_name) const noexcept;
-  bool HasItem(const Item item) const;
+  //bool HasItem(const Item item) const;
   bool HasPotion() const noexcept;
   bool IsDead() const noexcept { return m_condition <= 0; }
   void RemoveItem(const Item item);
@@ -85,10 +85,16 @@ struct Character
   int m_skill;
 
   static const bool m_verbose{false};
-
-  friend bool operator==(const Character& lhs, const Character& rhs);
 };
 
 bool operator==(const Character& lhs, const Character& rhs);
+
+/// Get the best possible character
+Character GetBestCharacter(
+  const Item initial_potion = Item::luck_potion,
+  const bool auto_attack = true
+) noexcept;
+
+bool HasItem(const Character& c, const Item item) noexcept;
 
 #endif // CHARACTER_H

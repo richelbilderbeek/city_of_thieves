@@ -18,14 +18,22 @@ struct Walkthrough final : public Observer
     const std::vector<int>& route = GetWinningRoute()
   );
 
+  /// Get the summed consequence of this route
+  const Consequence& GetConsequence() noexcept { return m_consequence; }
+
   int GetNumberOfCharsPerLine() const noexcept override;
-  void Start();
+
+  /// Run the route, get the change in character
+  Character Run();
 
   private:
 
   Game m_game;
   std::vector<int> m_route;
   bool m_silent;
+
+  /// The summed consequence of this route till now
+  Consequence m_consequence;
 
   void CharacterChanged(const Character&) override {} //Ignore
   Option RequestOption(const std::vector<Option>& options) override;

@@ -36,7 +36,7 @@ void ShopChapter::Do(Character& character) const
     for (const auto& item: items)
     {
       if (item.second > character.GetGold()) continue;
-      if (character.HasItem(item.first)) continue;
+      if (HasItem(character, item.first)) continue;
       std::stringstream text;
       text
         << "Buy "

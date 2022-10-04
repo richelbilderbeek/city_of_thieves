@@ -5,14 +5,12 @@
 #include <vector>
 
 #include "consequencetype.h"
-#include "item.h"
+#include "items.h"
 
 struct Character;
 
 struct Consequence
 {
-  using Items = std::vector<Item>;
-
   Consequence();
 
   ///Add the other's consequences to this one
@@ -94,13 +92,20 @@ struct Consequence
   ConsequenceType m_type;
 };
 
-Consequence ParseConsequence(std::stringstream& s);
-
 Consequence CreateDrinkPotionConsequence();
 Consequence CreateEatProvisionConsequence();
 Consequence CreateLeaveConsequence();
 Consequence CreateNoConsequence();
 Consequence CreateShowInventoryConsequence();
 Consequence CreateYesConsequence();
+
+/// Is the consequence empty, i.e. there is no effect?
+bool IsNoConsequence(const Consequence& c) noexcept;
+
+Consequence ParseConsequence(std::stringstream& s);
+
+bool operator==(const Consequence& lhs, const Consequence& rhs) noexcept;
+
+
 
 #endif // CONSEQUENCE_H

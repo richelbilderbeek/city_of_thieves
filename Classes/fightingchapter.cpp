@@ -37,7 +37,7 @@ void FightingChapter::Do(Character& character) const
   {
     DoFightTwoMonsters(GetMonsters(),character);
   }
-  if (character.HasItem(Item::silver_scorpion_brooch) && !character.IsDead())
+  if (HasItem(character, Item::silver_scorpion_brooch) && !character.IsDead())
   {
     character.ChangeCondition(1);
   }

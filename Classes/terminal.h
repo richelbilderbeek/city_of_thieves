@@ -22,11 +22,14 @@ struct Terminal final : public Observer
   void SetAutoPlay(const bool auto_play) { m_auto_play = auto_play; }
   void SetSilent(const bool silent) { m_silent = silent; }
 
+  /// When input is requested, this slot is called
+  int SlotRequestInput(const std::vector<int>& valid_inputs);
+
+  /// Speak the text out loud
   void SpeakText(const std::string& text);
 
 
   void CharacterChanged(const Character& character) override;
-  int SlotRequestInput(const std::vector<int>& valid_inputs);
   Option RequestOption(const std::vector<Option>& valid_inputs) override;
   void ShowText(const std::string& text) override;
   void Wait() override;

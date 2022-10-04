@@ -61,10 +61,11 @@ struct Chapter
   const SkillChapter& GetSkill() const noexcept { return m_skill_chapter; }
   SkillChapter& GetSkill() noexcept { return m_skill_chapter; }
 
+  /// The main text in a chapter
   std::string GetText() const noexcept { return m_text; }
 
+  /// Get the type of chapter
   ChapterType GetType() const noexcept { return m_chapter_type; }
-
 
   Option RequestOption(const std::vector<Option>& options) const;
 

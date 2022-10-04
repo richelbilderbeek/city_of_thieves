@@ -10,6 +10,10 @@
 #include "dice.h"
 #include "helper.h"
 #include "observer.h"
+#include "skill.h"
+#include "luck.h"
+#include "playercondition.h"
+
 Character::Character(const Character& other)
   :
     m_arrows{other.m_arrows},
@@ -73,7 +77,7 @@ void Character::AddHasFought(const std::string& monster_name)
 
 void Character::AddItem(const Item item)
 {
-  if (HasItem(item))
+  if (HasItem(*this, item))
   {
     #ifndef NDEBUG
     std::cerr << "WARNING: adding item " << item << " for the second time!" << std::endl;
@@ -89,13 +93,13 @@ void Character::AddItem(const Item item)
 int Character::CalcAttackStrength() const noexcept
 {
   int shield_value = 0;
-  if (HasItem(Item::shield_with_tower_crest)) { shield_value = 0; } //Cursed
-  else if (HasItem(Item::shield_with_unicorn_crest)) { shield_value = 1; }
-  else if (HasItem(Item::magnificent_shield)) { shield_value = 1; }
-  else if (HasItem(Item::shield)) { shield_value = 0; }
+  if (HasItem(*this, Item::shield_with_tower_crest)) { shield_value = 0; } //Cursed
+  else if (HasItem(*this, Item::shield_with_unicorn_crest)) { shield_value = 1; }
+  else if (HasItem(*this, Item::magnificent_shield)) { shield_value = 1; }
+  else if (HasItem(*this, Item::shield)) { shield_value = 0; }
 
   return GetSkill()
-    + (HasItem(Item::magic_helmet) ? 1 : 0)
+    + (HasItem(*this, Item::magic_helmet) ? 1 : 0)
     + shield_value
     + (Dice::Get()->Throw())
     + (Dice::Get()->Throw())
@@ -194,17 +198,17 @@ void Character::ChangeLuck(const int change)
 void Character::DrinkPotion()
 {
   assert(HasPotion());
-  if (HasItem(Item::dexterity_potion))
+  if (HasItem(*this, Item::dexterity_potion))
   {
     m_skill = m_initial_skill;
     RemoveItem(Item::dexterity_potion);
   }
-  else if (HasItem(Item::stamina_potion))
+  else if (HasItem(*this, Item::stamina_potion))
   {
     m_condition = m_initial_condition;
     RemoveItem(Item::stamina_potion);
   }
-  else if (HasItem(Item::luck_potion))
+  else if (HasItem(*this, Item::luck_potion))
   {
     ++m_initial_luck;
     m_luck = m_initial_luck;
@@ -216,25 +220,39 @@ void Character::DrinkPotion()
   }
 }
 
+Character GetBestCharacter(
+  const Item initial_potion,
+  const bool auto_attack
+) noexcept
+{
+  const int skill{GetBestInitialSkill()};
+  const int condition{GetBestInitialCondition()};
+  const int luck{GetBestInitialLuck()};
+  return Character(
+    skill, condition, luck,
+    initial_potion, auto_attack
+  );
+}
+
 int Character::GetSkill() const noexcept
 {
   int shield_value = 0;
-  if (HasItem(Item::shield_with_tower_crest)) { shield_value = -1; } //Cursed
-  else if (HasItem(Item::shield_with_unicorn_crest)) { shield_value = 3; }
-  else if (HasItem(Item::magnificent_shield)) { shield_value = 2; }
-  else if (HasItem(Item::shield)) { shield_value = 1; }
+  if (HasItem(*this, Item::shield_with_tower_crest)) { shield_value = -1; } //Cursed
+  else if (HasItem(*this, Item::shield_with_unicorn_crest)) { shield_value = 3; }
+  else if (HasItem(*this, Item::magnificent_shield)) { shield_value = 2; }
+  else if (HasItem(*this, Item::shield)) { shield_value = 1; }
 
 
   int sword_value = 0;
-  if (HasItem(Item::ordinary_sword)) { sword_value = 1; }
-  else if (HasItem(Item::carralifs_sword)) { sword_value = 2; }
+  if (HasItem(*this, Item::ordinary_sword)) { sword_value = 1; }
+  else if (HasItem(*this, Item::carralifs_sword)) { sword_value = 2; }
 
   return
     GetSkillBase()
-    + (this->HasItem(Item::cursed_white_silk_glove) ? -2 : 0)
-    + (this->HasItem(Item::magic_elven_boots) ? 1 : 0)
+    + (HasItem(*this, Item::cursed_white_silk_glove) ? -2 : 0)
+    + (HasItem(*this, Item::magic_elven_boots) ? 1 : 0)
     + shield_value
-    + (this->HasItem(Item::chainmail_coat) ? 2 : 0)
+    + (HasItem(*this, Item::chainmail_coat) ? 2 : 0)
     + sword_value
   ;
 }
@@ -248,8 +266,8 @@ int Character::GetLuck() const noexcept
 {
   return
     GetLuckBase()
-    + (this->HasItem(Item::copper_scorpion_brooch) ? -1 : 0)
-    + (this->HasItem(Item::golden_scorpion_brooch) ? 2 : 0)
+    + (HasItem(*this, Item::copper_scorpion_brooch) ? -1 : 0)
+    + (HasItem(*this, Item::golden_scorpion_brooch) ? 2 : 0)
   ;
 }
 
@@ -267,6 +285,7 @@ bool Character::HasFought(const std::string& monster_name) const noexcept
   ) > 0;
 }
 
+/*
 bool Character::HasItem(const Item item) const
 {
   const int n{static_cast<int>(
@@ -276,12 +295,25 @@ bool Character::HasItem(const Item item) const
   assert(n == 0 || n == 1);
   return n;
 }
+*/
+
+bool HasItem(const Character& c, const Item item) noexcept
+{
+  const auto& items{c.GetItems()};
+  const int n{static_cast<int>(
+      std::count(std::begin(items),std::end(items),item)
+    )
+  };
+  assert(n == 0 || n == 1);
+  return n;
+}
+
 
 bool Character::HasPotion() const noexcept
 {
-  return HasItem(Item::stamina_potion)
-    || HasItem(Item::dexterity_potion)
-    || HasItem(Item::luck_potion)
+  return HasItem(*this, Item::stamina_potion)
+    || HasItem(*this, Item::dexterity_potion)
+    || HasItem(*this, Item::luck_potion)
   ;
 }
 
@@ -310,7 +342,7 @@ void Character::RemoveItem(Item item)
     };
     for (const auto& silver_item: silver_items)
     {
-      if (HasItem(silver_item)) RemoveItem(silver_item);
+      if (HasItem(*this, silver_item)) RemoveItem(silver_item);
     }
     return;
   }
@@ -384,49 +416,49 @@ std::string Character::ShowInventory()
   ;
 
   //Shield
-  if (HasItem(Item::shield_with_tower_crest))
+  if (HasItem(*this, Item::shield_with_tower_crest))
   {
     s << " * " << ToPrettyStr(Item::shield_with_tower_crest) << ": -1 (equipped, cursed)\n";
 
-    if (HasItem(Item::shield_with_unicorn_crest)) { s << " * " << ToPrettyStr(Item::shield_with_unicorn_crest) << ": +3\n"; }
-    if (HasItem(Item::magnificent_shield)) { s << " * " << ToPrettyStr(Item::magnificent_shield) << ": +2\n"; }
-    if (HasItem(Item::shield)) { s << " * " << ToPrettyStr(Item::shield) << ": +1\n"; }
+    if (HasItem(*this, Item::shield_with_unicorn_crest)) { s << " * " << ToPrettyStr(Item::shield_with_unicorn_crest) << ": +3\n"; }
+    if (HasItem(*this, Item::magnificent_shield)) { s << " * " << ToPrettyStr(Item::magnificent_shield) << ": +2\n"; }
+    if (HasItem(*this, Item::shield)) { s << " * " << ToPrettyStr(Item::shield) << ": +1\n"; }
   }
-  else if (HasItem(Item::shield_with_unicorn_crest))
+  else if (HasItem(*this, Item::shield_with_unicorn_crest))
   {
     s << " * " << ToPrettyStr(Item::shield_with_unicorn_crest) << ": +3 (equipped)\n";
-    if (HasItem(Item::magnificent_shield)) { s << " * " << ToPrettyStr(Item::magnificent_shield) << ": +2\n"; }
-    if (HasItem(Item::shield)) { s << " * " << ToPrettyStr(Item::shield) << ": +1\n"; }
+    if (HasItem(*this, Item::magnificent_shield)) { s << " * " << ToPrettyStr(Item::magnificent_shield) << ": +2\n"; }
+    if (HasItem(*this, Item::shield)) { s << " * " << ToPrettyStr(Item::shield) << ": +1\n"; }
   }
-  else if (HasItem(Item::magnificent_shield))
+  else if (HasItem(*this, Item::magnificent_shield))
   {
-    if (HasItem(Item::magnificent_shield)) { s << " * " << ToPrettyStr(Item::magnificent_shield) << ": +2 (equipped)\n"; }
-    if (HasItem(Item::shield)) { s << " * " << ToPrettyStr(Item::shield) << ": +1\n"; }
+    if (HasItem(*this, Item::magnificent_shield)) { s << " * " << ToPrettyStr(Item::magnificent_shield) << ": +2 (equipped)\n"; }
+    if (HasItem(*this, Item::shield)) { s << " * " << ToPrettyStr(Item::shield) << ": +1\n"; }
   }
-  else if (HasItem(Item::shield))
+  else if (HasItem(*this, Item::shield))
   {
-    if (HasItem(Item::shield)) { s << " * " << ToPrettyStr(Item::shield) << ": +1 (equipped)\n"; }
+    if (HasItem(*this, Item::shield)) { s << " * " << ToPrettyStr(Item::shield) << ": +1 (equipped)\n"; }
   }
 
   //Sword
-  if (HasItem(Item::carralifs_sword))
+  if (HasItem(*this, Item::carralifs_sword))
   {
     s << " * " << ToPrettyStr(Item::carralifs_sword) << ": +2 (equipped) \n";
-    if (HasItem(Item::ordinary_sword)) { s << " * " << ToPrettyStr(Item::ordinary_sword) << ": +1\n"; }
+    if (HasItem(*this, Item::ordinary_sword)) { s << " * " << ToPrettyStr(Item::ordinary_sword) << ": +1\n"; }
   }
-  else if (HasItem(Item::ordinary_sword))
+  else if (HasItem(*this, Item::ordinary_sword))
   {
-    if (HasItem(Item::ordinary_sword)) { s << " * " << ToPrettyStr(Item::ordinary_sword) << ": +1 (equipped)\n"; }
+    if (HasItem(*this, Item::ordinary_sword)) { s << " * " << ToPrettyStr(Item::ordinary_sword) << ": +1 (equipped)\n"; }
   }
 
   //Boots
-  if (HasItem(Item::magic_elven_boots)) { s << " * " << ToPrettyStr(Item::magic_elven_boots) << ": +1 (equipped)\n"; }
+  if (HasItem(*this, Item::magic_elven_boots)) { s << " * " << ToPrettyStr(Item::magic_elven_boots) << ": +1 (equipped)\n"; }
 
   //Chainmail coat
-  if (HasItem(Item::chainmail_coat)) { s << " * " << ToPrettyStr(Item::chainmail_coat) << ": +2 (equipped)\n"; }
+  if (HasItem(*this, Item::chainmail_coat)) { s << " * " << ToPrettyStr(Item::chainmail_coat) << ": +2 (equipped)\n"; }
 
   //Cursed gloves
-  if (HasItem(Item::cursed_white_silk_glove)) { s << " * " << ToPrettyStr(Item::cursed_white_silk_glove) << ": -2 (equipped, cursed)\n"; }
+  if (HasItem(*this, Item::cursed_white_silk_glove)) { s << " * " << ToPrettyStr(Item::cursed_white_silk_glove) << ": -2 (equipped, cursed)\n"; }
 
   s
     << " * total: " << GetSkill() << "/" << GetInitialSkill() << '\n'
@@ -434,7 +466,7 @@ std::string Character::ShowInventory()
     << "luck:\n"
     << " * base: " << GetLuckBase() << "/" << GetInitialLuck() << '\n'
   ;
-  if (HasItem(Item::golden_scorpion_brooch)) { s << " * " << ToPrettyStr(Item::golden_scorpion_brooch) << ": +2\n"; }
+  if (HasItem(*this, Item::golden_scorpion_brooch)) { s << " * " << ToPrettyStr(Item::golden_scorpion_brooch) << ": +2\n"; }
   //Note: the copper brooch decreases luck with 1, but this is not shown on purpose
   //I cannot avoid that it will be easy to see that base luck and total luck don't match
   s
@@ -496,17 +528,17 @@ bool Character::TestLuck() noexcept
 bool operator==(const Character& lhs, const Character& rhs)
 {
   return
-       lhs.m_chapters == rhs.m_chapters
-    && lhs.m_arrows == rhs.m_arrows
-    && lhs.m_skill ==  rhs.m_skill
-    && lhs.m_fought == rhs.m_fought
-    && lhs.m_gold == rhs.m_gold
-    && lhs.m_initial_skill == rhs.m_initial_skill
-    && lhs.m_initial_luck && rhs.m_initial_luck
-    && lhs.m_initial_condition == rhs.m_initial_condition
-    && lhs.m_items == rhs.m_items
-    && lhs.m_luck == rhs.m_luck
-    && lhs.m_provisions == rhs.m_provisions
-    && lhs.m_condition == rhs.m_condition
+       lhs.GetChapters() == rhs.GetChapters()
+    && lhs.GetArrows() == rhs.GetArrows()
+    && lhs.GetSkill() ==  rhs.GetSkill()
+    && lhs.GetFought() == rhs.GetFought()
+    && lhs.GetGold() == rhs.GetGold()
+    && lhs.GetInitialSkill() == rhs.GetInitialSkill()
+    && lhs.GetInitialLuck() && rhs.GetInitialLuck()
+    && lhs.GetInitialCondition() == rhs.GetInitialCondition()
+    && lhs.GetItems() == rhs.GetItems()
+    && lhs.GetLuck() == rhs.GetLuck()
+    && lhs.GetProvisions() == rhs.GetProvisions()
+    && lhs.GetCondition() == rhs.GetCondition()
   ;
 }

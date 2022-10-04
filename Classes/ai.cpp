@@ -146,11 +146,11 @@ double Ai::CalcFinalPayoff(const Character& character) const noexcept
 {
   assert(character.GetChapters().size() > 1 && "Cannot die in chapter 1");
 
-  if (character.HasItem(Item::black_pearls)) ++m_tally[Item::black_pearls];
-  if (character.HasItem(Item::silver_arrow)) ++m_tally[Item::silver_arrow];
-  if (character.HasItem(Item::hags_hair)) ++m_tally[Item::hags_hair];
-  if (character.HasItem(Item::lotus_flower)) ++m_tally[Item::lotus_flower];
-  if (character.HasItem(Item::tattoo)) ++m_tally[Item::tattoo];
+  if (HasItem(character, Item::black_pearls)) ++m_tally[Item::black_pearls];
+  if (HasItem(character, Item::silver_arrow)) ++m_tally[Item::silver_arrow];
+  if (HasItem(character, Item::hags_hair)) ++m_tally[Item::hags_hair];
+  if (HasItem(character, Item::lotus_flower)) ++m_tally[Item::lotus_flower];
+  if (HasItem(character, Item::tattoo)) ++m_tally[Item::tattoo];
 
   //The rarer an item is discovered, the higher its value
   const int sum{
@@ -173,11 +173,11 @@ double Ai::CalcFinalPayoff(const Character& character) const noexcept
 
   const double final_payoff{
     std::pow(
-        (character.HasItem(Item::black_pearls) ? values[Item::black_pearls] : 0.0)
-      + (character.HasItem(Item::lotus_flower) ? values[Item::lotus_flower] : 0.0)
-      + (character.HasItem(Item::hags_hair)    ? values[Item::hags_hair] : 0.0)
-      + (character.HasItem(Item::tattoo)       ? values[Item::tattoo] : 0.0)
-      + (character.HasItem(Item::silver_arrow) ? values[Item::silver_arrow] : 0.0)
+        (HasItem(character, Item::black_pearls) ? values[Item::black_pearls] : 0.0)
+      + (HasItem(character, Item::lotus_flower) ? values[Item::lotus_flower] : 0.0)
+      + (HasItem(character, Item::hags_hair)    ? values[Item::hags_hair] : 0.0)
+      + (HasItem(character, Item::tattoo)       ? values[Item::tattoo] : 0.0)
+      + (HasItem(character, Item::silver_arrow) ? values[Item::silver_arrow] : 0.0)
       + (character.GetCurrentChapter() == 400  ? 1.0 : 0.0) //Won the game
       + (got_in_city ? 1.0 : 0.0)
       + (got_in_forest ? 1.0 : 0.0)

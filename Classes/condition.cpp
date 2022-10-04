@@ -71,11 +71,11 @@ bool Condition::IsSatisfied(const Character &character) const
   {
     if (item_needed == Item::all_needed_to_slay_zanbar_bone)
     {
-      if ( !character.HasItem(Item::tattoo)
-        || !character.HasItem(Item::lotus_flower)
-        || !character.HasItem(Item::black_pearls)
-        || !character.HasItem(Item::hags_hair)
-        || !character.HasItem(Item::silver_arrow)
+      if ( !HasItem(character, Item::tattoo)
+        || !HasItem(character, Item::lotus_flower)
+        || !HasItem(character, Item::black_pearls)
+        || !HasItem(character, Item::hags_hair)
+        || !HasItem(character, Item::silver_arrow)
       )
       {
         return false;
@@ -83,32 +83,32 @@ bool Condition::IsSatisfied(const Character &character) const
     }
     else if (item_needed == Item::any_scorpion_brooch)
     {
-      if ( !character.HasItem(Item::copper_scorpion_brooch)
-        && !character.HasItem(Item::silver_scorpion_brooch)
-        && !character.HasItem(Item::golden_scorpion_brooch)
+      if ( !HasItem(character, Item::copper_scorpion_brooch)
+        && !HasItem(character, Item::silver_scorpion_brooch)
+        && !HasItem(character, Item::golden_scorpion_brooch)
       ) return false;
     }
     else
     {
-      if (!character.HasItem(item_needed)) return false;
+      if (!HasItem(character, item_needed)) return false;
     }
   }
   for (const auto& item_not_needed: GetItemsNotNeeded())
   {
     if (item_not_needed == Item::any_scorpion_brooch)
     {
-      if ( character.HasItem(Item::copper_scorpion_brooch)
-        || character.HasItem(Item::silver_scorpion_brooch)
-        || character.HasItem(Item::golden_scorpion_brooch)
+      if ( HasItem(character, Item::copper_scorpion_brooch)
+        || HasItem(character, Item::silver_scorpion_brooch)
+        || HasItem(character, Item::golden_scorpion_brooch)
       ) return false;
     }
     else if (item_not_needed == Item::all_needed_to_slay_zanbar_bone)
     {
-      if ( character.HasItem(Item::tattoo)
-        && character.HasItem(Item::lotus_flower)
-        && character.HasItem(Item::black_pearls)
-        && character.HasItem(Item::hags_hair)
-        && character.HasItem(Item::silver_arrow)
+      if ( HasItem(character, Item::tattoo)
+        && HasItem(character, Item::lotus_flower)
+        && HasItem(character, Item::black_pearls)
+        && HasItem(character, Item::hags_hair)
+        && HasItem(character, Item::silver_arrow)
       )
       {
         return false;
@@ -116,7 +116,7 @@ bool Condition::IsSatisfied(const Character &character) const
     }
     else
     {
-      if (character.HasItem(item_not_needed)) return false;
+      if (HasItem(character, item_not_needed)) return false;
     }
   }
   return true;

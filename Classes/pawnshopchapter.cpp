@@ -30,7 +30,7 @@ void PawnShopChapter::Do(Character& character) const
 
     for (const auto& item: items)
     {
-      if (!character.HasItem(item.first)) continue;
+      if (!HasItem(character, item.first)) continue;
       std::stringstream text;
       text
         << "Sell "

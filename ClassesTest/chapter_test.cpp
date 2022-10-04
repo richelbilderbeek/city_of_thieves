@@ -156,14 +156,14 @@ BOOST_AUTO_TEST_CASE(test_chapter)
     Character character(10,10,10,Item::luck_potion);
     character.ChangeLuck(-character.GetLuck()); //Make player unlucky
     assert(character.GetLuck() == 0);
-    assert(!character.HasItem(Item::black_pearls));
+    assert(!HasItem(character, Item::black_pearls));
 
     d.ConnectTo(chapter);
     chapter.Do(character);
 
 
     assert(character.GetLuck() > 0);
-    assert(character.HasItem(Item::black_pearls));
+    assert(HasItem(character, Item::black_pearls));
   }
   //Chapter 14: must respond to ring of fire
   {
@@ -193,17 +193,17 @@ BOOST_AUTO_TEST_CASE(test_chapter)
   {
     const Chapter chapter(11);
     Character character(10,10,10,Item::luck_potion);
-    assert(character.HasItem(Item::shield));
+    assert(HasItem(character, Item::shield));
     const int dex_before{character.GetSkill()};
 
     d.ConnectTo(chapter);
     chapter.Do(character);
 
 
-    assert(!character.HasItem(Item::shield));
+    assert(!HasItem(character, Item::shield));
     const int dex_after{character.GetSkill()};
     assert(dex_after < dex_before); //Due to losing shield
-    assert(!character.HasItem(Item::shield));
+    assert(!HasItem(character, Item::shield));
   }
   //Chapter 11: must lose shield
   {
@@ -211,13 +211,13 @@ BOOST_AUTO_TEST_CASE(test_chapter)
     Character character(10,10,10,Item::luck_potion);
     character.AddItem(Item::chainmail_coat);
     const int dex_before{character.GetSkill()};
-    assert(character.HasItem(Item::shield));
+    assert(HasItem(character, Item::shield));
 
     d.ConnectTo(chapter);
     chapter.Do(character);
 
 
-    assert(!character.HasItem(Item::shield));
+    assert(!HasItem(character, Item::shield));
     const int dex_after{character.GetSkill()};
     assert(dex_after == dex_before - 1); //Due to losing shield
   }
@@ -529,14 +529,14 @@ BOOST_AUTO_TEST_CASE(test_chapter)
     d.ConnectTo(chapter);
     chapter.Do(character);
 
-    assert(!character.HasItem(Item::silver_arrow));
-    assert(!character.HasItem(Item::silver_chalice));
-    assert(!character.HasItem(Item::silver_flute));
-    assert(!character.HasItem(Item::silver_insect_bracelet));
-    assert(!character.HasItem(Item::silver_scorpion_brooch));
-    assert(!character.HasItem(Item::silver_spoon));
-    assert(!character.HasItem(Item::two_silver_goblets));
-    assert(!character.HasItem(Item::ivory_skull_on_a_silver_chain));
+    assert(!HasItem(character, Item::silver_arrow));
+    assert(!HasItem(character, Item::silver_chalice));
+    assert(!HasItem(character, Item::silver_flute));
+    assert(!HasItem(character, Item::silver_insect_bracelet));
+    assert(!HasItem(character, Item::silver_scorpion_brooch));
+    assert(!HasItem(character, Item::silver_spoon));
+    assert(!HasItem(character, Item::two_silver_goblets));
+    assert(!HasItem(character, Item::ivory_skull_on_a_silver_chain));
   }
 
   //Silver scorpion brooch must not revive

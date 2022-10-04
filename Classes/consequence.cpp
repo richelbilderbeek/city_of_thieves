@@ -341,3 +341,23 @@ Consequence CreateNoConsequence()
   c.SetType(ConsequenceType::no);
   return c;
 }
+
+bool IsNoConsequence(const Consequence& c) noexcept
+{
+  return c == Consequence();
+}
+
+bool operator==(const Consequence& lhs, const Consequence& rhs) noexcept
+{
+  return lhs.GetItemsToAdd() == rhs.GetItemsToAdd()
+    && lhs.GetItemsToRemove() == rhs.GetItemsToRemove()
+    && lhs.GetChangeArrows() == rhs.GetChangeArrows()
+    && lhs.GetChangeSkill() == rhs.GetChangeSkill()
+    && lhs.GetChangeGold() == rhs.GetChangeGold()
+    && lhs.GetChangeLuck() == rhs.GetChangeLuck()
+    && lhs.GetChangeProvisions() == rhs.GetChangeProvisions()
+    && lhs.GetChangeCondition() == rhs.GetChangeCondition()
+    && lhs.GetNextChapter() == rhs.GetNextChapter()
+    && lhs.GetType() == rhs.GetType()
+  ;
+}

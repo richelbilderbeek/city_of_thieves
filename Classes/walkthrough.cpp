@@ -24,14 +24,18 @@ int Walkthrough::GetNumberOfCharsPerLine() const noexcept
   return GetDefaultNumberOfCharsPerLine();
 }
 
-void Walkthrough::Start()
+Character Walkthrough::Run()
 {
+  const Character initial_character{m_game.GetCharacter()};
   while (1)
   {
     m_game.DoChapter();
     if (m_game.HasWon() || m_game.HasLost()) break;
   }
   assert(m_game.HasWon());
+  const Character final_character{m_game.GetCharacter()};
+  //return final_character - initial_character;
+  return final_character;
 }
 
 Option Walkthrough::RequestOption(const std::vector<Option>& options)

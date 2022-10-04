@@ -61,6 +61,6 @@ BOOST_AUTO_TEST_CASE(test_game_win)
   const Character character(6,12,12,Item::luck_potion);
   const bool silent{true};
   Walkthrough walkthrough(seed,character,silent);
-  walkthrough.Start();
+  walkthrough.Run();
 }
 

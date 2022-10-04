@@ -17,6 +17,8 @@ SOURCES += \
     $$PWD/gamewonchapter.cpp \
     $$PWD/helper.cpp \
     $$PWD/item.cpp \
+    $$PWD/items.cpp \
+    $$PWD/luck.cpp \
     $$PWD/luckchapter.cpp \
     $$PWD/menudialog.cpp \
     $$PWD/monster.cpp \
@@ -24,8 +26,10 @@ SOURCES += \
     $$PWD/optionschapter.cpp \
     $$PWD/pawnshopchapter.cpp \
     $$PWD/pillgamechapter.cpp \
+    $$PWD/playercondition.cpp \
     $$PWD/route.cpp \
     $$PWD/shopchapter.cpp \
+    $$PWD/skill.cpp \
     $$PWD/skillchapter.cpp \
     $$PWD/terminal.cpp \
     $$PWD/walkthrough.cpp \
@@ -48,6 +52,8 @@ HEADERS += \
     $$PWD/gamewonchapter.h \
     $$PWD/helper.h \
     $$PWD/item.h \
+    $$PWD/items.h \
+    $$PWD/luck.h \
     $$PWD/luckchapter.h \
     $$PWD/menudialog.h \
     $$PWD/monster.h \
@@ -55,8 +61,10 @@ HEADERS += \
     $$PWD/optionschapter.h \
     $$PWD/pawnshopchapter.h \
     $$PWD/pillgamechapter.h \
+    $$PWD/playercondition.h \
     $$PWD/route.h \
     $$PWD/shopchapter.h \
+    $$PWD/skill.h \
     $$PWD/skillchapter.h \
     $$PWD/terminal.h \
     $$PWD/walkthrough.h \
