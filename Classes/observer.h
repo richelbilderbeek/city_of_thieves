@@ -16,4 +16,8 @@ struct Observer
   virtual Option RequestOption(const std::vector<Option>& options) = 0;
 };
 
+/// Get the default number of characters per line,
+/// which is 80 on a terminal and 32 on an NDS
+int GetDefaultNumberOfCharsPerLine() noexcept;
+
 #endif // OBSERVER_H

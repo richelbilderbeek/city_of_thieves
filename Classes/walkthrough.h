@@ -7,13 +7,15 @@
 #include "option.h"
 #include "game.h"
 #include "observer.h"
+#include "route.h"
 
 struct Walkthrough final : public Observer
 {
   Walkthrough(
     const int seed,
     const Character& character,
-    const bool silent = false
+    const bool silent = false,
+    const std::vector<int>& route = GetWinningRoute()
   );
 
   int GetNumberOfCharsPerLine() const noexcept override;
@@ -22,6 +24,7 @@ struct Walkthrough final : public Observer
   private:
 
   Game m_game;
+  std::vector<int> m_route;
   bool m_silent;
 
   void CharacterChanged(const Character&) override {} //Ignore

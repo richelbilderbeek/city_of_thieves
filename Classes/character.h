@@ -38,9 +38,8 @@ struct Character
   int GetArrows() const noexcept { return m_arrows; }
   bool GetAutoAttack() const noexcept { return m_auto_attack; }
   const std::vector<int>& GetChapters() const noexcept { return m_chapters; }
+  int GetCondition() const noexcept { return m_condition; }
   int GetCurrentChapter() const noexcept { return m_chapters.back(); }
-  int GetSkill() const noexcept;
-  int GetSkillBase() const noexcept;
   int GetGold() const noexcept { return m_gold; }
   const Items& GetItems() const noexcept { return m_items; }
   int GetInitialSkill() const noexcept { return m_initial_skill; }
@@ -49,7 +48,8 @@ struct Character
   int GetLuck() const noexcept;
   int GetLuckBase() const noexcept;
   int GetProvisions() const noexcept { return m_provisions; }
-  int GetCondition() const noexcept { return m_condition; }
+  int GetSkill() const noexcept;
+  int GetSkillBase() const noexcept;
   bool HasFought(const std::string& monster_name) const noexcept;
   bool HasItem(const Item item) const;
   bool HasPotion() const noexcept;

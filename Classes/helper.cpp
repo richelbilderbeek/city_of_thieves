@@ -34,6 +34,7 @@ void Helper::Cout(const char c) const
   printf(buffer);
   #else
   std::cout << c;
+  std::cout.flush();
   #endif
 }
 
@@ -44,6 +45,7 @@ void Helper::Cout(const std::string& s) const
   fflush(stdout);
   #else
   std::cout << s;
+  std::cout.flush();
   #endif
 }
 

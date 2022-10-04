@@ -46,11 +46,7 @@ void Terminal::CharacterChanged(const Character& /* character */)
 
 int Terminal::GetNumberOfCharsPerLine() const noexcept
 {
-#ifndef ARM9
-  return 80;
-#else
-  return 32;
-#endif
+  return GetDefaultNumberOfCharsPerLine();
 }
 
 Option Terminal::RequestOption(const std::vector<Option>& options)
@@ -119,10 +115,7 @@ void Terminal::ShowText(const std::string& text)
   const std::string lines = Helper().StrToLines(text,GetNumberOfCharsPerLine());
   for (const char c: lines)
   {
-    Helper().Cout(c);
-    #ifndef ARM9
-    std::cout.flush();
-    #endif
+    Helper().Cout(c); // Flushes on NDS
     Helper().Wait(m_wait_character_msec);
   }
 }
