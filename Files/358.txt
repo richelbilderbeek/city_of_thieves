@@ -1,5 +1,5 @@
 It's a close shave, but you just manage to grip the edge of the wall with your fingertips. You pull yourself up and climb on to a stone walkway along the top of the city wall. On either side of you are stone towers rising above the battlements, spaced some hundred metres apart. There are doors in the towers, both of which are suddenly flung open as more guards run out to capture you. There is a twenty-metre drop on the other side of the wall. @
 normal
-option Jump to freedom@ goto 346
+option Jump to freedom @ goto 346
 option Fix a climbing rope to the wall and climb down the other side? @ if has climbing_rope goto 108
 option Face the oncoming guards @ goto 56
