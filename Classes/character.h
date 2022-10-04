@@ -51,7 +51,6 @@ struct Character
   int GetSkill() const noexcept;
   int GetSkillBase() const noexcept;
   bool HasFought(const std::string& monster_name) const noexcept;
-  //bool HasItem(const Item item) const;
   bool HasPotion() const noexcept;
   bool IsDead() const noexcept { return m_condition <= 0; }
   void RemoveItem(const Item item);

@@ -26,15 +26,15 @@ int Walkthrough::GetNumberOfCharsPerLine() const noexcept
 
 Character Walkthrough::Run()
 {
-  const Character initial_character{m_game.GetCharacter()};
   while (1)
   {
     m_game.DoChapter();
     if (m_game.HasWon() || m_game.HasLost()) break;
+    assert(m_game.GetCharacter().GetCondition() > 0);
+    assert(!m_game.GetCharacter().IsDead());
   }
-  assert(m_game.HasWon());
+  assert(m_game.HasWon() || m_game.HasLost());
   const Character final_character{m_game.GetCharacter()};
-  //return final_character - initial_character;
   return final_character;
 }
 

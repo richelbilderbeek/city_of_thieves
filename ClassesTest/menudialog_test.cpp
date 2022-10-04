@@ -24,7 +24,12 @@
 
 BOOST_AUTO_TEST_CASE(test_menu_dialog)
 {
-  const Character character(6+6,12+6,6+6,Item::luck_potion);
+  const Character character(
+     6+6+123,
+    12+6+123,
+     6+6+123,
+    Item::luck_potion
+  );
   const int seed{42};
   Game game(seed,character);
 
