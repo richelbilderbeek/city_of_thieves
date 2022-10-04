@@ -234,6 +234,11 @@ Character GetBestCharacter(
   );
 }
 
+int GetCurrentChapter(const Character& c) noexcept
+{
+  return c.GetChapters().back();
+}
+
 int Character::GetSkill() const noexcept
 {
   int shield_value = 0;

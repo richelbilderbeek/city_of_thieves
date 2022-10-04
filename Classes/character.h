@@ -38,7 +38,7 @@ struct Character
   bool GetAutoAttack() const noexcept { return m_auto_attack; }
   const std::vector<int>& GetChapters() const noexcept { return m_chapters; }
   int GetCondition() const noexcept { return m_condition; }
-  int GetCurrentChapter() const noexcept { return m_chapters.back(); }
+  //int GetCurrentChapter() const noexcept { return m_chapters.back(); }
   const auto& GetFought() const noexcept { return m_fought; }
   int GetGold() const noexcept { return m_gold; }
   const Items& GetItems() const noexcept { return m_items; }
@@ -92,6 +92,8 @@ Character GetBestCharacter(
   const Item initial_potion = Item::luck_potion,
   const bool auto_attack = true
 ) noexcept;
+
+int GetCurrentChapter(const Character& c) noexcept;
 
 bool HasItem(const Character& c, const Item item) noexcept;
 

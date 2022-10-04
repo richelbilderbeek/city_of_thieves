@@ -357,7 +357,7 @@ void Chapter::Do(Character& character) const
     if (GetOptions().GetValidOptions(character).empty())
     {
       std::cerr
-        << "ERROR: no valid options in chapter " << character.GetCurrentChapter()
+        << "ERROR: no valid options in chapter " << GetCurrentChapter(character)
         << std::endl
         << "Options:\n"
       ;

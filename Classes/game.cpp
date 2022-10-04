@@ -53,7 +53,7 @@ void Game::DoChapter()
 
 int Game::GetCurrentChapterNumber() const noexcept
 {
-  return m_character.GetCurrentChapter();
+  return GetCurrentChapter(m_character);
 }
 
 #ifndef NDEBUG

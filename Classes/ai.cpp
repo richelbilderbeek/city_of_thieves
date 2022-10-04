@@ -178,12 +178,12 @@ double Ai::CalcFinalPayoff(const Character& character) const noexcept
       + (HasItem(character, Item::hags_hair)    ? values[Item::hags_hair] : 0.0)
       + (HasItem(character, Item::tattoo)       ? values[Item::tattoo] : 0.0)
       + (HasItem(character, Item::silver_arrow) ? values[Item::silver_arrow] : 0.0)
-      + (character.GetCurrentChapter() == 400  ? 1.0 : 0.0) //Won the game
+      + (GetCurrentChapter(character) == 400  ? 1.0 : 0.0) //Won the game
       + (got_in_city ? 1.0 : 0.0)
       + (got_in_forest ? 1.0 : 0.0)
     ,2.0)
   };
-  if (character.GetCurrentChapter() == 400) { std::clog << "Finished game" << std::endl; }
+  if (GetCurrentChapter(character) == 400) { std::clog << "Finished game" << std::endl; }
 
   /*
   if (!character.HasItem(Item::black_pearls)) return 0.0;
@@ -192,7 +192,7 @@ double Ai::CalcFinalPayoff(const Character& character) const noexcept
   if (!character.HasItem(Item::hags_hair)) return 16.0;
   if (!character.HasItem(Item::lotus_flower)) return 64.0;
   if (!character.HasItem(Item::tattoo)) return 256.0;
-  if (!character.GetCurrentChapter() == 400) return 1024.0;
+  if (!GetCurrentChapter(character) == 400) return 1024.0;
   return 4096.0;
   */
   /*
@@ -203,7 +203,7 @@ double Ai::CalcFinalPayoff(const Character& character) const noexcept
       + (character.HasItem(Item::hags_hair)    ? 1.0 : 0.0)
       + (character.HasItem(Item::tattoo)       ? 1.0 : 0.0)
       + (character.HasItem(Item::silver_arrow) ? 1.0 : 0.0)
-      + (character.GetCurrentChapter() == 400  ? 1.0 : 0.0) //Won the game
+      + (GetCurrentChapter(character) == 400  ? 1.0 : 0.0) //Won the game
     ,2.0)
   };
   */

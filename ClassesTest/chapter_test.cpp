@@ -258,7 +258,7 @@ BOOST_AUTO_TEST_CASE(test_chapter)
     chapter.Do(character);
 
 
-    assert(character.GetCurrentChapter() > -1);
+    assert(GetCurrentChapter(character) > -1);
   }
   //Chapter 18: Skill chapter must be parsed correctly
   {
@@ -279,7 +279,7 @@ BOOST_AUTO_TEST_CASE(test_chapter)
     chapter.Do(character);
 
 
-    assert(character.GetCurrentChapter() > -1);
+    assert(GetCurrentChapter(character) > -1);
   }
   //Chapter 42: Must loose all provisions
   {
@@ -469,7 +469,7 @@ BOOST_AUTO_TEST_CASE(test_chapter)
     Character character(100,100,100,Item::luck_potion);
     d.ConnectTo(chapter);
     chapter.Do(character);
-    assert(character.GetCurrentChapter() == 38);
+    assert(GetCurrentChapter(character) == 38);
   }
   //Chapter 190: test-your-skill for unskilled character
   {
@@ -484,7 +484,7 @@ BOOST_AUTO_TEST_CASE(test_chapter)
 
     const int gold_after{character.GetGold()};
     assert(gold_after < gold_before);
-    assert(character.GetCurrentChapter() == 296);
+    assert(GetCurrentChapter(character) == 296);
   }
 
   //Chapter 297: must respond to monster being faught
