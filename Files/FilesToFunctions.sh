@@ -37,7 +37,7 @@ do
 
 done
 
-for BASENAME in About Changelog Hints Introduction Manual Teaser ZanbarBone58 ZanbarBone59 ZanbarBone80
+for BASENAME in About Hints Introduction Manual Teaser ZanbarBone58 ZanbarBone59 ZanbarBone80
 do
 
   INPUTFILENAME=$BASENAME.txt
