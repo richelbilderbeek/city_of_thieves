@@ -88,4 +88,3 @@ This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does 
  * [libnds_example_2](https://github.com/richelbilderbeek/libnds_example_2): minimal NDS example with Madmax audio
  * [Richel Bilderbeek's games](https://github.com/richelbilderbeek/Games)
  * [Singularity scriptlet for City of Thieves](https://github.com/richelbilderbeek/singularity_example_6)
-
