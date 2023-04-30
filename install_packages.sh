@@ -1,9 +1,8 @@
 #!/bin/bash
-apt-get install \
+apt-get install --yes \
   qtcreator \
-  qt5-qmake \
-  qt5-default \
-  libqt5svg5-dev \
+  qmake6 \
+  libqt6svg6-dev \
   make \
   g++ \
   libboost-all-dev
