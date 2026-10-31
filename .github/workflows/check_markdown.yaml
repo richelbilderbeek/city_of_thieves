@@ -1,0 +1,27 @@
+# Check that there is correct markdown in all files
+name: Check markdown
+
+# Check spelling on the 21st day of the month.
+# 21st as the first letter of this repo is the 21st letter in the alphabet.
+on:
+  push:
+  pull_request:
+  schedule:
+  - cron: "0 0 21 * *"
+
+jobs:
+  check_markdown:
+
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+
+      - uses: articulate/actions-markdownlint@v1
+        with:
+          config: .markdownlint.jsonc
+          ignore: .markdownlintignore
+

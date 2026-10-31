@@ -1,0 +1,27 @@
+# Check that there is correct spelling in all files
+name: Check spelling
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check_spelling:
+
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+
+      - name: Instructions how to fix
+        run: |
+          echo "If the spelling error is valid, fix the spelling error."
+          echo "If the spelling error is incorrect,"
+          echo "add this word to the file '.wordlist' (in the project root):"
+          echo "this is a whitelist/allowlist"
+
+      - uses: igsekor/pyspelling-any@v1.0.4
+
