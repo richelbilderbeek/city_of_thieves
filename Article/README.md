@@ -265,7 +265,7 @@ untill you reach the top and then you've found (one) optimal route.
 
 Below an illustration of the algorithms work.
 
-![Simple tree with the algorithm applied](https://github.com/richelbilderbeek/CityOfThieves/blob/master/Article/rafayelsalgo.png)
+![Simple tree with the algorithm applied](rafayelsalgo.png)
 
 > Figure 1: Simple tree with the algorithm applied.
 > The score is based on the probability to end in Game Over as described above.
