@@ -8,6 +8,7 @@ nav = [
   { "Start" = "README.md"},
   "screenshots/README.md",
   "acknowledgments.md",
+  "faq.md",
   "misc/README.md"
 ]
 
