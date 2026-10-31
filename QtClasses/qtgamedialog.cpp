@@ -7,9 +7,9 @@
 #include <QTextCursor>
 #pragma GCC diagnostic pop
 
-#include <boost/lexical_cast.hpp>
+//#include <boost/lexical_cast.hpp>
 
-#include "chapter.h"
+//#include "chapter.h"
 #include "menudialog.h"
 #include "helper.h"
 #include "dice.h"
@@ -18,6 +18,8 @@
 #pragma GCC diagnostic ignored "-Weffc++"
 #include "ui_qtgamedialog.h"
 #pragma GCC diagnostic pop
+
+#include <sstream>
 
 QtGameDialog::QtGameDialog(QWidget *parent) :
   QDialog(parent),
@@ -165,7 +167,8 @@ void QtGameDialog::ShowText(const std::string& text)
 
   for (const char c: text)
   {
-    const std::string s{boost::lexical_cast<std::string>(c)};
+    //const std::string s{boost::lexical_cast<std::string>(c)};
+    const std::string s{std::to_string(c)};
     d.insertText(s.c_str());
     Helper().Wait(waiting_time);
     //TODO: Speed up text display when user presses a key

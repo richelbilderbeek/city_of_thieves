@@ -5,7 +5,8 @@
 #include "character.h"
 
 OptionsChapter::OptionsChapter()
-  : m_options{}
+  : m_options{},
+    m_rng_generator{42}
 {
 
 }
@@ -13,7 +14,8 @@ OptionsChapter::OptionsChapter()
 void OptionsChapter::AddOption(const Option& option)
 {
   m_options.push_back(option);
-  std::random_shuffle(std::begin(m_options),std::end(m_options));
+  std::shuffle(std::begin(m_options),std::end(m_options), m_rng_generator);
+
 }
 
 std::vector<Option> OptionsChapter::GetValidOptions(const Character& character) const noexcept
