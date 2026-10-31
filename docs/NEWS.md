@@ -1,7 +1,8 @@
 # NEWS
 
-## Unreleased: Version 1.10
+## 2026-10-31: Version 1.10
 
+- Added Zensical website
 - Remove changelog in game
 - Fix [#16](https://github.com/richelbilderbeek/city_of_thieves/issues/16):
    Using luck to prevent damage upon player decrease the damage inflicted
