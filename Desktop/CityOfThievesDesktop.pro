@@ -48,6 +48,9 @@ CONFIG(debug, debug|release) {
 # Qt
 QT += core gui widgets
 
+# Music
+QT += multimedia
+
 # Prevent Qt for failing with this error:
 # qrc_[*].cpp:400:44: error: ‘qInitResources_[*]__init_variable__’ defined but not used
 # [*]: the resource filename

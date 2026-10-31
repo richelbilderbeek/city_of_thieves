@@ -3,4 +3,8 @@
         <file>ZanbarBone.jpg</file>
         <file>ZanbarBoneGrey.png</file>
     </qresource>
+    <qresource prefix="/songs">
+        <file>intro_theme.m4a</file>
+        <file>intro_theme.ogg</file>
+    </qresource>
 </RCC>

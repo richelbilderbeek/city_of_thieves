@@ -14,6 +14,9 @@
 #include "helper.h"
 #include "dice.h"
 
+#include <QMediaPlayer>
+#include <QMediaPlaylist>
+
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Weffc++"
 #include "ui_qtgamedialog.h"
@@ -30,6 +33,24 @@ QtGameDialog::QtGameDialog(QWidget *parent) :
   ui->setupUi(this);
 
   Dice::Get()->SetSeed(42);
+
+
+auto *playlist = new QMediaPlaylist(this);
+playlist->addMedia(QUrl("qrc:/songs/intro_theme.ogg"));
+playlist->setPlaybackMode(QMediaPlaylist::Loop);   // loop background music
+
+auto *player = new QMediaPlayer(this);
+player->setPlaylist(playlist);
+player->setVolume(50);                             // 0–100
+player->play();
+
+connect(player, QOverload<QMediaPlayer::Error>::of(&QMediaPlayer::error),
+        [player]{
+        qDebug()
+          << player->errorString()
+          << "\nTip: sudo apt install libqt5multimedia5-plugins";
+        }
+    );
 
   #ifdef QT5_TODO_FIND_CORRECT_DEFINE
   QTimer::singleShot(100,Qt::VeryCoarseTimer,this,SLOT(Start()));
