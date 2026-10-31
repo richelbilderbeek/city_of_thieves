@@ -1,5 +1,7 @@
 # NEWS
 
+## Unreleased: Version 1.11
+
 ## 2026-10-31: Version 1.10
 
 - Added Zensical website
