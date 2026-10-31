@@ -1,6 +1,7 @@
 # City Of Thieves
 
-City Of Thieves is a text adventure game after the English gamebook with the same name by Ian Livingstone. 
+City Of Thieves is a text adventure game after the English gamebook
+with the same name by Ian Livingstone.
 
 ![Console version](screenshots/CityOfThievesConsole_1_0.png)
 ![Desktop version](screenshots/CityOfThievesDesktop_1_0.png)
@@ -18,7 +19,9 @@ City Of Thieves is a text adventure game after the English gamebook with the sam
 
 ## External links
 
-- [libnds_example_1](https://github.com/richelbilderbeek/libnds_example_1): minimal NDS example
-- [libnds_example_2](https://github.com/richelbilderbeek/libnds_example_2): minimal NDS example with Madmax audio
+- [libnds_example_1](https://github.com/richelbilderbeek/libnds_example_1):
+  minimal NDS example
+- [libnds_example_2](https://github.com/richelbilderbeek/libnds_example_2):
+  minimal NDS example with Madmax audio
 - [Richel Bilderbeek's games](https://richelbilderbeek.github.io/games/)
 - [Singularity scriptlet for City of Thieves](https://github.com/richelbilderbeek/singularity_example_6)
