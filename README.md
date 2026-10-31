@@ -6,7 +6,11 @@
 [![Check Markdown](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_markdown.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_markdown.yaml)
 [![Check spelling](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_spelling.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_spelling.yaml)
 [![Create the Zensical website](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/create_zensical_website.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/create_zensical_website.yaml)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17700484.svg)](https://doi.org/10.5281/zenodo.17700484)
+
+Branch     |[![GitHub Actions logo](pics/GitHubActions.png)](https://github.com/richelbilderbeek/city_of_thieves/actions)   |[![Codecov logo](pics/Codecov.png)](https://www.codecov.io)
+-----------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+`main`     |![check](https://github.com/richelbilderbeek/city_of_thieves/workflows/check/badge.svg?branch=main)             |[![codecov.io](https://codecov.io/github/richelbilderbeek/city_of_thieves/coverage.svg?branch=main)](https://codecov.io/github/richelbilderbeek/city_of_thieves/branch/main)
+`develop`  |![check](https://github.com/richelbilderbeek/city_of_thieves/workflows/check/badge.svg?branch=develop)          |[![codecov.io](https://codecov.io/github/richelbilderbeek/city_of_thieves/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/city_of_thieves/branch/develop)
 
 <!-- markdownlint-enable MD013 -->
 
