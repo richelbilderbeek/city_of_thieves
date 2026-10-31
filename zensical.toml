@@ -11,7 +11,8 @@ nav = [
 [project.theme]
 # https://zensical.org/docs/setup/basics/?h=theme#theme-variant
 variant = "classic"
-palette.primary = "light green"
+palette.primary = "black"
+palette.accent = "red"
 
 # favicon = "favicon.ico"
 logo = "ZanbarBone.png"

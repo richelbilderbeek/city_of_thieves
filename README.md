@@ -1,16 +1,16 @@
-# Intro to Python for HPC
+# City of Thieves
 
 <!-- markdownlint-disable MD013 --><!-- Badges cannot be split up over lines, hence will break 80 characters per line -->
 
-[![Check links](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_links.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_links.yaml)
-[![Check Markdown](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_markdown.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_markdown.yaml)
-[![Check spelling](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_spelling.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_spelling.yaml)
-[![Create the MkDocs website](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/create_mkdocs_website.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/create_mkdocs_website.yaml)
+[![Check links](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_links.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_links.yaml)
+[![Check Markdown](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_markdown.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_markdown.yaml)
+[![Check spelling](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_spelling.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_spelling.yaml)
+[![Create the Zensical website](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/create_zensical_website.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/create_zensical_website.yaml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17700484.svg)](https://doi.org/10.5281/zenodo.17700484)
 
 <!-- markdownlint-enable MD013 -->
 
-- [Go to the nicely rendered site](https://uppmax.github.io/naiss_intro_python/)
+- [Go to the nicely rendered site](https://richelbilderbeek.github.io/city_of_thieves/)
 
 ## Files used by continuous integration scripts
 
