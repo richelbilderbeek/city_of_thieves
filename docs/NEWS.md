@@ -52,7 +52,8 @@
   when really still having two provisions
 - Gold flower is really put in the inventory
 - When giving the silver scorpion brooch to the serpent queen,
-  the silver scorpion broochis given, instead of the silver insect bracelet
+  the silver scorpion brooch is given,
+  instead of the silver insect bracelet
 - Changed all fonts to monospace
 - Desktop version: show items in list
 - Can only encounter the mummy once
