@@ -14,8 +14,11 @@
 #include "helper.h"
 #include "dice.h"
 
+#define USE_MUSIC
+#ifdef USE_MUSIC
 #include <QMediaPlayer>
 #include <QMediaPlaylist>
+#endif //f USE_MUSIC
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Weffc++"
@@ -34,23 +37,26 @@ QtGameDialog::QtGameDialog(QWidget *parent) :
 
   Dice::Get()->SetSeed(42);
 
+  #ifdef USE_MUSIC
+  auto *playlist = new QMediaPlaylist(this);
+  playlist->addMedia(QUrl("qrc:/songs/intro_theme.ogg"));
+  playlist->setPlaybackMode(QMediaPlaylist::Loop);   // loop background music
 
-auto *playlist = new QMediaPlaylist(this);
-playlist->addMedia(QUrl("qrc:/songs/intro_theme.ogg"));
-playlist->setPlaybackMode(QMediaPlaylist::Loop);   // loop background music
+  auto *player = new QMediaPlayer(this);
+  player->setPlaylist(playlist);
+  player->setVolume(50);                             // 0–100
+  player->play();
 
-auto *player = new QMediaPlayer(this);
-player->setPlaylist(playlist);
-player->setVolume(50);                             // 0–100
-player->play();
-
-connect(player, QOverload<QMediaPlayer::Error>::of(&QMediaPlayer::error),
-        [player]{
-        qDebug()
-          << player->errorString()
-          << "\nTip: sudo apt install libqt5multimedia5-plugins";
-        }
-    );
+  connect(
+    player,
+    QOverload<QMediaPlayer::Error>::of(&QMediaPlayer::error),
+    [player]{
+      qDebug()
+        << player->errorString()
+        << "\nTip:\n\nsudo apt install libqt5multimedia5-plugins";
+      }
+  );
+  #endif // USE_MUSIC
 
   #ifdef QT5_TODO_FIND_CORRECT_DEFINE
   QTimer::singleShot(100,Qt::VeryCoarseTimer,this,SLOT(Start()));
