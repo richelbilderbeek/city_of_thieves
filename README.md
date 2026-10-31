@@ -1,92 +1,27 @@
-# City Of Thieves
+# Intro to Python for HPC
 
-Branch     |[![GitHub Actions logo](pics/GitHubActions.png)](https://github.com/richelbilderbeek/city_of_thieves/actions)   |[![Codecov logo](pics/Codecov.png)](https://www.codecov.io)
------------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-`master`   |![check](https://github.com/richelbilderbeek/city_of_thieves/workflows/check/badge.svg?branch=master)           |[![codecov.io](https://codecov.io/github/richelbilderbeek/city_of_thieves/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/city_of_thieves/branch/master)
-`develop`  |![check](https://github.com/richelbilderbeek/city_of_thieves/workflows/check/badge.svg?branch=develop)          |[![codecov.io](https://codecov.io/github/richelbilderbeek/city_of_thieves/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/city_of_thieves/branch/develop)
+<!-- markdownlint-disable MD013 --><!-- Badges cannot be split up over lines, hence will break 80 characters per line -->
 
-City Of Thieves is a text adventure game after the English gamebook with the same name by Ian Livingstone. 
+[![Check links](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_links.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_links.yaml)
+[![Check Markdown](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_markdown.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_markdown.yaml)
+[![Check spelling](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_spelling.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/check_spelling.yaml)
+[![Create the MkDocs website](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/create_mkdocs_website.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/naiss_intro_python/actions/workflows/create_mkdocs_website.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17700484.svg)](https://doi.org/10.5281/zenodo.17700484)
 
- * [Wikipedia](https://en.wikipedia.org/wiki/City_of_Thieves_%28gamebook%29)
+<!-- markdownlint-enable MD013 -->
 
-![Console version](Screenshots/CityOfThievesConsole_1_0.png)
-![Desktop version](Screenshots/CityOfThievesDesktop_1_0.png)
-![Nintendo DS version](Screenshots/CityOfThievesNds_1_0.jpg)
-![Nintendo DS version on emulator](Screenshots/CityOfThievesNdsEmulator_1_0.png)
+- [Go to the nicely rendered site](https://uppmax.github.io/naiss_intro_python/)
 
-## Building
+## Files used by continuous integration scripts
 
-To build all:
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 
-```
-make
-```
+Filename                                    |Description
+--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------
+[`mlc_config.json`](mlc_config.json)        |Configuration of the link checker, use `markdown-link-check --config mlc_config.json --quiet docs/**/*.md` to do link checking locally
+[`.spellcheck.yml`](.spellcheck.yml)        |Configuration of the spell checker, use [`./scripts/check_spelling.sh`](scripts/check_spelling.sh) to do spell check locally
+[`.wordlist.txt`](.wordlist.txt)            |Whitelisted words for the spell checker, use [`./scripts/check_spelling.sh`](scripts/check_spelling.sh) to do spell check locally
+[`.markdownlint.jsonc`](.markdownlint.jsonc)|Configuration of the Markdown linter, use [`./scripts/fix_markdown_style_errors.sh`](scripts/fix_markdown_style_errors.sh) to do markdown linting locally
+[`.markdownlintignore`](.markdownlintignore)|Files ignored by the Markdown linter, use [`./scripts/fix_markdown_style_errors.sh`](scripts/fix_markdown_style_errors.sh) to do markdown linting locally
 
-### Console
-
-```
-make console
-```
-
-### Desktop
-
-```
-make desktop
-```
-
-## Running
-
-Be sure to have already build the files.
-
-Then open the correct Qt Creator project:
-
- * Console: `Console/CityOfThievesConsole.pro`
- * Console (test only): `Console/CityOfThievesConsoleTest.pro`
- * Desktop: `Desktop/CityOfThievesDesktop.pro`
- * NDS: `Nds/source/GameCityOfThievesNds.pro`
-
-## Downloads
-
- * [Windows executable](http://richelbilderbeek.nl/CityOfThievesExe.zip)
- * [Arch Linux AUR package](https://aur.archlinux.org/packages/cityofthieves-cli/) (Console version only for the moment)
- * [NDS](http://richelbilderbeek.nl/CityOfThievesNds.zip)
- * Download the Singularity image:
-
-```
-singularity pull library://richelbilderbeek/default/city_of_thieves 
-```
-
-## Video
-
- * General gameplay: [YouTube](https://youtu.be/0QeDhZQGPFo) [download (.ogv)](http://richelbilderbeek.nl/city_of_thieves.ogv)
-
-## I want to help!
-
-Great!
-
-There is need for some testing and spelling corrections. Create a new Issue or email @richelbilderbeek.
-
-## What are all those files in the folder `Files`?
-
-The `.txt` files contain the story of 'City Of Thieves'. 
-These are converted to C++ headers and source files by the `FilesToFunctions.sh` scripts. 
-This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does not support a filesystem on the NDS hardware.
-
-## Contributors
-
- * Richel Bilderbeek [@richelbilderbeek](https://github.com/richelbilderbeek): lead developer
- * Jeroen Niemandal [@JeroenN](https://github.com/JeroenN): added autofight
- * Carmen IJsebaart [@CarmenIJsebaart](https://github.com/CarmenIJsebaart): testing
- * Greg Fivash: testing
- * Sander van Kasteel [@sandervankasteel](https://github.com/sandervankasteel): [Arch linux package maintainer](https://aur.archlinux.org/packages/cityofthieves-cli/), bug reporting
- * Seb Doekes: [bug report #16](https://github.com/richelbilderbeek/city_of_thieves/issues/16)
- * Jesper Doekes: [bug report #16](https://github.com/richelbilderbeek/city_of_thieves/issues/16)
-
-## External links
-
- * [libnds_example_1](https://github.com/richelbilderbeek/libnds_example_1): minimal NDS example
- * [libnds_example_2](https://github.com/richelbilderbeek/libnds_example_2): minimal NDS example with Madmax audio
- * [Richel Bilderbeek's games](https://github.com/richelbilderbeek/Games)
- * [Singularity scriptlet for City of Thieves](https://github.com/richelbilderbeek/singularity_example_6)
-
-
+<!-- markdownlint-enable MD013 -->

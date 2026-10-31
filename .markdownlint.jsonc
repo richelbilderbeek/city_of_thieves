@@ -1,0 +1,50 @@
+// Example markdownlint configuration with all properties set to their default value
+{
+
+  // Default state for all rules
+  "default": true,
+
+  // MkDocs assumes 4 spaces for indentation.
+  // Markdown assumes 4 spaces for indentation.
+  // That markdownlint has a different default is the error of markdownlint
+  "MD007": { "indent": 4 },
+
+  // Standard markdown does not allow for two correct consecutive blank lines 
+  // i an admonitions (a.o. the 'question' admonition):
+  //
+  // ???- question "A question"
+  //
+  //     ```
+  //     echo "indented code here :-)
+  //     ````
+  //     [blank line 1 here]
+  // [blank line 2 here]
+  //
+  // Hence we allow 2 consecutive blank lines
+  //
+  "MD012": {
+    // Consecutive blank lines, CHANGED FROM 1
+    "maximum": 2
+  },
+
+  // Standard markdown does not allow for valid indent code like this:
+  //
+  // ???- question "A question"
+  //
+  //     ```
+  //     echo "indented code here :-)
+  //     ````
+  //     
+  // Hence we allow valid indented code.
+  //
+  // MD046/code-block-style : Code block style : https://github.com/DavidAnson/markdownlint/blob/v0.34.0/doc/md046.md
+  "MD046": false,
+
+  // MD055/table-pipe-style : Table pipe style : https://github.com/DavidAnson/markdownlint/blob/main/doc/md055.md
+  // 
+  // Some tools create table with a leading and trailing pipe,
+  // where other tools don't.
+  // Instead of manually fixing tables, accept that tools have different
+  // behaviors.
+  "MD055": false,
+}

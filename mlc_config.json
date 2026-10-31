@@ -1,0 +1,8 @@
+{
+  "aliveStatusCodes": [0, 200, 403, 418, 500, 503],
+  "ignorePatterns": [
+    {
+        "pattern": "^https://rackham-gui.uppmax.uu.se"
+    }
+  ]
+}
