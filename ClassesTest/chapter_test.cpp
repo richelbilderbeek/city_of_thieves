@@ -554,7 +554,10 @@ BOOST_AUTO_TEST_CASE(test_chapter)
   //Chapter 287: the hot food costs 1 gold piece
   {
     const Chapter chapter(287);
-    assert(chapter.GetOptions().GetOptions()[0].GetCondition().GetGoldNeeded() == 1);
+    const int option_index{1};
+    assert(option_index < static_cast<int>(chapter.GetOptions().GetOptions().size()));
+    assert(chapter.GetOptions().GetOptions()[option_index].GetText() == "Eat some food");
+    assert(chapter.GetOptions().GetOptions()[option_index].GetCondition().GetGoldNeeded() == 1);
   }
 
   //Parse chapters using Chapter
@@ -619,4 +622,4 @@ BOOST_AUTO_TEST_CASE(test_chapter)
     }
   }
 }
-#pragma GCC diagnostic pop
+// #pragma GCC diagnostic pop
