@@ -1,5 +1,11 @@
 # FAQ
 
+## I want to help!
+
+Great!
+
+See [how to contribute](CONTRIBUTING.md).
+
 ## Technical
 
 ### What are all those files in the folder `Files`?

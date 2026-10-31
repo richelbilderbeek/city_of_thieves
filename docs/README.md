@@ -2,67 +2,19 @@
 
 City Of Thieves is a text adventure game after the English gamebook with the same name by Ian Livingstone. 
 
-- [Wikipedia](https://en.wikipedia.org/wiki/City_of_Thieves_%28gamebook%29)
-
 ![Console version](screenshots/CityOfThievesConsole_1_0.png)
 ![Desktop version](screenshots/CityOfThievesDesktop_1_0.png)
 ![Nintendo DS version](screenshots/CityOfThievesNds_1_0.jpg)
 ![Nintendo DS version on emulator](screenshots/CityOfThievesNdsEmulator_1_0.png)
 
-## Building
-
-To build all:
-
-```
-make
-```
-
-### Console
-
-```
-make console
-```
-
-### Desktop
-
-```
-make desktop
-```
-
-## Running
-
-Be sure to have already build the files.
-
-Then open the correct Qt Creator project:
-
-- Console: `Console/CityOfThievesConsole.pro`
-- Console (test only): `Console/CityOfThievesConsoleTest.pro`
-- Desktop: `Desktop/CityOfThievesDesktop.pro`
-- NDS: `Nds/source/GameCityOfThievesNds.pro`
-
-## Downloads
-
-- [Windows executable](http://richelbilderbeek.nl/CityOfThievesExe.zip)
-- [Arch Linux AUR package](https://aur.archlinux.org/packages/cityofthieves-cli/) (Console version only for the moment)
-- [NDS](http://richelbilderbeek.nl/CityOfThievesNds.zip)
-- Download the Singularity image:
-
-```
-singularity pull library://richelbilderbeek/default/city_of_thieves 
-```
-
-## Video
-
-- General gameplay: [YouTube](https://youtu.be/0QeDhZQGPFo) [download (.ogv)](http://richelbilderbeek.nl/city_of_thieves.ogv)
-
-## I want to help!
-
-Great!
-
-There is need for some testing and spelling corrections. Create a new Issue or email @richelbilderbeek.
-
 - [Acknowledgments](acknowledgments.md)
+- [Building](build.md)
+- [Contributing](CONTRIBUTING.md)
+- [Download](download.md)
 - [FAQ](faq.md)
+- [Running](run.md)
+- [Videos](videos.md)
+- [Wikipedia](https://en.wikipedia.org/wiki/City_of_Thieves_%28gamebook%29)
 
 ## External links
 
@@ -70,5 +22,3 @@ There is need for some testing and spelling corrections. Create a new Issue or e
 - [libnds_example_2](https://github.com/richelbilderbeek/libnds_example_2): minimal NDS example with Madmax audio
 - [Richel Bilderbeek's games](https://richelbilderbeek.github.io/games/)
 - [Singularity scriptlet for City of Thieves](https://github.com/richelbilderbeek/singularity_example_6)
-
-

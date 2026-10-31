@@ -6,10 +6,16 @@ edit_uri = "blob/main/docs/"
 
 nav = [
   { "Start" = "README.md"},
-  "screenshots/README.md",
   "acknowledgments.md",
+  "build.md",
+  "download.md",
+  "CODE_OF_CONDUCT.md",
+  "CONTRIBUTING.md",
   "faq.md",
-  "misc/README.md"
+  "misc/README.md",
+  "run.md",
+  "screenshots/README.md",
+  "videos.md"
 ]
 
 [project.theme]
