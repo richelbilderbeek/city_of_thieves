@@ -67,15 +67,7 @@ The `.txt` files contain the story of 'City Of Thieves'.
 These are converted to C++ headers and source files by the `FilesToFunctions.sh` scripts. 
 This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does not support a filesystem on the NDS hardware.
 
-## Contributors
-
-- Richel Bilderbeek [@richelbilderbeek](https://github.com/richelbilderbeek): lead developer
-- Jeroen Niemandal [@JeroenN](https://github.com/JeroenN): added autofight
-- Carmen IJsebaart [@CarmenIJsebaart](https://github.com/CarmenIJsebaart): testing
-- Greg Fivash: testing
-- Sander van Kasteel [@sandervankasteel](https://github.com/sandervankasteel): [Arch linux package maintainer](https://aur.archlinux.org/packages/cityofthieves-cli/), bug reporting
-- Seb Doekes: [bug report #16](https://github.com/richelbilderbeek/city_of_thieves/issues/16)
-- Jesper Doekes: [bug report #16](https://github.com/richelbilderbeek/city_of_thieves/issues/16)
+- [Acknowledgments](acknowledgments.md)
 
 ## External links
 
