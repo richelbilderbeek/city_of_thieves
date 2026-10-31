@@ -4,6 +4,8 @@ on:
 
 name: check_build
 
+
+
 jobs:
   check_build:
     runs-on: ubuntu-latest
@@ -56,3 +58,8 @@ jobs:
 
       - name: Do OCLint, always passes
         run: ./do_oclint.sh || true
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
