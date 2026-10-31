@@ -2,7 +2,7 @@
 
 City Of Thieves is a text adventure game after the English gamebook with the same name by Ian Livingstone. 
 
- * [Wikipedia](https://en.wikipedia.org/wiki/City_of_Thieves_%28gamebook%29)
+- [Wikipedia](https://en.wikipedia.org/wiki/City_of_Thieves_%28gamebook%29)
 
 ![Console version](Screenshots/CityOfThievesConsole_1_0.png)
 ![Desktop version](Screenshots/CityOfThievesDesktop_1_0.png)
@@ -35,17 +35,17 @@ Be sure to have already build the files.
 
 Then open the correct Qt Creator project:
 
- * Console: `Console/CityOfThievesConsole.pro`
- * Console (test only): `Console/CityOfThievesConsoleTest.pro`
- * Desktop: `Desktop/CityOfThievesDesktop.pro`
- * NDS: `Nds/source/GameCityOfThievesNds.pro`
+- Console: `Console/CityOfThievesConsole.pro`
+- Console (test only): `Console/CityOfThievesConsoleTest.pro`
+- Desktop: `Desktop/CityOfThievesDesktop.pro`
+- NDS: `Nds/source/GameCityOfThievesNds.pro`
 
 ## Downloads
 
- * [Windows executable](http://richelbilderbeek.nl/CityOfThievesExe.zip)
- * [Arch Linux AUR package](https://aur.archlinux.org/packages/cityofthieves-cli/) (Console version only for the moment)
- * [NDS](http://richelbilderbeek.nl/CityOfThievesNds.zip)
- * Download the Singularity image:
+- [Windows executable](http://richelbilderbeek.nl/CityOfThievesExe.zip)
+- [Arch Linux AUR package](https://aur.archlinux.org/packages/cityofthieves-cli/) (Console version only for the moment)
+- [NDS](http://richelbilderbeek.nl/CityOfThievesNds.zip)
+- Download the Singularity image:
 
 ```
 singularity pull library://richelbilderbeek/default/city_of_thieves 
@@ -53,7 +53,7 @@ singularity pull library://richelbilderbeek/default/city_of_thieves
 
 ## Video
 
- * General gameplay: [YouTube](https://youtu.be/0QeDhZQGPFo) [download (.ogv)](http://richelbilderbeek.nl/city_of_thieves.ogv)
+- General gameplay: [YouTube](https://youtu.be/0QeDhZQGPFo) [download (.ogv)](http://richelbilderbeek.nl/city_of_thieves.ogv)
 
 ## I want to help!
 
@@ -69,19 +69,19 @@ This was needed, because NitroFS (as part of libnds, as part of DevKitPro) does 
 
 ## Contributors
 
- * Richel Bilderbeek [@richelbilderbeek](https://github.com/richelbilderbeek): lead developer
- * Jeroen Niemandal [@JeroenN](https://github.com/JeroenN): added autofight
- * Carmen IJsebaart [@CarmenIJsebaart](https://github.com/CarmenIJsebaart): testing
- * Greg Fivash: testing
- * Sander van Kasteel [@sandervankasteel](https://github.com/sandervankasteel): [Arch linux package maintainer](https://aur.archlinux.org/packages/cityofthieves-cli/), bug reporting
- * Seb Doekes: [bug report #16](https://github.com/richelbilderbeek/city_of_thieves/issues/16)
- * Jesper Doekes: [bug report #16](https://github.com/richelbilderbeek/city_of_thieves/issues/16)
+- Richel Bilderbeek [@richelbilderbeek](https://github.com/richelbilderbeek): lead developer
+- Jeroen Niemandal [@JeroenN](https://github.com/JeroenN): added autofight
+- Carmen IJsebaart [@CarmenIJsebaart](https://github.com/CarmenIJsebaart): testing
+- Greg Fivash: testing
+- Sander van Kasteel [@sandervankasteel](https://github.com/sandervankasteel): [Arch linux package maintainer](https://aur.archlinux.org/packages/cityofthieves-cli/), bug reporting
+- Seb Doekes: [bug report #16](https://github.com/richelbilderbeek/city_of_thieves/issues/16)
+- Jesper Doekes: [bug report #16](https://github.com/richelbilderbeek/city_of_thieves/issues/16)
 
 ## External links
 
- * [libnds_example_1](https://github.com/richelbilderbeek/libnds_example_1): minimal NDS example
- * [libnds_example_2](https://github.com/richelbilderbeek/libnds_example_2): minimal NDS example with Madmax audio
- * [Richel Bilderbeek's games](https://github.com/richelbilderbeek/Games)
- * [Singularity scriptlet for City of Thieves](https://github.com/richelbilderbeek/singularity_example_6)
+- [libnds_example_1](https://github.com/richelbilderbeek/libnds_example_1): minimal NDS example
+- [libnds_example_2](https://github.com/richelbilderbeek/libnds_example_2): minimal NDS example with Madmax audio
+- [Richel Bilderbeek's games](https://richelbilderbeek.github.io/games/)
+- [Singularity scriptlet for City of Thieves](https://github.com/richelbilderbeek/singularity_example_6)
 
 
