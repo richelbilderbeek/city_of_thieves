@@ -7,7 +7,7 @@
 #include <QTextCursor>
 #pragma GCC diagnostic pop
 
-//#include <boost/lexical_cast.hpp>
+#include <boost/lexical_cast.hpp>
 
 //#include "chapter.h"
 #include "menudialog.h"
@@ -167,8 +167,11 @@ void QtGameDialog::ShowText(const std::string& text)
 
   for (const char c: text)
   {
-    //const std::string s{boost::lexical_cast<std::string>(c)};
-    const std::string s{std::to_string(c)};
+    // Really need 'boost::lexical_cast' here,
+    // as using 'std::to_string' turns this into numbers only
+    const std::string s{boost::lexical_cast<std::string>(c)};
+    //const std::string s{std::to_string(c)}; // NO!
+
     d.insertText(s.c_str());
     Helper().Wait(waiting_time);
     //TODO: Speed up text display when user presses a key
