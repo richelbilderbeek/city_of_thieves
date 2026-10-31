@@ -2,11 +2,12 @@
 
 <!-- markdownlint-disable MD013 --><!-- Badges cannot be split up over lines, hence will break 80 characters per line -->
 
+[![check_build](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_build.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_build.yaml)
 [![Check links](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_links.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_links.yaml)
 [![Check Markdown](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_markdown.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_markdown.yaml)
 [![Check spelling](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_spelling.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_spelling.yaml)
-[![Create the Zensical website](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/create_zensical_website.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/create_zensical_website.yaml)
 [![codecov.io](https://codecov.io/github/richelbilderbeek/city_of_thieves/coverage.svg?branch=main)](https://codecov.io/github/richelbilderbeek/city_of_thieves/branch/main)
+[![Create the Zensical website](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/create_zensical_website.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/create_zensical_website.yaml)
 
 <!-- markdownlint-enable MD013 -->
 
