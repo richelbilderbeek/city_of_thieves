@@ -58,12 +58,12 @@ throwing_knife                |:no_mouth: Avoidable use
 two_gems                      |:confused: Unknown: can sell for 9 gold pieces 
 two_silver_goblets            |:neutral_face: Useless
 
-![](blacksand_map.png)
+![Blacksand Map](blacksand_map.png)
 
 > Map of Blacksand, the City of Thieves,
 > from [https://fightingfantasy.fandom.com/wiki/Port_Blacksand](https://fightingfantasy.fandom.com/wiki/Port_Blacksand)
 
-![](blacksand_map_route.png)
+![Blacksand Map route](blacksand_map_route.png)
 
 > Map of Blacksand, the City of Thieves,
 > the routes in the game,

@@ -4,10 +4,10 @@ City Of Thieves is a text adventure game after the English gamebook with the sam
 
 - [Wikipedia](https://en.wikipedia.org/wiki/City_of_Thieves_%28gamebook%29)
 
-![Console version](Screenshots/CityOfThievesConsole_1_0.png)
-![Desktop version](Screenshots/CityOfThievesDesktop_1_0.png)
-![Nintendo DS version](Screenshots/CityOfThievesNds_1_0.jpg)
-![Nintendo DS version on emulator](Screenshots/CityOfThievesNdsEmulator_1_0.png)
+![Console version](screenshots/CityOfThievesConsole_1_0.png)
+![Desktop version](screenshots/CityOfThievesDesktop_1_0.png)
+![Nintendo DS version](screenshots/CityOfThievesNds_1_0.jpg)
+![Nintendo DS version on emulator](screenshots/CityOfThievesNdsEmulator_1_0.png)
 
 ## Building
 
