@@ -2,6 +2,8 @@
 
 City Of Thieves is a text adventure game after the English gamebook
 with the same name by Ian Livingstone.
+City Of Thieves is one of
+[Richèl Bilderbeek's games](https://richelbilderbeek.github.io/games).
 
 ![Screenshot](screenshots/city_of_thieves_desktop_1_11.png)
 
