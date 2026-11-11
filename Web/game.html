@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>City of Thieves</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #111;
+      color: #ddd;
+      font-family: "DejaVu Sans Mono", Consolas, "Courier New", monospace;
+      font-size: 15px;
+    }
+    #game {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+    }
+    #output {
+      flex: 1;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      line-height: 1.4;
+    }
+    #input-form {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    #input {
+      flex: 1;
+      background: #222;
+      color: #fff;
+      border: 1px solid #555;
+      padding: 6px;
+      font: inherit;
+    }
+    #input:disabled { opacity: 0.5; }
+    button {
+      background: #a00;
+      color: #fff;
+      border: none;
+      padding: 6px 14px;
+      font: inherit;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.5; cursor: default; }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <div id="output" aria-live="polite">Loading City of Thieves...
+</div>
+    <form id="input-form" autocomplete="off">
+      <input id="input" type="text" inputmode="numeric"
+             placeholder="Type the number of your choice and press Enter"
+             aria-label="Your choice" disabled>
+      <button id="send" type="submit" disabled>Choose</button>
+    </form>
+  </div>
+  <script>
+    const output = document.getElementById("output");
+    const input = document.getElementById("input");
+    const send = document.getElementById("send");
+    const form = document.getElementById("input-form");
+    let resolveLine = null;
+
+    // The game writes one character at a time: collect the text and
+    // update the page at most once per frame, to keep the page fast
+    let pendingText = "";
+    let flushScheduled = false;
+
+    function flushText() {
+      flushScheduled = false;
+      if (pendingText === "") { return; }
+      output.append(pendingText);
+      pendingText = "";
+      output.scrollTop = output.scrollHeight;
+    }
+
+    function appendText(text) {
+      pendingText += text;
+      if (!flushScheduled) {
+        flushScheduled = true;
+        requestAnimationFrame(flushText);
+      }
+    }
+
+    function setWaiting(waiting) {
+      input.disabled = !waiting;
+      send.disabled = !waiting;
+      if (waiting) { input.focus(); }
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!resolveLine) { return; }
+      const line = input.value.trim();
+      input.value = "";
+      appendText("> " + line + "\n");
+      const resolve = resolveLine;
+      resolveLine = null;
+      setWaiting(false);
+      resolve(line);
+    });
+
+    const script = document.createElement("script");
+    script.src = "city_of_thieves.js";
+    script.onload = () => {
+      output.textContent = "";
+      createCityOfThieves({
+        appendText: appendText,
+        readLine: () => new Promise((resolve) => {
+          flushText();
+          resolveLine = resolve;
+          setWaiting(true);
+        }),
+        print: (text) => appendText(text + "\n"),
+        printErr: (text) => console.error(text),
+        onGameEnded: (message) => {
+          if (message) { appendText("\n[Error: " + message + "]\n"); }
+          appendText("\n[The game has ended. Reload the page to play again.]\n");
+          setWaiting(false);
+        }
+      }).catch((error) => {
+        appendText("\n[Error: " + error + "]\n");
+      });
+    };
+    script.onerror = () => {
+      appendText("\n[Could not load the game.]\n");
+    };
+    document.body.appendChild(script);
+  </script>
+</body>
+</html>

@@ -12,11 +12,29 @@
 #include "getfile.h"
 #include "helper.h"
 
+#ifdef __EMSCRIPTEN__
+#include <cstdlib>
+#include <emscripten.h>
+
+// Wait until the player submits a line on the web page (see Web/game.html)
+EM_ASYNC_JS(char*, web_read_line, (), {
+  const line = await Module.readLine();
+  const size = lengthBytesUTF8(line) + 1;
+  const ptr = _malloc(size);
+  stringToUTF8(line, ptr, size);
+  return ptr;
+});
+#endif
+
 Terminal::Terminal()
   :
     m_auto_play{false},
     m_silent{false},
-#ifndef NDEBUG
+#if defined(__EMSCRIPTEN__)
+    // On the web, text is shown at once: per-character timers are too slow
+    m_wait_character_msec{0.0},
+    m_wait_suspense{0.5}
+#elif !defined(NDEBUG)
     m_wait_character_msec{0.0},
     m_wait_suspense{0.0}
 #else
@@ -85,7 +103,15 @@ int Terminal::SlotRequestInput(const std::vector<int>& valid_inputs)
     while (1)
     {
       std::string s;
+      #ifdef __EMSCRIPTEN__
+      {
+        char * const line{web_read_line()};
+        s = line;
+        std::free(line);
+      }
+      #else
       std::getline(std::cin,s);
+      #endif
       if (!Helper().IsInt(s))
       {
         ShowText("Please enter an integer\n");

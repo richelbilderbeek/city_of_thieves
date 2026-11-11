@@ -187,4 +187,5 @@ Numba
 parallelization
 Fabio
 Zaccarini
-
+Emscripten
+WebAssembly

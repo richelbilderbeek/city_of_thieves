@@ -3,6 +3,9 @@
   "ignorePatterns": [
     {
         "pattern": "^https://rackham-gui.uppmax.uu.se"
+    },
+    {
+        "pattern": "^play/"
     }
   ]
 }

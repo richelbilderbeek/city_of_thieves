@@ -19,6 +19,15 @@
 #include <stdio.h>
 #endif
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+
+// Append text to the terminal on the web page (see Web/game.html)
+EM_JS(void, web_append_text, (const char* text), {
+  Module.appendText(UTF8ToString(text));
+});
+#endif
+
 Helper::Helper()
 {
 
@@ -32,6 +41,9 @@ void Helper::Cout(const char c) const
   buffer[0] = c;
   buffer[1] = '\0';
   printf(buffer);
+  #elif defined(__EMSCRIPTEN__)
+  const char buffer[2] = { c, '\0' };
+  web_append_text(buffer);
   #else
   std::cout << c;
   std::cout.flush();
@@ -43,6 +55,8 @@ void Helper::Cout(const std::string& s) const
   #ifdef ARM9
   printf(s.c_str());
   fflush(stdout);
+  #elif defined(__EMSCRIPTEN__)
+  web_append_text(s.c_str());
   #else
   std::cout << s;
   std::cout.flush();
@@ -422,7 +436,10 @@ std::string Helper::Trim(const std::string& s) const
 void Helper::Wait(const double n_secs, const bool verbose) const noexcept
 {
   if (verbose) { std::clog << __func__ << std::endl; }
-  #ifndef ARM9
+  #if defined(__EMSCRIPTEN__)
+  // Yield to the browser instead of busy-waiting, so the page stays responsive
+  if (n_secs > 0.0) { emscripten_sleep(static_cast<unsigned int>(n_secs * 1000.0)); }
+  #elif !defined(ARM9)
   const auto t = std::chrono::high_resolution_clock::now();
 
   while (1)

@@ -10,6 +10,11 @@ on:
       - .github/workflows/create_zensical_website.yaml
       - 'docs/**'
       - zensical.toml
+      # The online version of the game
+      - 'Classes/**'
+      - 'Files/**'
+      - 'Web/**'
+      - scripts/build_web.sh
 
 permissions:
   contents: read
@@ -25,6 +30,11 @@ jobs:
     steps:
       - uses: actions/configure-pages@v5
       - uses: actions/checkout@v5
+      # Create the online version of the game,
+      # using Emscripten to compile it to WebAssembly
+      - uses: mymindstorm/setup-emsdk@v14
+      - run: emcc --version
+      - run: ./scripts/build_web.sh
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x

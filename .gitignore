@@ -60,3 +60,6 @@ oclint-0.10.3/
 devkitpro-pacman.deb
 
 site/
+
+# Online version, built by scripts/build_web.sh
+docs/play/
