@@ -33,7 +33,7 @@ jobs:
       # Create the online version of the game,
       # using Emscripten to compile it to WebAssembly
       - uses: mymindstorm/setup-emsdk@v14
-      - run: emcc --version
+      - run: em++ --version
       - run: ./scripts/build_web.sh
       - uses: actions/setup-python@v5
         with:

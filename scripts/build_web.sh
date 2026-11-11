@@ -7,7 +7,7 @@
 #
 #   ./scripts/build_web.sh
 #
-# Requires 'emcc' (from Emscripten) to be in the PATH.
+# Requires 'em++' (from Emscripten) to be in the PATH.
 # Writes the game to 'docs/play/', so that the Zensical website
 # can serve it.
 set -euo pipefail
@@ -37,7 +37,7 @@ classes_sources=$(grep -o '\$\$PWD/[A-Za-z0-9_]*\.cpp' Classes/CityOfThievesCons
 files_sources=$(grep -o '\$\$PWD/[A-Za-z0-9_]*\.cpp' Files/Files.pri | sed 's|\$\$PWD|Files|')
 
 # shellcheck disable=SC2086
-emcc \
+em++ \
   -std=c++17 \
   -O2 \
   -DNDEBUG \
