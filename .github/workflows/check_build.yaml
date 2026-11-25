@@ -1,45 +1,39 @@
+# Check that the program can be built,
+# that its tests pass and measure the code coverage
+name: check_build
+
 on:
   push:
   pull_request:
 
-name: check_build
-
-
-
 jobs:
   check_build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
 
-      #- name: Run headless test
-      #  uses: GabrielBB/xvfb-action@v1
-      #  with:
-      #    run: npm test
-
-      - name: Install Qt
-        uses: jurplel/install-qt-action@v3
-
-      - name: Install Boost
-        run: sudo apt install -qq libboost-all-dev
-
-      - name: Install cppcheck
-        run: sudo apt-get install -qq cppcheck
-
-      - name: Install GraphViz
-        run: sudo apt-get install -qq graphviz
-
-      - name: Install codecov
-        run: sudo pip install codecov
-
-      - name: Install OCLint
-        run: ./install_oclint.sh
+      - name: Install Qt, Boost, cppcheck and GraphViz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qtbase5-dev qtmultimedia5-dev libboost-all-dev cppcheck graphviz
 
       - name: make console_test
         run: make console_test
 
       - name: Run CityOfThievesConsoleTest
         run: ./Console/CityOfThievesConsoleTest
+
+      - name: Measure code coverage
+        run: |
+          pip install gcovr
+          gcovr --root . --filter 'Classes/' --print-summary --xml coverage.xml
+
+      - name: Upload code coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          files: coverage.xml
+          fail_ci_if_error: false
+          token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: make console
         run: make console
@@ -50,16 +44,10 @@ jobs:
       - name: cppcheck, always passes
         run: cppcheck --quiet --error-exitcode=1 . || true
 
-      - name: Get codecov
-        run: |
-          ./get_code_cov.sh &> /dev/null
-          codecov &> /dev/null
-          bash <(curl -s https://codecov.io/bash)
+      - name: Install OCLint, always passes
+        continue-on-error: true
+        run: ./install_oclint.sh
 
       - name: Do OCLint, always passes
-        run: ./do_oclint.sh || true
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        continue-on-error: true
+        run: ./do_oclint.sh
