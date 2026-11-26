@@ -6,7 +6,7 @@
 [![Check links](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_links.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_links.yaml)
 [![Check Markdown](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_markdown.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_markdown.yaml)
 [![Check spelling](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_spelling.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/check_spelling.yaml)
-[![codecov](https://codecov.io/github/richelbilderbeek/city_of_thieves/graph/badge.svg?token=aFXfh5gRPg)](https://codecov.io/github/richelbilderbeek/city_of_thieves)
+[![codecov](https://codecov.io/gh/richelbilderbeek/city_of_thieves/branch/main/graph/badge.svg)](https://codecov.io/gh/richelbilderbeek/city_of_thieves)
 [![Create the Zensical website](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/create_zensical_website.yaml/badge.svg?branch=main)](https://github.com/richelbilderbeek/city_of_thieves/actions/workflows/create_zensical_website.yaml)
 
 <!-- markdownlint-enable MD013 -->
