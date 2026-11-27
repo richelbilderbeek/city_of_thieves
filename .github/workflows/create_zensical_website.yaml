@@ -3,6 +3,7 @@ name: Create Zensical website
 
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
